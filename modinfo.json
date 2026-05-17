@@ -1,0 +1,14 @@
+{
+  "type": "code",
+  "modid": "lotr",
+  "name": "LOTR Mod",
+  "authors": [
+    "Max"
+  ],
+  "description": "Starter scaffold for the LOTR Vintage Story mod.",
+  "version": "0.1.0",
+  "dependencies": {
+    "game": "1.22.0",
+    "survival": "1.22.0"
+  }
+}

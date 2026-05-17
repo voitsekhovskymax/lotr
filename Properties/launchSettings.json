@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "lotr": {
+      "commandName": "Executable",
+      "executablePath": "$(VINTAGE_STORY)/Vintagestory",
+      "commandLineArgs": "--dataPath \"$(VINTAGE_STORY_DATA)\"",
+      "environmentVariables": {
+        "VINTAGE_STORY": "/Applications/Vintage Story.app",
+        "VINTAGE_STORY_DATA": "/Users/max/Library/Application Support/VintagestoryData"
+      }
+    },
+    "lotr Server": {
+      "commandName": "Executable",
+      "executablePath": "$(VINTAGE_STORY)/VintagestoryServer",
+      "commandLineArgs": "--dataPath \"$(VINTAGE_STORY_DATA)\"",
+      "environmentVariables": {
+        "VINTAGE_STORY": "/Applications/Vintage Story.app",
+        "VINTAGE_STORY_DATA": "/Users/max/Library/Application Support/VintagestoryData"
+      }
+    }
+  }
+}

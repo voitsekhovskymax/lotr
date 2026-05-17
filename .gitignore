@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# .NET build artifacts
+bin/
+obj/
+TestResults/
+artifacts/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Visual Studio / user-local files
+*.user
+*.rsuser
+*.suo
+
+# NuGet local state
+*.nupkg
+*.snupkg
+packages/
+
+# Logs
+*.log
+
+# Release/package outputs
+Releases/
+
+# Vintage Story local deploy/test artifacts
+*.zip

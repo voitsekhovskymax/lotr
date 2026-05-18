@@ -1,0 +1,35 @@
+{
+  "code": "lotr-shire-hills",
+  "comment": "Gentle rolling hills \u2014 The Shire. Sea level ~0.43, tops ~0.52",
+  "weight": 5,
+  "terrainOctaves": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0.1,
+    0.1,
+    0.05,
+    0
+  ],
+  "terrainOctaveThresholds": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "terrainYKeyPositions": [
+    0.42,
+    0.52
+  ],
+  "terrainYKeyThresholds": [
+    1.0,
+    0.0
+  ]
+}

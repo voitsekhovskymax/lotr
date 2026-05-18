@@ -1,0 +1,17 @@
+{
+  "pixelsPerBlock": 512,
+  "mapCenterPixelX": 128,
+  "mapCenterPixelZ": 128,
+  "colors": {
+    "64B43C": "lotr:region-shire",
+    "8B6914": "lotr:region-bree",
+    "5B8FCC": "lotr:region-rivendell",
+    "6B6B8A": "lotr:region-blue-mountains",
+    "4A4A4A": "lotr:region-moria",
+    "C8C8B4": "lotr:region-minas-tirith",
+    "3A3A3A": "lotr:region-isengard",
+    "8B0000": "lotr:region-mordor",
+    "1E50A0": "lotr:region-ocean",
+    "B4A078": "lotr:region-rohan"
+  }
+}

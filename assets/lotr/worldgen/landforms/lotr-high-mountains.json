@@ -1,0 +1,41 @@
+{
+  "code": "lotr-high-mountains",
+  "comment": "Tall jagged peaks \u2014 Blue Mountains / Misty Mountains. Snow above 0.72.",
+  "weight": 4,
+  "terrainOctaves": [
+    1,
+    1,
+    1,
+    1,
+    0.8,
+    0.4,
+    0.2,
+    0.1,
+    0.1
+  ],
+  "terrainOctaveThresholds": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "terrainYKeyPositions": [
+    0.42,
+    0.55,
+    0.72,
+    0.88,
+    1.0
+  ],
+  "terrainYKeyThresholds": [
+    1.0,
+    0.6,
+    0.2,
+    0.05,
+    0.0
+  ]
+}

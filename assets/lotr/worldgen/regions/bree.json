@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-bree",
+  "displayName": "Bree-land",
+  "biome": "lotr:biome-bree",
+  "faction": "lotr:faction-gondor",
+  "centerX": -800,
+  "centerZ": 0,
+  "radiusX": 600,
+  "radiusZ": 600,
+  "priority": 10,
+  "notes": "Crossroads town"
+}

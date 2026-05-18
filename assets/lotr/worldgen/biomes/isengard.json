@@ -1,0 +1,15 @@
+{
+  "id": "lotr:biome-isengard",
+  "displayName": "Isengard",
+  "tempMin": 10,
+  "tempMax": 15,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.3,
+  "landformHint": "flat-lowlands",
+  "surfaceBlock": "gravel-andesite",
+  "flora": [],
+  "fauna": [],
+  "notes": "Deforested industrial wasteland, Orthanc"
+}

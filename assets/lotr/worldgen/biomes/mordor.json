@@ -1,0 +1,16 @@
+{
+  "id": "lotr:biome-mordor",
+  "displayName": "Mordor",
+  "tempMin": 20,
+  "tempMax": 30,
+  "rainMin": 0.0,
+  "rainMax": 0.05,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.05,
+  "landformHint": "volcanic-wasteland",
+  "surfaceBlock": "gravel-basalt",
+  "flora": [],
+  "fauna": [],
+  "lava": true,
+  "notes": "Volcanic ash plains, lava rivers, no flora"
+}

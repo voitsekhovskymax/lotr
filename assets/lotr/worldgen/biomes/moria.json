@@ -1,0 +1,15 @@
+{
+  "id": "lotr:biome-moria",
+  "displayName": "Moria (Khazad-dum)",
+  "tempMin": 5,
+  "tempMax": 10,
+  "rainMin": 0.0,
+  "rainMax": 0.0,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.0,
+  "landformHint": "underground",
+  "surfaceBlock": "basalt",
+  "flora": [],
+  "fauna": [],
+  "notes": "Underground cave complex, no surface"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-rohan",
+  "displayName": "Rohan",
+  "biome": "lotr:biome-rohan",
+  "faction": "lotr:faction-rohan",
+  "centerX": 5000,
+  "centerZ": 10000,
+  "radiusX": 3000,
+  "radiusZ": 2000,
+  "priority": 10,
+  "notes": "The Riddermark - plains of the horse-lords"
+}

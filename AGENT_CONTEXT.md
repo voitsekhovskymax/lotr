@@ -17,9 +17,9 @@ Systems: Factions, Alignment, Quests, World Generation
 - Game: Vintage Story 1.22
 - Runtime: .NET 10
 - Language: C# 13
-- Build: Cake Build (CakeBuild/Program.cs)
+- Build: `dotnet build lotr.csproj -c Debug`
 - IDE: JetBrains Rider on macOS
-- Game path: /Applications/Vintagestory/
+- Game path: /Applications/Vintage Story.app
 - Data path: ~/Library/Application Support/VintagestoryData/
 
 ---
@@ -27,26 +27,41 @@ Systems: Factions, Alignment, Quests, World Generation
 ## PROJECT STRUCTURE
 
 ```
-lotrmod/
-├── modinfo.json                    # Mod manifest
-├── CakeBuild/Program.cs            # Build system
-└── lotrmod/
-    ├── lotrmod.csproj
-    ├── modinfo.json
-    ├── assets/lotrmod/
-    │   ├── blocktypes/             # Block JSON definitions
-    │   ├── itemtypes/              # Item/weapon JSON definitions
-    │   ├── entities/humanoid/      # NPC JSON definitions
-    │   ├── worldgen/structures/    # Building schematics
-    │   ├── recipes/                # Crafting recipes
-    │   ├── lang/en.json            # Translations
-    │   └── textures/
-    └── src/
-        ├── LotrModSystem.cs        # MOD ENTRY POINT
-        ├── worldgen/
-        ├── entities/
-        ├── systems/
-        └── items/
+/Users/max/Projects/lotr/
+├── lotr.csproj
+├── modinfo.json
+├── assets/lotr/
+│   ├── blocktypes/
+│   ├── itemtypes/
+│   ├── entities/humanoid/
+│   ├── worldgen/
+│   ├── recipes/
+│   ├── lang/en.json
+│   └── textures/
+└── src/
+    ├── LotrModSystem.cs        # MOD ENTRY POINT
+    ├── Constants/
+    ├── Entities/
+    │   ├── Humanoids/
+    │   ├── Monsters/
+    │   ├── Bosses/
+    │   ├── Behaviors/
+    │   └── AI/
+    ├── Systems/
+    │   ├── Alignment/
+    │   ├── Factions/
+    │   ├── Quests/
+    │   ├── Dialogue/
+    │   ├── Regions/
+    │   ├── Spawn/
+    │   ├── World/
+    │   └── SaveData/
+    ├── WorldGen/
+    ├── Items/
+    ├── Blocks/
+    ├── Commands/
+    ├── Config/
+    └── Utilities/
 ```
 
 ---
@@ -133,13 +148,13 @@ Each region belongs to a faction. Player gains/loses alignment through actions.
 
 ```
 Factions:
-  lotrmod:faction-shire      (Hobbits)       — friendly default
-  lotrmod:faction-gondor     (Humans)        — neutral
-  lotrmod:faction-rohan      (Rohirrim)      — neutral
-  lotrmod:faction-rivendell  (Elves)         — neutral
-  lotrmod:faction-moria      (Dwarves)       — neutral
-  lotrmod:faction-isengard   (Uruk-hai)      — hostile
-  lotrmod:faction-mordor     (Orcs/Sauron)   — hostile
+  lotr:faction-shire      (Hobbits)       — friendly default
+  lotr:faction-gondor     (Humans)        — neutral
+  lotr:faction-rohan      (Rohirrim)      — neutral
+  lotr:faction-rivendell  (Elves)         — neutral
+  lotr:faction-moria      (Dwarves)       — neutral
+  lotr:faction-isengard   (Uruk-hai)      — hostile
+  lotr:faction-mordor     (Orcs/Sauron)   — hostile
 ```
 
 Alignment range: -1000 (hated) to +1000 (exalted)
@@ -149,12 +164,13 @@ Stored per-player via SaveGame attributes.
 
 ## NAMING CONVENTIONS
 
-- ModID: `lotrmod` (always lowercase)
-- Entity codes: `lotrmod:gandalf`, `lotrmod:frodo`, `lotrmod:orc-mordor`
-- Block codes: `lotrmod:stone-minas-tirith`, `lotrmod:block-mithril`
-- Item codes: `lotrmod:sword-sting`, `lotrmod:lembas`, `lotrmod:one-ring`
-- Texture paths: `lotrmod:entity/humanoid/gandalf`, `lotrmod:block/mithril`
-- JSON asset paths: `assets/lotrmod/entities/humanoid/gandalf.json`
+- ModID: `lotr` (always lowercase)
+- Namespace: `Lotr`
+- Entity codes: `lotr:gandalf`, `lotr:frodo`, `lotr:orc-mordor`
+- Block codes: `lotr:stone-minas-tirith`, `lotr:block-mithril`
+- Item codes: `lotr:sword-sting`, `lotr:lembas`, `lotr:one-ring`
+- Texture paths: `lotr:entity/humanoid/gandalf`, `lotr:block/mithril`
+- JSON asset paths: `assets/lotr/entities/humanoid/gandalf.json`
 
 ---
 
@@ -167,24 +183,24 @@ Stored per-player via SaveGame attributes.
 5. Never store `ICoreAPI` as a static field — pass via constructor
 6. Entity registration happens in `Start()`, not `StartServerSide()`
 7. JSON entity code must match the registered class name exactly
-8. All entity/block/item codes need the `lotrmod:` prefix
+8. All entity/block/item codes need the `lotr:` prefix
 
 ---
 
 ## JSON ENTITY TEMPLATE
 
-File: `assets/lotrmod/entities/humanoid/[name].json`
+File: `assets/lotr/entities/humanoid/[name].json`
 
 ```json
 {
-  "code": "lotrmod:[name]",
+  "code": "lotr:[name]",
   "class": "EntityAgent",
   "hitboxSize": { "x": 0.6, "y": 1.9 },
   "deadHitboxSize": { "x": 0.6, "y": 0.5 },
   "eyeHeight": 1.7,
   "client": {
     "renderer": "Shape",
-    "shape": { "base": "lotrmod:entity/humanoid/[name]" },
+    "shape": { "base": "lotr:entity/humanoid/[name]" },
     "behaviors": [
       { "code": "repulseagents" },
       { "code": "controlledphysics", "stepHeight": 0.6 },
@@ -208,7 +224,7 @@ File: `assets/lotrmod/entities/humanoid/[name].json`
       {
         "code": "taskai",
         "aitasks": [
-          { "code": "lotrmod:questgiver", "priority": 1.5 },
+          { "code": "lotr:questgiver", "priority": 1.5 },
           { "code": "lookatentity", "entityCodes": ["player"], "priority": 0.8 },
           { "code": "wander", "priority": 0.5, "movespeed": 0.015 }
         ]
@@ -216,12 +232,12 @@ File: `assets/lotrmod/entities/humanoid/[name].json`
     ]
   },
   "sounds": {
-    "hurt": "lotrmod:entity/[name]-hurt",
-    "death": "lotrmod:entity/[name]-death"
+    "hurt": "lotr:entity/[name]-hurt",
+    "death": "lotr:entity/[name]-death"
   },
   "attributes": {
-    "faction": "lotrmod:faction-[faction]",
-    "dialogue": "lotrmod:dialogue/[name]"
+    "faction": "lotr:faction-[faction]",
+    "dialogue": "lotr:dialogue-[name]"
   }
 }
 ```
@@ -230,14 +246,14 @@ File: `assets/lotrmod/entities/humanoid/[name].json`
 
 ## C# ENTITY TEMPLATE
 
-File: `src/entities/Entity[Name].cs`
+File: `src/Entities/Humanoids/Entity[Name].cs`
 
 ```csharp
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 
-namespace LotrMod
+namespace Lotr.Entities.Humanoids
 {
     public class Entity[Name] : EntityAgent
     {
@@ -247,57 +263,11 @@ namespace LotrMod
             long InChunkIndex3d)
         {
             base.Initialize(properties, api, InChunkIndex3d);
-            // Custom initialization here
         }
 
         public override void OnGameTick(float dt)
         {
             base.OnGameTick(dt);
-            // Called every game tick on server side
-        }
-
-        public override bool ShouldReceiveDamage(
-            DamageSource damageSource, float damage)
-        {
-            // Return false to make entity immune to certain damage
-            return base.ShouldReceiveDamage(damageSource, damage);
-        }
-    }
-}
-```
-
----
-
-## AI TASK TEMPLATE
-
-File: `src/entities/ai/AiTask[Name].cs`
-
-```csharp
-using Vintagestory.API.Common;
-using Vintagestory.API.Common.Entities;
-
-namespace LotrMod
-{
-    public class AiTask[Name] : AiTaskBase
-    {
-        public AiTask[Name](EntityAgent entity) : base(entity) { }
-
-        public override bool ShouldExecute()
-        {
-            // Return true when this task should start
-            return false;
-        }
-
-        public override void StartExecute()
-        {
-            base.StartExecute();
-            // Called once when task begins
-        }
-
-        public override bool ContinueExecute(float dt)
-        {
-            // Return true to keep running, false to stop
-            return false;
         }
     }
 }
@@ -307,13 +277,13 @@ namespace LotrMod
 
 ## SYSTEM TEMPLATE
 
-File: `src/systems/[Name]System.cs`
+File: `src/Systems/[Name]/[Name]System.cs`
 
 ```csharp
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 
-namespace LotrMod
+namespace Lotr.Systems.[Name]
 {
     public class [Name]System
     {
@@ -331,49 +301,11 @@ namespace LotrMod
             _api.Event.GameWorldSave += OnWorldSave;
         }
 
-        private void OnPlayerJoin(IServerPlayer player)
-        {
-            // Initialize player data
-        }
-
-        private void OnWorldSave()
-        {
-            // Persist system data
-        }
+        private void OnPlayerJoin(IServerPlayer player) { }
+        private void OnWorldSave() { }
     }
 }
 ```
-
----
-
-## PHASE 1 TASKS (MVP — Shire)
-
-These are the first tasks for the agent to implement:
-
-### Task 1.1 — modinfo.json and LotrModSystem.cs
-Create the mod entry point. Register entity classes. Log startup message.
-Files: `modinfo.json`, `src/LotrModSystem.cs`
-
-### Task 1.2 — Hobbit entity JSON
-Create Frodo and Bilbo as basic wandering NPCs in the Shire.
-Hitbox: x:0.4, y:1.1. No quests yet, just wandering behavior.
-Files: `assets/lotrmod/entities/humanoid/frodo.json`
-       `assets/lotrmod/entities/humanoid/bilbo.json`
-
-### Task 1.3 — Shire region block
-Create a custom grass block "Shire Grass" with a slightly different green tint.
-This is used to visually mark the Shire region.
-Files: `assets/lotrmod/blocktypes/shire-grass.json`
-
-### Task 1.4 — Lembas item
-Create a food item "Lembas Bread" that provides 4x saturation of normal bread
-and gives a 30-second speed boost.
-Files: `assets/lotrmod/itemtypes/lembas.json`
-       `src/items/ItemLembas.cs`
-
-### Task 1.5 — Basic translation file
-Create English translation file with all entity/item names defined above.
-File: `assets/lotrmod/lang/en.json`
 
 ---
 

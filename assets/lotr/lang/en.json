@@ -1,3 +1,22 @@
 {
-  "lotr:modname": "LOTR Mod"
+  "lotr:frodo": "Frodo Baggins",
+  "lotr:bilbo": "Bilbo Baggins",
+  "lotr:gandalf": "Gandalf the Grey",
+  "lotr:aragorn": "Aragorn",
+
+  "lotr:lembas": "Lembas Bread",
+  "lotr:lembas-desc": "Elvish waybread. One small bite fills the stomach of a grown man.",
+
+  "lotr:shire-grass-default": "Shire Grass",
+
+  "lotr:faction-shire": "The Shire",
+  "lotr:faction-gondor": "Gondor",
+  "lotr:faction-rohan": "Rohan",
+  "lotr:faction-rivendell": "Rivendell",
+  "lotr:faction-moria": "Moria",
+  "lotr:faction-isengard": "Isengard",
+  "lotr:faction-mordor": "Mordor",
+
+  "lotr:quest-shire-long-expected-party": "A Long-Expected Party",
+  "lotr:quest-shire-concerning-hobbits": "Concerning Hobbits"
 }

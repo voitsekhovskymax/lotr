@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-minas-tirith",
+  "displayName": "Minas Tirith",
+  "biome": "lotr:biome-minas-tirith",
+  "faction": "lotr:faction-gondor",
+  "centerX": 2000,
+  "centerZ": 500,
+  "radiusX": 800,
+  "radiusZ": 800,
+  "priority": 10,
+  "notes": "White city of Gondor"
+}

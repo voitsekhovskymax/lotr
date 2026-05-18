@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-isengard",
+  "displayName": "Isengard",
+  "biome": "lotr:biome-isengard",
+  "faction": "lotr:faction-isengard",
+  "centerX": 500,
+  "centerZ": 2000,
+  "radiusX": 500,
+  "radiusZ": 500,
+  "priority": 10,
+  "notes": "Saruman's fortress"
+}

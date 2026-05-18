@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-ocean",
+  "displayName": "The Great Sea",
+  "biome": "lotr:biome-ocean",
+  "faction": "lotr:faction-neutral",
+  "centerX": -65000,
+  "centerZ": 0,
+  "radiusX": 50000,
+  "radiusZ": 50000,
+  "priority": 1,
+  "notes": "Belegaer - ocean west of Middle-earth"
+}

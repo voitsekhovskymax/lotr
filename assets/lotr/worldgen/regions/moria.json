@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-moria",
+  "displayName": "Moria",
+  "biome": "lotr:biome-moria",
+  "faction": "lotr:faction-moria",
+  "centerX": 500,
+  "centerZ": 1000,
+  "radiusX": 600,
+  "radiusZ": 600,
+  "priority": 20,
+  "notes": "Underground only — Khazad-dum"
+}

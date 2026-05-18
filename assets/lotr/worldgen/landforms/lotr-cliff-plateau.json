@@ -1,0 +1,39 @@
+{
+  "code": "lotr-cliff-plateau",
+  "comment": "High flat plateau with sharp cliffs \u2014 Minas Tirith / Gondor.",
+  "weight": 3,
+  "terrainOctaves": [
+    1,
+    1,
+    0.8,
+    0.5,
+    0,
+    0.1,
+    0.1,
+    0,
+    0
+  ],
+  "terrainOctaveThresholds": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "terrainYKeyPositions": [
+    0.4,
+    0.48,
+    0.56,
+    0.6
+  ],
+  "terrainYKeyThresholds": [
+    1.0,
+    0.8,
+    0.1,
+    0.0
+  ]
+}

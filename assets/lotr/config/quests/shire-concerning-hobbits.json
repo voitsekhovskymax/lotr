@@ -1,0 +1,17 @@
+{
+  "id": "lotr:quest-shire-concerning-hobbits",
+  "name": "Concerning Hobbits",
+  "description": "Gandalf has arrived in the Shire. Speak with him about Bilbo's ring.",
+  "prerequisites": ["lotr:quest-shire-long-expected-party"],
+  "requiredFaction": "lotr:faction-shire",
+  "requiredAlignment": 50,
+  "reward": {
+    "alignmentChanges": {
+      "lotr:faction-shire": 75,
+      "lotr:faction-gondor": 25
+    },
+    "items": {
+      "lotr:lembas": 5
+    }
+  }
+}

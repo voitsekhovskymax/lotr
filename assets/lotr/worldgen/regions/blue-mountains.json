@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-blue-mountains",
+  "displayName": "Blue Mountains",
+  "biome": "lotr:biome-blue-mountains",
+  "faction": "lotr:faction-moria",
+  "centerX": -4000,
+  "centerZ": 0,
+  "radiusX": 1500,
+  "radiusZ": 800,
+  "priority": 10,
+  "notes": "Ered Luin — dwarven mountain range"
+}

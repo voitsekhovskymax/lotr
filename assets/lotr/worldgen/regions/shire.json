@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-shire",
+  "displayName": "The Shire",
+  "biome": "lotr:biome-shire",
+  "faction": "lotr:faction-shire",
+  "centerX": -2000,
+  "centerZ": -1000,
+  "radiusX": 1200,
+  "radiusZ": 900,
+  "priority": 10,
+  "notes": "Hobbit homeland, rolling green hills"
+}

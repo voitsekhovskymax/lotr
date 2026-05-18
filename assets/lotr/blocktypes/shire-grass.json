@@ -1,0 +1,33 @@
+{
+  "code": "shire-grass",
+  "variantgroups": [
+    { "code": "type", "states": [ "default" ] }
+  ],
+  "class": "Block",
+  "material": "Grass",
+  "blockmaterial": "Other",
+  "drawtype": "Cube",
+  "replaceable": 0,
+  "resistance": 0.5,
+  "sounds": {
+    "walk": "walk/grass"
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "sidesopaque": {
+    "all": false
+  },
+  "textures": {
+    "top": { "base": "block/soil/farmland/dry" },
+    "end": { "base": "block/soil/farmland/dry" },
+    "south": { "base": "block/soil/farmland/dry" },
+    "north": { "base": "block/soil/farmland/dry" },
+    "east": { "base": "block/soil/farmland/dry" },
+    "west": { "base": "block/soil/farmland/dry" }
+  },
+  "lightAbsorption": 99,
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

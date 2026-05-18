@@ -1,0 +1,22 @@
+{
+  "id": "lotr:biome-minas-tirith",
+  "displayName": "Minas Tirith",
+  "tempMin": 15,
+  "tempMax": 20,
+  "rainMin": 0.3,
+  "rainMax": 0.5,
+  "fertilityMin": 0.4,
+  "fertilityMax": 0.6,
+  "landformHint": "cliff-plateau",
+  "surfaceBlock": "soil-low-sparse",
+  "flora": [
+    "olive",
+    "cypress",
+    "drygrassland"
+  ],
+  "fauna": [
+    "horse",
+    "hawk"
+  ],
+  "notes": "White city on mountain spur, 7-tiered"
+}

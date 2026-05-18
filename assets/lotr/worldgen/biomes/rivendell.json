@@ -1,0 +1,24 @@
+{
+  "id": "lotr:biome-rivendell",
+  "displayName": "Rivendell",
+  "tempMin": 10,
+  "tempMax": 15,
+  "rainMin": 0.6,
+  "rainMax": 0.8,
+  "fertilityMin": 0.6,
+  "fertilityMax": 0.8,
+  "landformHint": "deep-valley",
+  "surfaceBlock": "soil-medium-normal",
+  "flora": [
+    "birch",
+    "beech",
+    "fern",
+    "flowers"
+  ],
+  "fauna": [
+    "deer",
+    "bird"
+  ],
+  "water": "waterfalls-and-streams",
+  "notes": "Hidden elven valley between mountains"
+}

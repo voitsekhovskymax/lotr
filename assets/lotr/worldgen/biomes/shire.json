@@ -1,0 +1,26 @@
+{
+  "id": "lotr:biome-shire",
+  "displayName": "The Shire",
+  "tempMin": 15,
+  "tempMax": 20,
+  "rainMin": 0.6,
+  "rainMax": 0.8,
+  "fertilityMin": 0.7,
+  "fertilityMax": 0.9,
+  "landformHint": "rolling-hills",
+  "surfaceBlock": "soil-medium-normal",
+  "flora": [
+    "oak",
+    "apple",
+    "tallgrass",
+    "berries",
+    "wildflowers"
+  ],
+  "fauna": [
+    "rabbit",
+    "deer",
+    "bird"
+  ],
+  "ambientSound": "lotr:sounds/ambient/shire",
+  "notes": "Green lush hobbit-land, gentle hills"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-mordor",
+  "displayName": "Mordor",
+  "biome": "lotr:biome-mordor",
+  "faction": "lotr:faction-mordor",
+  "centerX": 2000,
+  "centerZ": 3000,
+  "radiusX": 2000,
+  "radiusZ": 1500,
+  "priority": 10,
+  "notes": "The dark land, volcanic wasteland"
+}

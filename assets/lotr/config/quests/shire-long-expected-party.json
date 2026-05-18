@@ -1,0 +1,16 @@
+{
+  "id": "lotr:quest-shire-long-expected-party",
+  "name": "A Long-Expected Party",
+  "description": "Bilbo Baggins is celebrating his 111th birthday. Help prepare the feast at Bag End.",
+  "prerequisites": [],
+  "requiredFaction": "lotr:faction-shire",
+  "requiredAlignment": 0,
+  "reward": {
+    "alignmentChanges": {
+      "lotr:faction-shire": 50
+    },
+    "items": {
+      "lotr:lembas": 3
+    }
+  }
+}

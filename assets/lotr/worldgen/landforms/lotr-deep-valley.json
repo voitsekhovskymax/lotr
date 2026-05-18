@@ -1,0 +1,39 @@
+{
+  "code": "lotr-deep-valley",
+  "comment": "Narrow valley between cliffs \u2014 Rivendell. Low center, steep walls.",
+  "weight": 3,
+  "terrainOctaves": [
+    1,
+    1,
+    1,
+    1,
+    0.5,
+    0.2,
+    0.1,
+    0,
+    0
+  ],
+  "terrainOctaveThresholds": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "terrainYKeyPositions": [
+    0.38,
+    0.44,
+    0.6,
+    0.75
+  ],
+  "terrainYKeyThresholds": [
+    1.0,
+    0.6,
+    0.1,
+    0.0
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "code": "lotr-volcanic-wasteland",
+  "comment": "Broken, low volcanic terrain \u2014 Mordor. Craters, no flora.",
+  "weight": 4,
+  "terrainOctaves": [
+    1,
+    1,
+    1,
+    0.8,
+    0.5,
+    0.3,
+    0.1,
+    0,
+    0
+  ],
+  "terrainOctaveThresholds": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "terrainYKeyPositions": [
+    0.38,
+    0.44,
+    0.5,
+    0.58
+  ],
+  "terrainYKeyThresholds": [
+    1.0,
+    0.7,
+    0.3,
+    0.0
+  ],
+  "mutations": [
+    {
+      "variant": {
+        "code": "lotr-volcanic-wasteland"
+      },
+      "chance": 0.15
+    }
+  ]
+}

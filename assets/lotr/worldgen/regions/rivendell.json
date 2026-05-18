@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-rivendell",
+  "displayName": "Rivendell",
+  "biome": "lotr:biome-rivendell",
+  "faction": "lotr:faction-rivendell",
+  "centerX": 0,
+  "centerZ": -800,
+  "radiusX": 400,
+  "radiusZ": 300,
+  "priority": 10,
+  "notes": "Hidden elven valley"
+}

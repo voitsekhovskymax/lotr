@@ -1,0 +1,23 @@
+{
+  "code": "lembas",
+  "class": "ItemLembas",
+  "maxstacksize": 16,
+  "durability": 1,
+  "attributes": {
+    "satiety": 200,
+    "satietyloss": 40,
+    "eatmode": "instant",
+    "nutrition": {
+      "nutrients": {
+        "proteing": 4,
+        "saturation": 200
+      }
+    }
+  },
+  "textures": {
+    "all": { "base": "item/lembas" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

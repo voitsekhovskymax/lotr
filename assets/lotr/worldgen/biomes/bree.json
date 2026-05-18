@@ -1,0 +1,23 @@
+{
+  "id": "lotr:biome-bree",
+  "displayName": "Bree-land",
+  "tempMin": 10,
+  "tempMax": 15,
+  "rainMin": 0.5,
+  "rainMax": 0.7,
+  "fertilityMin": 0.5,
+  "fertilityMax": 0.7,
+  "landformHint": "flat-lowlands",
+  "surfaceBlock": "soil-medium-sparse",
+  "flora": [
+    "oak",
+    "elm",
+    "tallgrass"
+  ],
+  "fauna": [
+    "horse",
+    "cattle",
+    "rabbit"
+  ],
+  "notes": "Crossroads settlement, moderate climate"
+}

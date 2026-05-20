@@ -1,0 +1,21 @@
+﻿{
+  "code": "wose-knife",
+  "class": "ItemTool",
+  "durability": 60,
+  "tool": "knife",
+  "miningspeed": {
+    "plant": 2.1,
+    "cloth": 1.68
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 1.05,
+    "attackrange": 0.8
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/knife" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

@@ -1,0 +1,16 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:ingot-morguliron",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "N":  {
+                                  "code":  "lotr:nugget-morguliron",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  3,
+    "ingredientPattern":  "NNN,NNN,NNN"
+}

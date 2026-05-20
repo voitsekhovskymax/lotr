@@ -1,0 +1,20 @@
+﻿{
+  "code": "galadhrim-shovel",
+  "class": "ItemTool",
+  "durability": 450,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 4.55,
+    "gravel": 3.64,
+    "sand": 3.64
+  },
+  "attributes": {
+    "tooltier": 3
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

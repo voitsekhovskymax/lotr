@@ -1,0 +1,20 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:gurthang",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "S":  {
+                                  "code":  "game:stick",
+                                  "type":  "item"
+                              },
+                        "G":  {
+                                  "code":  "lotr:ingot-galvorn",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  1,
+    "ingredientPattern":  "G,G,S"
+}

@@ -1,0 +1,22 @@
+﻿{
+  "code": "wose-pickaxe",
+  "class": "ItemTool",
+  "durability": 160,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 2.8,
+    "ore": 2.8,
+    "basemetal": 2.24
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 1.05,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

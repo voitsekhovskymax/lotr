@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "csharp-async": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/csharp-async/SKILL.md",
+      "computedHash": "e889958419757528e43fb674607d13fffe331a6673cfcef2b0ab8ff9fb569bb8"
+    }
+  }
+}

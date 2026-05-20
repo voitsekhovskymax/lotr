@@ -1,0 +1,18 @@
+﻿{
+  "code": "herugrim",
+  "class": "ItemTool",
+  "durability": 3200,
+  "tool": "sword",
+  "attributes": {
+    "attackpower": 6.8,
+    "attackrange": 1.9,
+    "tooltier": 5,
+    "isLegendary": true
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/sword" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

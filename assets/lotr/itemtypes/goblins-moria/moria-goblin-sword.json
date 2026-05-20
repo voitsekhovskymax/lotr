@@ -1,0 +1,17 @@
+﻿{
+  "code": "moria-goblin-sword",
+  "class": "ItemTool",
+  "durability": 300,
+  "tool": "sword",
+  "attributes": {
+    "attackpower": 4.2,
+    "attackrange": 1.8,
+    "tooltier": 1
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/sword" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

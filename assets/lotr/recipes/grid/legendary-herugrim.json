@@ -1,0 +1,20 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:herugrim",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "S":  {
+                                  "code":  "game:stick",
+                                  "type":  "item"
+                              },
+                        "I":  {
+                                  "code":  "game:ingot-steel",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  1,
+    "ingredientPattern":  "I,I,S"
+}

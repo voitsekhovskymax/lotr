@@ -1,0 +1,41 @@
+﻿{
+    "class": "Block",
+    "creativeInventory": {
+        "lotr": [
+            "*"
+        ]
+    },
+    "sounds": {
+        "place": "game:place/stone",
+        "break": "game:break/stone",
+        "walk": "game:walk/stone"
+    },
+    "sidessolid": {
+        "all": true
+    },
+    "code": "ore-mithril",
+    "replaceable": 0,
+    "lightAbsorption": 99,
+    "drawtype": "Cube",
+    "drops": [
+        {
+            "quantity": {
+                "avg": 2,
+                "var": 1
+            },
+            "code": "lotr:nugget-mithril",
+            "type": "item"
+        }
+    ],
+    "material": "Stone",
+    "sidesopaque": {
+        "all": true
+    },
+    "resistance": 10,
+    "blockmaterial": "Stone",
+    "textures": {
+        "all": {
+            "base": "game:block/stone/rock/granite"
+        }
+    }
+}

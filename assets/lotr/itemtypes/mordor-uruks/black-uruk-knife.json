@@ -1,0 +1,21 @@
+﻿{
+  "code": "black-uruk-knife",
+  "class": "ItemTool",
+  "durability": 180,
+  "tool": "knife",
+  "miningspeed": {
+    "plant": 3,
+    "cloth": 2.4
+  },
+  "attributes": {
+    "tooltier": 2,
+    "attackpower": 1.35,
+    "attackrange": 0.8
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/knife" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

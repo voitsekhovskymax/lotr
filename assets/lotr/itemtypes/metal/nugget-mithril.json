@@ -1,0 +1,15 @@
+﻿{
+    "creativeInventory":  {
+                              "lotr":  [
+                                           "*"
+                                       ]
+                          },
+    "code":  "nugget-mithril",
+    "textures":  {
+                     "all":  {
+                                 "base":  "game:item/resource/nugget"
+                             }
+                 },
+    "class":  "Item",
+    "maxstacksize":  64
+}

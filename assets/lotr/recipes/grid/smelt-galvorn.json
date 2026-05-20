@@ -1,0 +1,24 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:ingot-galvorn",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "S":  {
+                                  "code":  "game:nugget-silver",
+                                  "type":  "item"
+                              },
+                        "M":  {
+                                  "code":  "game:nugget-meteoriciron",
+                                  "type":  "item"
+                              },
+                        "I":  {
+                                  "code":  "game:nugget-iron",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  3,
+    "ingredientPattern":  "III,SSS,MMM"
+}

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <LangVersion>13.0</LangVersion>
+    <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -9,6 +9,14 @@
     <RootNamespace>Lotr</RootNamespace>
     <AssemblyName>lotr</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+    <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">D:\games\VintageStory</VINTAGE_STORY>
+    <VINTAGE_STORY_DATA Condition="'$(VINTAGE_STORY_DATA)' == ''">$(APPDATA)\VintagestoryData</VINTAGE_STORY_DATA>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="!$([MSBuild]::IsOSPlatform('Windows'))">
     <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">/Applications/Vintage Story.app</VINTAGE_STORY>
     <VINTAGE_STORY_DATA Condition="'$(VINTAGE_STORY_DATA)' == ''">$(HOME)/Library/Application Support/VintagestoryData</VINTAGE_STORY_DATA>
   </PropertyGroup>

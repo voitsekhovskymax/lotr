@@ -1,0 +1,18 @@
+﻿{
+  "code": "isengard-orc-saw",
+  "class": "ItemTool",
+  "durability": 200,
+  "tool": "saw",
+  "miningspeed": {
+    "wood": 2.75
+  },
+  "attributes": {
+    "tooltier": 2
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/saw" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

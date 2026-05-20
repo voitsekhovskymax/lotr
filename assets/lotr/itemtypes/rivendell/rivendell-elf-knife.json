@@ -1,0 +1,21 @@
+﻿{
+  "code": "rivendell-elf-knife",
+  "class": "ItemTool",
+  "durability": 405,
+  "tool": "knife",
+  "miningspeed": {
+    "plant": 3.9,
+    "cloth": 3.12
+  },
+  "attributes": {
+    "tooltier": 3,
+    "attackpower": 2.5,
+    "attackrange": 0.8
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/knife" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

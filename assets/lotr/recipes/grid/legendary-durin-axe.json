@@ -1,0 +1,24 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:durin-axe",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "D":  {
+                                  "code":  "lotr:ingot-dwarvensteel",
+                                  "type":  "item"
+                              },
+                        "S":  {
+                                  "code":  "game:stick",
+                                  "type":  "item"
+                              },
+                        "M":  {
+                                  "code":  "lotr:ingot-mithril",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  2,
+    "ingredientPattern":  "DM,DS,_S"
+}

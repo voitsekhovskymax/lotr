@@ -1,0 +1,18 @@
+﻿{
+  "code": "gurthang",
+  "class": "ItemTool",
+  "durability": 4500,
+  "tool": "sword",
+  "attributes": {
+    "attackpower": 9.5,
+    "attackrange": 2.1,
+    "tooltier": 5,
+    "isLegendary": true
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/sword" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

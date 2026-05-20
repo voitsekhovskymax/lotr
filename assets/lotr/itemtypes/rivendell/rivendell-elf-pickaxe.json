@@ -1,0 +1,22 @@
+﻿{
+  "code": "rivendell-elf-pickaxe",
+  "class": "ItemTool",
+  "durability": 600,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 5.2,
+    "ore": 5.2,
+    "basemetal": 4.16
+  },
+  "attributes": {
+    "tooltier": 3,
+    "attackpower": 1.5,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:wose-sword",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "S":  {
+                                  "code":  "game:stick",
+                                  "type":  "item"
+                              },
+                        "M":  {
+                                  "code":  "game:ingot-copper",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  1,
+    "ingredientPattern":  "M,M,S"
+}

@@ -1,0 +1,31 @@
+﻿{
+  "code": "ered-luin-dwarf",
+  "class": "EntityDwarf",
+  "hitboxSize": { "x": 0.5, "y": 1.4 },
+  "eyeHeight": 1.2,
+  "client": {
+    "size": 0.74,
+    "renderer": "Shape",
+    "shape": { "base": "game:entity/humanoid/seraph-faceless" },
+    "behaviors": [
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 0.6 },
+      { "code": "floatupwhenstuck", "onlyWhenDead": true },
+      { "code": "interpolateposition" }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 0.6 },
+      { "code": "health", "currenthealth": 30, "maxhealth": 30 },
+      { "code": "taskai", "aitasks": [
+        { "code": "lookaround", "priority": 0.5 },
+        { "code": "wander", "priority": 0.3, "movespeed": 0.015 }
+      ]}
+    ]
+  },
+  "attributes": {
+    "faction": "lotr:faction-ered-luin"
+  }
+}

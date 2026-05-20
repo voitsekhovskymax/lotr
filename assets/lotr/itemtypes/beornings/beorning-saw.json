@@ -1,0 +1,18 @@
+﻿{
+  "code": "beorning-saw",
+  "class": "ItemTool",
+  "durability": 325,
+  "tool": "saw",
+  "miningspeed": {
+    "wood": 2.75
+  },
+  "attributes": {
+    "tooltier": 2
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/saw" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

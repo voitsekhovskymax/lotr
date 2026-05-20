@@ -1,0 +1,22 @@
+﻿{
+  "code": "moria-goblin-pickaxe",
+  "class": "ItemTool",
+  "durability": 200,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 4.4,
+    "ore": 4.4,
+    "basemetal": 3.52
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 1.05,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

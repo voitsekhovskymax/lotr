@@ -1,0 +1,21 @@
+﻿{
+  "code": "beorning-axe",
+  "class": "ItemTool",
+  "durability": 455,
+  "tool": "axe",
+  "miningspeed": {
+    "wood": 3.3,
+    "leaves": 2.31
+  },
+  "attributes": {
+    "tooltier": 2,
+    "attackpower": 1.92,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/axe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

@@ -1,0 +1,17 @@
+﻿{
+  "code": "black-uruk-sword",
+  "class": "ItemTool",
+  "durability": 1080,
+  "tool": "sword",
+  "attributes": {
+    "attackpower": 5.4,
+    "attackrange": 1.8,
+    "tooltier": 2
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/sword" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

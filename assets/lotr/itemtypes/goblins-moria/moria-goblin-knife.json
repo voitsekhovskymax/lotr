@@ -1,0 +1,21 @@
+﻿{
+  "code": "moria-goblin-knife",
+  "class": "ItemTool",
+  "durability": 75,
+  "tool": "knife",
+  "miningspeed": {
+    "plant": 3.3,
+    "cloth": 2.64
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 1.05,
+    "attackrange": 0.8
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/knife" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

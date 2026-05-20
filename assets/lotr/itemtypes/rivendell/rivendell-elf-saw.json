@@ -1,0 +1,18 @@
+﻿{
+  "code": "rivendell-elf-saw",
+  "class": "ItemTool",
+  "durability": 375,
+  "tool": "saw",
+  "miningspeed": {
+    "wood": 3.25
+  },
+  "attributes": {
+    "tooltier": 3
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/saw" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

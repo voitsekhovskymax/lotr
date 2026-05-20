@@ -1,0 +1,22 @@
+﻿{
+  "code": "moria-dwarf-pickaxe",
+  "class": "ItemTool",
+  "durability": 1200,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 4.8,
+    "ore": 4.8,
+    "basemetal": 3.84
+  },
+  "attributes": {
+    "tooltier": 4,
+    "attackpower": 1.35,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

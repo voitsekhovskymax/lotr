@@ -1,0 +1,18 @@
+﻿{
+  "code": "shire-saw",
+  "class": "ItemTool",
+  "durability": 175,
+  "tool": "saw",
+  "miningspeed": {
+    "wood": 2.25
+  },
+  "attributes": {
+    "tooltier": 1
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/saw" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

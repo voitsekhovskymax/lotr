@@ -1,0 +1,22 @@
+﻿{
+  "code": "dale-pickaxe",
+  "class": "ItemTool",
+  "durability": 480,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 4,
+    "ore": 4,
+    "basemetal": 3.2
+  },
+  "attributes": {
+    "tooltier": 2,
+    "attackpower": 1.35,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:bree-axe",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "S":  {
+                                  "code":  "game:stick",
+                                  "type":  "item"
+                              },
+                        "M":  {
+                                  "code":  "game:ingot-iron",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  2,
+    "ingredientPattern":  "MM,MS,_S"
+}

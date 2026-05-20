@@ -1,0 +1,20 @@
+﻿{
+    "output":  {
+                   "quantity":  1,
+                   "code":  "lotr:galadhrim-pickaxe",
+                   "type":  "item"
+               },
+    "height":  3,
+    "ingredients":  {
+                        "S":  {
+                                  "code":  "game:stick",
+                                  "type":  "item"
+                              },
+                        "M":  {
+                                  "code":  "lotr:ingot-galvorn",
+                                  "type":  "item"
+                              }
+                    },
+    "width":  3,
+    "ingredientPattern":  "MMM,_S_,_S_"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "code": "iron-hills-dwarf-shovel",
+  "class": "ItemTool",
+  "durability": 600,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 4.2,
+    "gravel": 3.36,
+    "sand": 3.36
+  },
+  "attributes": {
+    "tooltier": 3
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

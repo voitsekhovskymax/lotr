@@ -1,0 +1,20 @@
+﻿{
+  "code": "shire-shovel",
+  "class": "ItemTool",
+  "durability": 420,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 4.725,
+    "gravel": 3.78,
+    "sand": 3.78
+  },
+  "attributes": {
+    "tooltier": 1
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

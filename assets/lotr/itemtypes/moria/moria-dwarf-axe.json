@@ -1,0 +1,21 @@
+﻿{
+  "code": "moria-dwarf-axe",
+  "class": "ItemTool",
+  "durability": 700,
+  "tool": "axe",
+  "miningspeed": {
+    "wood": 3.6,
+    "leaves": 2.52
+  },
+  "attributes": {
+    "tooltier": 3,
+    "attackpower": 1.8,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/axe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

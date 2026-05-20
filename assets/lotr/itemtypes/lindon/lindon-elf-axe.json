@@ -1,0 +1,21 @@
+﻿{
+  "code": "lindon-elf-axe",
+  "class": "ItemTool",
+  "durability": 525,
+  "tool": "axe",
+  "miningspeed": {
+    "wood": 3.9,
+    "leaves": 2.73
+  },
+  "attributes": {
+    "tooltier": 3,
+    "attackpower": 2,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/axe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

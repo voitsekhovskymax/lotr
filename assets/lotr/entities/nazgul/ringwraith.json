@@ -1,0 +1,31 @@
+﻿{
+  "code": "ringwraith",
+  "class": "EntityAgent",
+  "hitboxSize": { "x": 0.6, "y": 2 },
+  "eyeHeight": 1.85,
+  "client": {
+    "size": 1.05,
+    "renderer": "Shape",
+    "shape": { "base": "game:entity/humanoid/seraph-faceless" },
+    "behaviors": [
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 0.6 },
+      { "code": "floatupwhenstuck", "onlyWhenDead": true },
+      { "code": "interpolateposition" }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 0.6 },
+      { "code": "health", "currenthealth": 200, "maxhealth": 200 },
+      { "code": "taskai", "aitasks": [
+        { "code": "lookaround", "priority": 0.5 },
+        { "code": "wander", "priority": 0.3, "movespeed": 0.015 }
+      ]}
+    ]
+  },
+  "attributes": {
+    "faction": "lotr:faction-nazgul"
+  }
+}

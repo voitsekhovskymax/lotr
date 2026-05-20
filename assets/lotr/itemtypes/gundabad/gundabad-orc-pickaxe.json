@@ -1,0 +1,22 @@
+﻿{
+  "code": "gundabad-orc-pickaxe",
+  "class": "ItemTool",
+  "durability": 320,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 4.4,
+    "ore": 4.4,
+    "basemetal": 3.52
+  },
+  "attributes": {
+    "tooltier": 2,
+    "attackpower": 1.2,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

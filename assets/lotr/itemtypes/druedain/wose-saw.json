@@ -1,0 +1,18 @@
+﻿{
+  "code": "wose-saw",
+  "class": "ItemTool",
+  "durability": 100,
+  "tool": "saw",
+  "miningspeed": {
+    "wood": 1.75
+  },
+  "attributes": {
+    "tooltier": 1
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/saw" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

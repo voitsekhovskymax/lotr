@@ -1,0 +1,20 @@
+﻿{
+  "code": "half-orc-shovel",
+  "class": "ItemTool",
+  "durability": 360,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 3.5,
+    "gravel": 2.8,
+    "sand": 2.8
+  },
+  "attributes": {
+    "tooltier": 2
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "code": "wose-shovel",
+  "class": "ItemTool",
+  "durability": 120,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 2.45,
+    "gravel": 1.96,
+    "sand": 1.96
+  },
+  "attributes": {
+    "tooltier": 1
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

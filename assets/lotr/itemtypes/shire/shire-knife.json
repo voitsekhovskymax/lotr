@@ -1,0 +1,21 @@
+﻿{
+  "code": "shire-knife",
+  "class": "ItemTool",
+  "durability": 105,
+  "tool": "knife",
+  "miningspeed": {
+    "plant": 2.7,
+    "cloth": 2.16
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 0.9,
+    "attackrange": 0.8
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/knife" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

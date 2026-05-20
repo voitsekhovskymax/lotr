@@ -1,0 +1,21 @@
+﻿{
+  "code": "beorning-knife",
+  "class": "ItemTool",
+  "durability": 195,
+  "tool": "knife",
+  "miningspeed": {
+    "plant": 3.3,
+    "cloth": 2.64
+  },
+  "attributes": {
+    "tooltier": 2,
+    "attackpower": 1.44,
+    "attackrange": 0.8
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/knife" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

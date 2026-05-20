@@ -1,0 +1,15 @@
+﻿{
+    "creativeInventory":  {
+                              "lotr":  [
+                                           "*"
+                                       ]
+                          },
+    "code":  "ingot-dwarvensteel",
+    "textures":  {
+                     "all":  {
+                                 "base":  "game:item/resource/ingot"
+                             }
+                 },
+    "class":  "Item",
+    "maxstacksize":  64
+}

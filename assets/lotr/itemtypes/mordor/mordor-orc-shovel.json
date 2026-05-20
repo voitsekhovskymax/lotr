@@ -1,0 +1,20 @@
+﻿{
+  "code": "mordor-orc-shovel",
+  "class": "ItemTool",
+  "durability": 240,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 3.85,
+    "gravel": 3.08,
+    "sand": 3.08
+  },
+  "attributes": {
+    "tooltier": 2
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

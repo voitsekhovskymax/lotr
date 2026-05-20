@@ -1,0 +1,17 @@
+﻿{
+  "code": "rivendell-elf-sword",
+  "class": "ItemTool",
+  "durability": 900,
+  "tool": "sword",
+  "attributes": {
+    "attackpower": 6,
+    "attackrange": 2,
+    "tooltier": 3
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/sword" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

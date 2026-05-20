@@ -1,0 +1,22 @@
+﻿{
+  "code": "bree-pickaxe",
+  "class": "ItemTool",
+  "durability": 280,
+  "tool": "pickaxe",
+  "miningspeed": {
+    "stone": 3.6,
+    "ore": 3.6,
+    "basemetal": 2.88
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 0.9,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/pickaxe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

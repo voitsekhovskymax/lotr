@@ -1,0 +1,21 @@
+﻿{
+  "code": "wose-axe",
+  "class": "ItemTool",
+  "durability": 140,
+  "tool": "axe",
+  "miningspeed": {
+    "wood": 2.1,
+    "leaves": 1.47
+  },
+  "attributes": {
+    "tooltier": 1,
+    "attackpower": 1.4,
+    "attackrange": 1.0
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/axe" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "code": "moria-goblin-shovel",
+  "class": "ItemTool",
+  "durability": 150,
+  "tool": "shovel",
+  "miningspeed": {
+    "soil": 3.85,
+    "gravel": 3.08,
+    "sand": 3.08
+  },
+  "attributes": {
+    "tooltier": 1
+  },
+  "textures": {
+    "all": { "base": "game:item/tool/shovel" }
+  },
+  "creativeInventory": {
+    "lotr": ["*"]
+  }
+}

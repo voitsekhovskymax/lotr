@@ -1,31 +1,31 @@
 ﻿{
-    "class":  "Block",
-    "creativeInventory":  {
-                              "lotr":  [
-                                           "*"
-                                       ]
-                          },
-    "sounds":  {
-                   "place":  "game:place/stone",
-                   "break":  "game:break/stone",
-                   "walk":  "game:walk/stone"
-               },
-    "sidessolid":  {
-                       "all":  true
-                   },
-    "code":  "stone-orthanc",
-    "replaceable":  0,
-    "lightAbsorption":  99,
-    "drawtype":  "Cube",
-    "material":  "Stone",
-    "sidesopaque":  {
-                        "all":  true
-                    },
-    "resistance":  100,
-    "blockmaterial":  "Stone",
-    "textures":  {
-                     "all":  {
-                                 "base":  "game:block/stone/rock/obsidian"
-                             }
-                 }
+  "class": "Block",
+  "sounds": {
+    "place": "game:place/stone",
+    "break": "game:break/stone",
+    "walk": "game:walk/stone"
+  },
+  "sidessolid": {
+    "all": true
+  },
+  "code": "stone-orthanc",
+  "replaceable": 0,
+  "lightAbsorption": 99,
+  "drawtype": "Cube",
+  "material": "Stone",
+  "sidesopaque": {
+    "all": true
+  },
+  "resistance": 100,
+  "blockmaterial": "Stone",
+  "textures": {
+    "all": {
+      "base": "lotr:block/stone-orthanc"
+    }
+  },
+  "creativeinventory": {
+    "lotr-blocks": [
+      "*"
+    ]
+  }
 }

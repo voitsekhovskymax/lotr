@@ -23,12 +23,12 @@
       "base": "lotr:item/corsair-shovel"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/corsair-shovel"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

@@ -23,12 +23,12 @@
       "base": "lotr:item/wood-elf-shovel"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/wood-elf-shovel"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

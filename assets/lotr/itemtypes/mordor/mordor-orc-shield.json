@@ -15,8 +15,8 @@
       "base": "lotr:item/mordor-orc-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

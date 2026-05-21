@@ -22,12 +22,12 @@
       "base": "lotr:item/gundabad-orc-axe"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/gundabad-orc-axe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

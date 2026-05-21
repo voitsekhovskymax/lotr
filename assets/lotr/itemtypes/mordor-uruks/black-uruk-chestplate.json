@@ -1,0 +1,27 @@
+﻿{
+  "code": "black-uruk-chestplate",
+  "class": "ItemArmor",
+  "durability": 1000,
+  "attributes": {
+    "clippingReference": "chestplate",
+    "wearableAttachment": "body",
+    "protectionModifier": 0.46,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/black-uruk-chestplate"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/black-uruk-chestplate"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

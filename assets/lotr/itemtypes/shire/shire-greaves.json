@@ -1,0 +1,27 @@
+﻿{
+  "code": "shire-greaves",
+  "class": "ItemArmor",
+  "durability": 200,
+  "attributes": {
+    "clippingReference": "greaves",
+    "wearableAttachment": "legs",
+    "protectionModifier": 0.05,
+    "statModifiers": {
+      "walkspeed": 0.0
+    },
+    "tooltier": 1
+  },
+  "shape": {
+    "base": "lotr:item/shire-greaves"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/shire-greaves"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

@@ -15,8 +15,8 @@
       "base": "lotr:item/black-uruk-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

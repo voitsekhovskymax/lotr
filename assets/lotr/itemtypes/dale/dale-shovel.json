@@ -23,12 +23,12 @@
       "base": "lotr:item/dale-shovel"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/dale-shovel"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

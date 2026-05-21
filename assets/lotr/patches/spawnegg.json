@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:itemtypes/spawnegg",
+    "op": "add",
+    "path": "/creativeinventory/lotr-entities",
+    "value": [ "lotr:*" ]
+  }
+]

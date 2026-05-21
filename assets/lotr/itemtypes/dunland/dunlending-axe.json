@@ -22,12 +22,12 @@
       "base": "lotr:item/dunlending-axe"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/dunlending-axe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

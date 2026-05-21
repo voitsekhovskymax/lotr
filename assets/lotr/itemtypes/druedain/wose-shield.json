@@ -15,8 +15,8 @@
       "base": "lotr:item/wose-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

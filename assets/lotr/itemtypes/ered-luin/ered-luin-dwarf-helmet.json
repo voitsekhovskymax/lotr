@@ -1,0 +1,27 @@
+﻿{
+  "code": "ered-luin-dwarf-helmet",
+  "class": "ItemArmor",
+  "durability": 1500,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.15,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 4
+  },
+  "shape": {
+    "base": "lotr:item/ered-luin-dwarf-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/ered-luin-dwarf-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

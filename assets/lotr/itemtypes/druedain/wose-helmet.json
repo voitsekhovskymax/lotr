@@ -1,0 +1,27 @@
+﻿{
+  "code": "wose-helmet",
+  "class": "ItemArmor",
+  "durability": 250,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.04,
+    "statModifiers": {
+      "walkspeed": 0.01
+    },
+    "tooltier": 1
+  },
+  "shape": {
+    "base": "lotr:item/wose-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/wose-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

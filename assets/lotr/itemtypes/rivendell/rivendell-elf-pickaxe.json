@@ -23,12 +23,12 @@
       "base": "lotr:item/rivendell-elf-pickaxe"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/rivendell-elf-pickaxe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

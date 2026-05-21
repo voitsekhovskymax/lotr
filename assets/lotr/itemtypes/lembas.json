@@ -1,4 +1,4 @@
-{
+﻿{
   "code": "lembas",
   "class": "ItemLembas",
   "maxstacksize": 16,
@@ -15,9 +15,13 @@
     }
   },
   "textures": {
-    "all": { "base": "item/lembas" }
+    "all": {
+      "base": "lotr:item/lembas"
+    }
   },
-  "creativeInventory": {
-    "lotr": ["*"]
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

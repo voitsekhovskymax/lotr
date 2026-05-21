@@ -23,12 +23,12 @@
       "base": "lotr:item/lindon-elf-pickaxe"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/lindon-elf-pickaxe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

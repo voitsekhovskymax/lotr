@@ -1,0 +1,27 @@
+﻿{
+  "code": "mordor-orc-greaves",
+  "class": "ItemArmor",
+  "durability": 700,
+  "attributes": {
+    "clippingReference": "greaves",
+    "wearableAttachment": "legs",
+    "protectionModifier": 0.26,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/mordor-orc-greaves"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/mordor-orc-greaves"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

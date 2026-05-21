@@ -15,8 +15,8 @@
       "base": "lotr:item/rohirrim-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

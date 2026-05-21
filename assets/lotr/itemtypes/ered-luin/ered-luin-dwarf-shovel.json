@@ -23,12 +23,12 @@
       "base": "lotr:item/ered-luin-dwarf-shovel"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/ered-luin-dwarf-shovel"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

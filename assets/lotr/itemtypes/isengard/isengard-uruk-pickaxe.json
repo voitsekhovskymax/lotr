@@ -23,12 +23,12 @@
       "base": "lotr:item/isengard-uruk-pickaxe"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/isengard-uruk-pickaxe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

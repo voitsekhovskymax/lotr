@@ -23,12 +23,12 @@
       "base": "lotr:item/isengard-orc-shovel"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/isengard-orc-shovel"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

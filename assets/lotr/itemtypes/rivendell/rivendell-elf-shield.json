@@ -15,8 +15,8 @@
       "base": "lotr:item/rivendell-elf-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

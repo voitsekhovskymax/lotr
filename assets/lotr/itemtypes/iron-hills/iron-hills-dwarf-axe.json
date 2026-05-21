@@ -22,12 +22,12 @@
       "base": "lotr:item/iron-hills-dwarf-axe"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/iron-hills-dwarf-axe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

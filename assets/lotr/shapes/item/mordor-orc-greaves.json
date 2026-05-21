@@ -1,0 +1,147 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/mordor-orc-greaves"
+  },
+  "elements": [
+    {
+      "name": "legL",
+      "from": [
+        3.5,
+        0.0,
+        5.0
+      ],
+      "to": [
+        7.0,
+        12.0,
+        11.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            4,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            4,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            4,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            4,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "name": "legR",
+      "from": [
+        9.0,
+        0.0,
+        5.0
+      ],
+      "to": [
+        12.5,
+        12.0,
+        11.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#texture",
+          "uv": [
+            4,
+            0,
+            8,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            4,
+            0,
+            8,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            4,
+            0,
+            8,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#texture",
+          "uv": [
+            4,
+            0,
+            8,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#texture",
+          "uv": [
+            4,
+            0,
+            8,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            4,
+            0,
+            8,
+            4
+          ]
+        }
+      }
+    }
+  ]
+}

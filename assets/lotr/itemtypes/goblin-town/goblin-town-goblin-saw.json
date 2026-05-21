@@ -16,12 +16,12 @@
       "base": "lotr:item/goblin-town-goblin-saw"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/goblin-town-goblin-saw"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

@@ -17,12 +17,12 @@
       "base": "lotr:item/iron-hills-dwarf-knife"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/iron-hills-dwarf-knife"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

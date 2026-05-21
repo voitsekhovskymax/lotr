@@ -15,8 +15,8 @@
       "base": "lotr:item/laketown-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

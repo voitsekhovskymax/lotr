@@ -15,8 +15,8 @@
       "base": "lotr:item/wood-elf-bow"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

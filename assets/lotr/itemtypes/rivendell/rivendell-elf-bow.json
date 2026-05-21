@@ -15,8 +15,8 @@
       "base": "lotr:item/rivendell-elf-bow"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

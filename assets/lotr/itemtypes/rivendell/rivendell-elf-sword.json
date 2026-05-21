@@ -13,12 +13,12 @@
       "base": "lotr:item/rivendell-elf-sword"
     }
   },
-  "creativeInventory": {
-    "lotr": [
-      "*"
-    ]
-  },
   "shape": {
     "base": "lotr:item/rivendell-elf-sword"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

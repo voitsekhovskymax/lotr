@@ -1,0 +1,27 @@
+﻿{
+  "code": "dale-chestplate",
+  "class": "ItemArmor",
+  "durability": 2000,
+  "attributes": {
+    "clippingReference": "chestplate",
+    "wearableAttachment": "body",
+    "protectionModifier": 0.45,
+    "statModifiers": {
+      "walkspeed": -0.015
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/dale-chestplate"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/dale-chestplate"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

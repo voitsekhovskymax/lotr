@@ -15,8 +15,8 @@
       "base": "lotr:item/half-orc-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

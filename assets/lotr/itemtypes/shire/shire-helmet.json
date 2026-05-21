@@ -1,0 +1,27 @@
+﻿{
+  "code": "shire-helmet",
+  "class": "ItemArmor",
+  "durability": 150,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.02,
+    "statModifiers": {
+      "walkspeed": 0.0
+    },
+    "tooltier": 1
+  },
+  "shape": {
+    "base": "lotr:item/shire-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/shire-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

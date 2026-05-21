@@ -1,0 +1,27 @@
+﻿{
+  "code": "galadhrim-chestplate",
+  "class": "ItemArmor",
+  "durability": 2400,
+  "attributes": {
+    "clippingReference": "chestplate",
+    "wearableAttachment": "body",
+    "protectionModifier": 0.4,
+    "statModifiers": {
+      "walkspeed": 0.0
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/galadhrim-chestplate"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/galadhrim-chestplate"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

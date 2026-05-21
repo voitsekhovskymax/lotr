@@ -15,8 +15,8 @@
       "base": "lotr:item/goblin-town-goblin-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

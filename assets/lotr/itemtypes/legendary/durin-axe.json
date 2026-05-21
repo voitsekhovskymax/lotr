@@ -10,9 +10,16 @@
     "isLegendary": true
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/erebor-dwarf-axe"
+    }
   },
-  "creativeInventory": {
-    "lotr": ["*"]
+  "shape": {
+    "base": "lotr:item/erebor-dwarf-axe"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

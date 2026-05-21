@@ -1,0 +1,27 @@
+﻿{
+  "code": "gondorian-helmet",
+  "class": "ItemArmor",
+  "durability": 1000,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.12,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/gondorian-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/gondorian-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

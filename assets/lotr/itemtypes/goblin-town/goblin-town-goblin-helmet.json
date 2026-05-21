@@ -1,0 +1,27 @@
+﻿{
+  "code": "goblin-town-goblin-helmet",
+  "class": "ItemArmor",
+  "durability": 500,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.13,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/goblin-town-goblin-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/goblin-town-goblin-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

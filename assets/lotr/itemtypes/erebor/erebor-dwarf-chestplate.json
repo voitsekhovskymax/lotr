@@ -1,0 +1,27 @@
+﻿{
+  "code": "erebor-dwarf-chestplate",
+  "class": "ItemArmor",
+  "durability": 3000,
+  "attributes": {
+    "clippingReference": "chestplate",
+    "wearableAttachment": "body",
+    "protectionModifier": 0.55,
+    "statModifiers": {
+      "walkspeed": -0.03
+    },
+    "tooltier": 4
+  },
+  "shape": {
+    "base": "lotr:item/erebor-dwarf-chestplate"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/erebor-dwarf-chestplate"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

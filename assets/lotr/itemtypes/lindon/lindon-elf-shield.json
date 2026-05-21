@@ -15,8 +15,8 @@
       "base": "lotr:item/lindon-elf-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

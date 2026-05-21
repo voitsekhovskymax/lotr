@@ -1,0 +1,27 @@
+﻿{
+  "code": "moria-dwarf-helmet",
+  "class": "ItemArmor",
+  "durability": 1500,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.15,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 4
+  },
+  "shape": {
+    "base": "lotr:item/moria-dwarf-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/moria-dwarf-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

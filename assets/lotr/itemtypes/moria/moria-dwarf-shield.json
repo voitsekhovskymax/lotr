@@ -15,8 +15,8 @@
       "base": "lotr:item/moria-dwarf-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

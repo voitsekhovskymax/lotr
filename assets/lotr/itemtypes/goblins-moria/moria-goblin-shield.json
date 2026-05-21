@@ -15,8 +15,8 @@
       "base": "lotr:item/moria-goblin-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

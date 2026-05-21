@@ -15,8 +15,8 @@
       "base": "lotr:item/ranger-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

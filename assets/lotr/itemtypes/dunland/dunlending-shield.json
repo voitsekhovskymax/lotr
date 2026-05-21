@@ -15,8 +15,8 @@
       "base": "lotr:item/dunlending-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

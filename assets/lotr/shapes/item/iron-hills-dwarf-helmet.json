@@ -1,0 +1,78 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/iron-hills-dwarf-helmet"
+  },
+  "elements": [
+    {
+      "name": "cap",
+      "from": [
+        3.5,
+        6.0,
+        3.5
+      ],
+      "to": [
+        12.5,
+        14.0,
+        12.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  ]
+}

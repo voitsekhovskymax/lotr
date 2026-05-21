@@ -1,0 +1,27 @@
+﻿{
+  "code": "erebor-dwarf-helmet",
+  "class": "ItemArmor",
+  "durability": 1500,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.15,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 4
+  },
+  "shape": {
+    "base": "lotr:item/erebor-dwarf-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/erebor-dwarf-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

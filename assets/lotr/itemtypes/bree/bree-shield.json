@@ -15,8 +15,8 @@
       "base": "lotr:item/bree-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

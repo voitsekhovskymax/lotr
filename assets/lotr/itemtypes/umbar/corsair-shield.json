@@ -15,8 +15,8 @@
       "base": "lotr:item/corsair-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

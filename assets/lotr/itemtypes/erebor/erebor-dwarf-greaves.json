@@ -1,0 +1,27 @@
+﻿{
+  "code": "erebor-dwarf-greaves",
+  "class": "ItemArmor",
+  "durability": 2000,
+  "attributes": {
+    "clippingReference": "greaves",
+    "wearableAttachment": "legs",
+    "protectionModifier": 0.3,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 4
+  },
+  "shape": {
+    "base": "lotr:item/erebor-dwarf-greaves"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/erebor-dwarf-greaves"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

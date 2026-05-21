@@ -15,8 +15,8 @@
       "base": "lotr:item/isengard-uruk-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

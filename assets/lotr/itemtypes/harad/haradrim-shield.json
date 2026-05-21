@@ -15,8 +15,8 @@
       "base": "lotr:item/haradrim-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

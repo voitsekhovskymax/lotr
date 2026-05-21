@@ -1,0 +1,27 @@
+﻿{
+  "code": "ranger-greaves",
+  "class": "ItemArmor",
+  "durability": 1400,
+  "attributes": {
+    "clippingReference": "greaves",
+    "wearableAttachment": "legs",
+    "protectionModifier": 0.25,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/ranger-greaves"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/ranger-greaves"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

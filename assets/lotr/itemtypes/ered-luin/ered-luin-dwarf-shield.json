@@ -15,8 +15,8 @@
       "base": "lotr:item/ered-luin-dwarf-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

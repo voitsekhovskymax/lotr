@@ -1,0 +1,27 @@
+﻿{
+  "code": "rivendell-elf-chestplate",
+  "class": "ItemArmor",
+  "durability": 2400,
+  "attributes": {
+    "clippingReference": "chestplate",
+    "wearableAttachment": "body",
+    "protectionModifier": 0.4,
+    "statModifiers": {
+      "walkspeed": 0.0
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/rivendell-elf-chestplate"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/rivendell-elf-chestplate"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

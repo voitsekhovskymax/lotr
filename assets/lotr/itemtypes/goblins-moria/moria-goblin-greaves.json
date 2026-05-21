@@ -1,0 +1,27 @@
+﻿{
+  "code": "moria-goblin-greaves",
+  "class": "ItemArmor",
+  "durability": 700,
+  "attributes": {
+    "clippingReference": "greaves",
+    "wearableAttachment": "legs",
+    "protectionModifier": 0.26,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/moria-goblin-greaves"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/moria-goblin-greaves"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

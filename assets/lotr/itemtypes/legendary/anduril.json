@@ -10,9 +10,16 @@
     "isLegendary": true
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/gondorian-sword"
+    }
   },
-  "creativeInventory": {
-    "lotr": ["*"]
+  "shape": {
+    "base": "lotr:item/gondorian-sword"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

@@ -10,9 +10,16 @@
     "isLegendary": true
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/rohirrim-sword"
+    }
   },
-  "creativeInventory": {
-    "lotr": ["*"]
+  "shape": {
+    "base": "lotr:item/rohirrim-sword"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

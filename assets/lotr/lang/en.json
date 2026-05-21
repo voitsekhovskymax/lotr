@@ -18,5 +18,9 @@
   "lotr:faction-mordor": "Mordor",
 
   "lotr:quest-shire-long-expected-party": "A Long-Expected Party",
-  "lotr:quest-shire-concerning-hobbits": "Concerning Hobbits"
+  "lotr:quest-shire-concerning-hobbits": "Concerning Hobbits",
+
+  "game:tabname-lotr-items": "LOTR: Items",
+  "game:tabname-lotr-entities": "LOTR: Entities"
 }
+

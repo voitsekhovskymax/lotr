@@ -1,0 +1,27 @@
+﻿{
+  "code": "iron-hills-dwarf-helmet",
+  "class": "ItemArmor",
+  "durability": 1500,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.15,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 4
+  },
+  "shape": {
+    "base": "lotr:item/iron-hills-dwarf-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/iron-hills-dwarf-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

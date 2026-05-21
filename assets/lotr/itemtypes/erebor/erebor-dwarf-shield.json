@@ -15,8 +15,8 @@
       "base": "lotr:item/erebor-dwarf-shield"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

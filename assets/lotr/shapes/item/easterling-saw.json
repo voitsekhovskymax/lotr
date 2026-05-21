@@ -18,13 +18,58 @@
         8.0
       ],
       "faces": {
-        "all": {
+        "north": {
           "texture": "#texture",
           "uv": [
             0,
             0,
             2,
             8
+          ]
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            2
           ]
         }
       }
@@ -42,13 +87,58 @@
         24.0
       ],
       "faces": {
-        "all": {
+        "north": {
           "texture": "#texture",
           "uv": [
             2,
             0,
             4,
             16
+          ]
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            2
+          ]
+        },
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            2
           ]
         }
       }

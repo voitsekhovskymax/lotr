@@ -1,0 +1,27 @@
+﻿{
+  "code": "angmar-orc-chestplate",
+  "class": "ItemArmor",
+  "durability": 1000,
+  "attributes": {
+    "clippingReference": "chestplate",
+    "wearableAttachment": "body",
+    "protectionModifier": 0.46,
+    "statModifiers": {
+      "walkspeed": -0.02
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/angmar-orc-chestplate"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/angmar-orc-chestplate"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

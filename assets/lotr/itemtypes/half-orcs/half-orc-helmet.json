@@ -1,0 +1,27 @@
+﻿{
+  "code": "half-orc-helmet",
+  "class": "ItemArmor",
+  "durability": 500,
+  "attributes": {
+    "clippingReference": "helmet",
+    "wearableAttachment": "head",
+    "protectionModifier": 0.13,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/half-orc-helmet"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/half-orc-helmet"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

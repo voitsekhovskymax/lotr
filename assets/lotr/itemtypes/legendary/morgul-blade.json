@@ -10,9 +10,16 @@
     "isLegendary": true
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/mordor-orc-sword"
+    }
   },
-  "creativeInventory": {
-    "lotr": ["*"]
+  "shape": {
+    "base": "lotr:item/mordor-orc-sword"
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
   }
 }

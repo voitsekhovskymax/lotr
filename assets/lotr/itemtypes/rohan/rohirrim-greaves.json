@@ -1,0 +1,27 @@
+﻿{
+  "code": "rohirrim-greaves",
+  "class": "ItemArmor",
+  "durability": 1400,
+  "attributes": {
+    "clippingReference": "greaves",
+    "wearableAttachment": "legs",
+    "protectionModifier": 0.25,
+    "statModifiers": {
+      "walkspeed": -0.01
+    },
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/rohirrim-greaves"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/rohirrim-greaves"
+    }
+  },
+  "creativeinventory": {
+    "lotr-items": [
+      "*"
+    ]
+  }
+}

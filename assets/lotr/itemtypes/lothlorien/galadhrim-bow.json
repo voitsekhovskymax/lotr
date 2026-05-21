@@ -15,8 +15,8 @@
       "base": "lotr:item/galadhrim-bow"
     }
   },
-  "creativeInventory": {
-    "lotr": [
+  "creativeinventory": {
+    "lotr-items": [
       "*"
     ]
   }

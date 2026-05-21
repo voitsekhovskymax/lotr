@@ -1,17 +1,24 @@
 ﻿{
   "code": "rohirrim-sword",
   "class": "ItemTool",
-  "durability": 720,
+  "durability": 1600,
   "tool": "sword",
   "attributes": {
-    "attackpower": 5.4,
-    "attackrange": 1.8,
-    "tooltier": 2
+    "attackpower": 6.8,
+    "attackrange": 2.0,
+    "tooltier": 4
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/rohirrim-sword"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/rohirrim-sword"
   }
 }

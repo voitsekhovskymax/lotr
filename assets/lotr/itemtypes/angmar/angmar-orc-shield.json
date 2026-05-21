@@ -1,0 +1,23 @@
+﻿{
+  "code": "angmar-orc-shield",
+  "class": "Item",
+  "durability": 600,
+  "attributes": {
+    "defense": 6,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/angmar-orc-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/angmar-orc-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

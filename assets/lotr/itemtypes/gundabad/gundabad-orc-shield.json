@@ -1,0 +1,23 @@
+﻿{
+  "code": "gundabad-orc-shield",
+  "class": "Item",
+  "durability": 600,
+  "attributes": {
+    "defense": 6,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/gundabad-orc-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/gundabad-orc-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

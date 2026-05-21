@@ -1,17 +1,24 @@
 ﻿{
   "code": "gundabad-orc-sword",
   "class": "ItemTool",
-  "durability": 480,
+  "durability": 500,
   "tool": "sword",
   "attributes": {
-    "attackpower": 4.8,
-    "attackrange": 1.8,
-    "tooltier": 2
+    "attackpower": 7.2,
+    "attackrange": 2.0,
+    "tooltier": 3
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/gundabad-orc-sword"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/gundabad-orc-sword"
   }
 }

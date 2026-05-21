@@ -1,0 +1,23 @@
+﻿{
+  "code": "ered-luin-dwarf-shield",
+  "class": "Item",
+  "durability": 3000,
+  "attributes": {
+    "defense": 12,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/ered-luin-dwarf-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/ered-luin-dwarf-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+﻿{
+  "code": "wood-elf-bow",
+  "class": "Item",
+  "durability": 1500,
+  "attributes": {
+    "attackpower": 6.5,
+    "attackrange": 22.0,
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/wood-elf-bow"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/wood-elf-bow"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+﻿{
+  "textureWidth": 64,
+  "textureHeight": 64,
+  "textures": {
+    "eagle": "lotr:entity/animal/great-eagle-2"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [
+        5.5,
+        6,
+        3.5
+      ],
+      "to": [
+        10.5,
+        11,
+        12.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#eagle",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#eagle",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#eagle",
+          "uv": [
+            16.0,
+            0.0,
+            24.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#eagle",
+          "uv": [
+            24.0,
+            0.0,
+            32.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#eagle",
+          "uv": [
+            0.0,
+            8.0,
+            8.0,
+            16.0
+          ]
+        }
+      },
+      "children": [
+        {
+          "name": "head",
+          "from": [
+            1.0,
+            4.0,
+            -2.0
+          ],
+          "to": [
+            4.0,
+            7.0,
+            1.0
+          ],
+          "faces": {
+            "north": {
+              "texture": "#eagle",
+              "uv": [
+                32.0,
+                0.0,
+                36.0,
+                4.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "wingL",
+          "from": [
+            5,
+            0.0,
+            1.0
+          ],
+          "to": [
+            19,
+            1.0,
+            8.0
+          ],
+          "rotationOrigin": [
+            5,
+            0.5,
+            4.5
+          ],
+          "faces": {
+            "up": {
+              "texture": "#eagle",
+              "uv": [
+                0.0,
+                16.0,
+                16.0,
+                24.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "wingR",
+          "from": [
+            -14,
+            0.0,
+            1.0
+          ],
+          "to": [
+            0.0,
+            1.0,
+            8.0
+          ],
+          "rotationOrigin": [
+            0.0,
+            0.5,
+            4.5
+          ],
+          "faces": {
+            "up": {
+              "texture": "#eagle",
+              "uv": [
+                16.0,
+                16.0,
+                32.0,
+                24.0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "legL",
+      "from": [
+        6.5,
+        0.0,
+        7.0
+      ],
+      "to": [
+        7.5,
+        6,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#eagle",
+          "uv": [
+            0.0,
+            24.0,
+            2.0,
+            30.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "legR",
+      "from": [
+        8.5,
+        0.0,
+        7.0
+      ],
+      "to": [
+        9.5,
+        6,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#eagle",
+          "uv": [
+            2.0,
+            24.0,
+            4.0,
+            30.0
+          ]
+        }
+      }
+    }
+  ]
+}

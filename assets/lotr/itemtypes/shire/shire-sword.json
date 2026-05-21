@@ -1,17 +1,24 @@
 ﻿{
   "code": "shire-sword",
   "class": "ItemTool",
-  "durability": 420,
+  "durability": 120,
   "tool": "sword",
   "attributes": {
-    "attackpower": 3.6,
-    "attackrange": 1.3,
+    "attackpower": 1.2,
+    "attackrange": 2.0,
     "tooltier": 1
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/shire-sword"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/shire-sword"
   }
 }

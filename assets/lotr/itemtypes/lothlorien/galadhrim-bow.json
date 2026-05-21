@@ -1,0 +1,23 @@
+﻿{
+  "code": "galadhrim-bow",
+  "class": "Item",
+  "durability": 1500,
+  "attributes": {
+    "attackpower": 6.5,
+    "attackrange": 22.0,
+    "tooltier": 3
+  },
+  "shape": {
+    "base": "lotr:item/galadhrim-bow"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/galadhrim-bow"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

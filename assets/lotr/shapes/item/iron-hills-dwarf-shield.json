@@ -1,0 +1,33 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/iron-hills-dwarf-shield"
+  },
+  "elements": [
+    {
+      "name": "plate",
+      "from": [
+        2.0,
+        7.5,
+        2.0
+      ],
+      "to": [
+        14.0,
+        8.5,
+        14.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            12,
+            12
+          ]
+        }
+      }
+    }
+  ]
+}

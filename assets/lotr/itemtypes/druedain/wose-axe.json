@@ -1,21 +1,33 @@
 ﻿{
   "code": "wose-axe",
   "class": "ItemTool",
-  "durability": 140,
+  "durability": 300,
   "tool": "axe",
   "miningspeed": {
     "wood": 2.1,
     "leaves": 1.47
   },
   "attributes": {
+    "attackpower": 2.8,
+    "attackrange": 2.0,
     "tooltier": 1,
-    "attackpower": 1.4,
-    "attackrange": 1.0
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 2.5,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/axe" }
+    "texture": {
+      "base": "lotr:item/wose-axe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/wose-axe"
   }
 }

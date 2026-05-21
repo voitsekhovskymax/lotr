@@ -1,17 +1,24 @@
 ﻿{
   "code": "lindon-elf-sword",
   "class": "ItemTool",
-  "durability": 900,
+  "durability": 1500,
   "tool": "sword",
   "attributes": {
-    "attackpower": 6,
-    "attackrange": 2,
+    "attackpower": 5.8,
+    "attackrange": 2.0,
     "tooltier": 3
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/lindon-elf-sword"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/lindon-elf-sword"
   }
 }

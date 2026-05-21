@@ -1,18 +1,27 @@
 ﻿{
   "code": "rohirrim-saw",
   "class": "ItemTool",
-  "durability": 300,
+  "durability": 800,
   "tool": "saw",
   "miningspeed": {
     "wood": 2.5
   },
   "attributes": {
-    "tooltier": 2
+    "attackpower": 3.2,
+    "attackrange": 2.0,
+    "tooltier": 3
   },
   "textures": {
-    "all": { "base": "game:item/tool/saw" }
+    "texture": {
+      "base": "lotr:item/rohirrim-saw"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/rohirrim-saw"
   }
 }

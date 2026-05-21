@@ -1,17 +1,24 @@
 ﻿{
   "code": "wose-sword",
   "class": "ItemTool",
-  "durability": 240,
+  "durability": 300,
   "tool": "sword",
   "attributes": {
-    "attackpower": 4.2,
-    "attackrange": 1.8,
+    "attackpower": 2.8,
+    "attackrange": 2.0,
     "tooltier": 1
   },
   "textures": {
-    "all": { "base": "game:item/tool/sword" }
+    "texture": {
+      "base": "lotr:item/wose-sword"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/wose-sword"
   }
 }

@@ -1,21 +1,33 @@
 ﻿{
   "code": "shire-axe",
   "class": "ItemTool",
-  "durability": 245,
+  "durability": 120,
   "tool": "axe",
   "miningspeed": {
     "wood": 2.7,
     "leaves": 1.89
   },
   "attributes": {
-    "tooltier": 1,
     "attackpower": 1.2,
-    "attackrange": 1.0
+    "attackrange": 2.0,
+    "tooltier": 1,
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 1.5,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/axe" }
+    "texture": {
+      "base": "lotr:item/shire-axe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/shire-axe"
   }
 }

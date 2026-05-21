@@ -1,0 +1,57 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/rivendell-elf-bow"
+  },
+  "elements": [
+    {
+      "name": "body1",
+      "from": [
+        7.5,
+        7.5,
+        0.0
+      ],
+      "to": [
+        8.5,
+        8.5,
+        16.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "string",
+      "from": [
+        7.8,
+        7.8,
+        0.0
+      ],
+      "to": [
+        8.2,
+        8.2,
+        16.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

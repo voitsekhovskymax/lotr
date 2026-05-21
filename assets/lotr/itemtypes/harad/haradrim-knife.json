@@ -1,21 +1,28 @@
 ﻿{
   "code": "haradrim-knife",
   "class": "ItemTool",
-  "durability": 180,
+  "durability": 800,
   "tool": "knife",
   "miningspeed": {
     "plant": 3,
     "cloth": 2.4
   },
   "attributes": {
-    "tooltier": 2,
-    "attackpower": 1.35,
-    "attackrange": 0.8
+    "attackpower": 3.2,
+    "attackrange": 1.6,
+    "tooltier": 3
   },
   "textures": {
-    "all": { "base": "game:item/tool/knife" }
+    "texture": {
+      "base": "lotr:item/haradrim-knife"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/haradrim-knife"
   }
 }

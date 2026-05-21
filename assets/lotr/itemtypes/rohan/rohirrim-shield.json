@@ -1,0 +1,23 @@
+﻿{
+  "code": "rohirrim-shield",
+  "class": "Item",
+  "durability": 2000,
+  "attributes": {
+    "defense": 10,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/rohirrim-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/rohirrim-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

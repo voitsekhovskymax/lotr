@@ -1,0 +1,23 @@
+﻿{
+  "code": "rivendell-elf-shield",
+  "class": "Item",
+  "durability": 1500,
+  "attributes": {
+    "defense": 8,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/rivendell-elf-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/rivendell-elf-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

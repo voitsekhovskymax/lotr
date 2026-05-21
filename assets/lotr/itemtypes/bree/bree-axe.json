@@ -1,21 +1,33 @@
 ﻿{
   "code": "bree-axe",
   "class": "ItemTool",
-  "durability": 245,
+  "durability": 1000,
   "tool": "axe",
   "miningspeed": {
     "wood": 2.7,
     "leaves": 1.89
   },
   "attributes": {
-    "tooltier": 1,
-    "attackpower": 1.2,
-    "attackrange": 1.0
+    "attackpower": 4.5,
+    "attackrange": 2.0,
+    "tooltier": 3,
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 5.0,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/axe" }
+    "texture": {
+      "base": "lotr:item/bree-axe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/bree-axe"
   }
 }

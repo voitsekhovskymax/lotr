@@ -1,18 +1,27 @@
 ﻿{
   "code": "goblin-town-goblin-saw",
   "class": "ItemTool",
-  "durability": 125,
+  "durability": 400,
   "tool": "saw",
   "miningspeed": {
     "wood": 2.75
   },
   "attributes": {
-    "tooltier": 1
+    "attackpower": 3.0,
+    "attackrange": 2.0,
+    "tooltier": 2
   },
   "textures": {
-    "all": { "base": "game:item/tool/saw" }
+    "texture": {
+      "base": "lotr:item/goblin-town-goblin-saw"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/goblin-town-goblin-saw"
   }
 }

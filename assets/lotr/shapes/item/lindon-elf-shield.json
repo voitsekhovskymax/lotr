@@ -1,0 +1,33 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/lindon-elf-shield"
+  },
+  "elements": [
+    {
+      "name": "plate",
+      "from": [
+        3.0,
+        7.5,
+        2.0
+      ],
+      "to": [
+        13.0,
+        8.5,
+        14.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            12,
+            12
+          ]
+        }
+      }
+    }
+  ]
+}

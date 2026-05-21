@@ -1,21 +1,33 @@
 ﻿{
   "code": "gundabad-orc-axe",
   "class": "ItemTool",
-  "durability": 280,
+  "durability": 450,
   "tool": "axe",
   "miningspeed": {
     "wood": 3.3,
     "leaves": 2.31
   },
   "attributes": {
-    "tooltier": 2,
-    "attackpower": 1.6,
-    "attackrange": 1.0
+    "attackpower": 7.0,
+    "attackrange": 2.0,
+    "tooltier": 3,
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 4.5,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/axe" }
+    "texture": {
+      "base": "lotr:item/gundabad-orc-axe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/gundabad-orc-axe"
   }
 }

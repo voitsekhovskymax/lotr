@@ -1,0 +1,200 @@
+﻿{
+  "textureWidth": 64,
+  "textureHeight": 64,
+  "textures": {
+    "mearas": "lotr:entity/animal/mearas-2"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [
+        4.75,
+        8.0,
+        1.5
+      ],
+      "to": [
+        11.25,
+        15.5,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#mearas",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#mearas",
+          "uv": [
+            8.0,
+            0.0,
+            24.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#mearas",
+          "uv": [
+            24.0,
+            0.0,
+            32.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#mearas",
+          "uv": [
+            32.0,
+            0.0,
+            48.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#mearas",
+          "uv": [
+            0.0,
+            8.0,
+            8.0,
+            24.0
+          ]
+        }
+      },
+      "children": [
+        {
+          "name": "head",
+          "from": [
+            1.25,
+            5.0,
+            -3.25
+          ],
+          "to": [
+            5.25,
+            10.0,
+            3.25
+          ],
+          "faces": {
+            "north": {
+              "texture": "#mearas",
+              "uv": [
+                48.0,
+                0.0,
+                56.0,
+                8.0
+              ]
+            },
+            "up": {
+              "texture": "#mearas",
+              "uv": [
+                48.0,
+                8.0,
+                56.0,
+                16.0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "legFL",
+      "from": [
+        4.75,
+        0.0,
+        2.5
+      ],
+      "to": [
+        6.75,
+        8.0,
+        4.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#mearas",
+          "uv": [
+            0.0,
+            24.0,
+            4.0,
+            32.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "legFR",
+      "from": [
+        9.25,
+        0.0,
+        2.5
+      ],
+      "to": [
+        11.25,
+        8.0,
+        4.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#mearas",
+          "uv": [
+            4.0,
+            24.0,
+            8.0,
+            32.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "legBL",
+      "from": [
+        4.75,
+        0.0,
+        11.5
+      ],
+      "to": [
+        6.75,
+        8.0,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#mearas",
+          "uv": [
+            8.0,
+            24.0,
+            12.0,
+            32.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "legBR",
+      "from": [
+        9.25,
+        0.0,
+        11.5
+      ],
+      "to": [
+        11.25,
+        8.0,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#mearas",
+          "uv": [
+            12.0,
+            24.0,
+            16.0,
+            32.0
+          ]
+        }
+      }
+    }
+  ]
+}

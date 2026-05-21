@@ -1,0 +1,23 @@
+﻿{
+  "code": "erebor-dwarf-shield",
+  "class": "Item",
+  "durability": 3000,
+  "attributes": {
+    "defense": 12,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/erebor-dwarf-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/erebor-dwarf-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

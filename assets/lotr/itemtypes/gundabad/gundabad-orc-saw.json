@@ -1,18 +1,27 @@
 ﻿{
   "code": "gundabad-orc-saw",
   "class": "ItemTool",
-  "durability": 200,
+  "durability": 400,
   "tool": "saw",
   "miningspeed": {
     "wood": 2.75
   },
   "attributes": {
+    "attackpower": 3.0,
+    "attackrange": 2.0,
     "tooltier": 2
   },
   "textures": {
-    "all": { "base": "game:item/tool/saw" }
+    "texture": {
+      "base": "lotr:item/gundabad-orc-saw"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/gundabad-orc-saw"
   }
 }

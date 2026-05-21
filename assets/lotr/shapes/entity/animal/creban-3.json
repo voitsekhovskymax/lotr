@@ -1,0 +1,201 @@
+﻿{
+  "textureWidth": 64,
+  "textureHeight": 64,
+  "textures": {
+    "creban": "lotr:entity/animal/creban-3"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [
+        6.5,
+        2,
+        5.5
+      ],
+      "to": [
+        9.5,
+        4,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#creban",
+          "uv": [
+            0.0,
+            0.0,
+            8.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#creban",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#creban",
+          "uv": [
+            16.0,
+            0.0,
+            24.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#creban",
+          "uv": [
+            24.0,
+            0.0,
+            32.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#creban",
+          "uv": [
+            0.0,
+            8.0,
+            8.0,
+            16.0
+          ]
+        }
+      },
+      "children": [
+        {
+          "name": "head",
+          "from": [
+            0.0,
+            1.0,
+            -2.0
+          ],
+          "to": [
+            3.0,
+            4.0,
+            1.0
+          ],
+          "faces": {
+            "north": {
+              "texture": "#creban",
+              "uv": [
+                32.0,
+                0.0,
+                36.0,
+                4.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "wingL",
+          "from": [
+            3,
+            0.0,
+            1.0
+          ],
+          "to": [
+            11,
+            1.0,
+            4.0
+          ],
+          "rotationOrigin": [
+            3,
+            0.5,
+            2.5
+          ],
+          "faces": {
+            "up": {
+              "texture": "#creban",
+              "uv": [
+                0.0,
+                16.0,
+                16.0,
+                24.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "wingR",
+          "from": [
+            -8,
+            0.0,
+            1.0
+          ],
+          "to": [
+            0.0,
+            1.0,
+            4.0
+          ],
+          "rotationOrigin": [
+            0.0,
+            0.5,
+            2.5
+          ],
+          "faces": {
+            "up": {
+              "texture": "#creban",
+              "uv": [
+                16.0,
+                16.0,
+                32.0,
+                24.0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "legL",
+      "from": [
+        7.5,
+        0.0,
+        7.0
+      ],
+      "to": [
+        8.5,
+        2,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#creban",
+          "uv": [
+            0.0,
+            24.0,
+            2.0,
+            30.0
+          ]
+        }
+      }
+    },
+    {
+      "name": "legR",
+      "from": [
+        7.5,
+        0.0,
+        7.0
+      ],
+      "to": [
+        8.5,
+        2,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#creban",
+          "uv": [
+            2.0,
+            24.0,
+            4.0,
+            30.0
+          ]
+        }
+      }
+    }
+  ]
+}

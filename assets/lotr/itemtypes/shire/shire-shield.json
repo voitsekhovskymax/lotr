@@ -1,0 +1,23 @@
+﻿{
+  "code": "shire-shield",
+  "class": "Item",
+  "durability": 200,
+  "attributes": {
+    "defense": 2,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/shire-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/shire-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/iron-hills-dwarf-pickaxe"
+  },
+  "elements": [
+    {
+      "name": "handle",
+      "from": [
+        7.5,
+        7.5,
+        0.0
+      ],
+      "to": [
+        8.5,
+        8.5,
+        20.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "head",
+      "from": [
+        1.0,
+        7.8,
+        18.0
+      ],
+      "to": [
+        15.0,
+        8.2,
+        20.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            14,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

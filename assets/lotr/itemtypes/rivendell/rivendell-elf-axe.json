@@ -1,21 +1,33 @@
 ﻿{
   "code": "rivendell-elf-axe",
   "class": "ItemTool",
-  "durability": 525,
+  "durability": 1200,
   "tool": "axe",
   "miningspeed": {
     "wood": 3.9,
     "leaves": 2.73
   },
   "attributes": {
+    "attackpower": 4.0,
+    "attackrange": 2.0,
     "tooltier": 3,
-    "attackpower": 2,
-    "attackrange": 1.0
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 6.0,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/axe" }
+    "texture": {
+      "base": "lotr:item/rivendell-elf-axe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/rivendell-elf-axe"
   }
 }

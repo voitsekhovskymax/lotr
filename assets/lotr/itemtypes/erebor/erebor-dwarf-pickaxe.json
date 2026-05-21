@@ -1,7 +1,7 @@
 ﻿{
   "code": "erebor-dwarf-pickaxe",
   "class": "ItemTool",
-  "durability": 1200,
+  "durability": 2500,
   "tool": "pickaxe",
   "miningspeed": {
     "stone": 4.8,
@@ -9,14 +9,26 @@
     "basemetal": 3.84
   },
   "attributes": {
+    "attackpower": 6.2,
+    "attackrange": 2.0,
     "tooltier": 4,
-    "attackpower": 1.35,
-    "attackrange": 1.0
+    "miningspeed": {
+      "stone": 9.5,
+      "wood": 1.0,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/pickaxe" }
+    "texture": {
+      "base": "lotr:item/erebor-dwarf-pickaxe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/erebor-dwarf-pickaxe"
   }
 }

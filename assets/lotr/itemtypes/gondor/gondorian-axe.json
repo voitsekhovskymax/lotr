@@ -1,21 +1,33 @@
 ﻿{
   "code": "gondorian-axe",
   "class": "ItemTool",
-  "durability": 420,
+  "durability": 1000,
   "tool": "axe",
   "miningspeed": {
     "wood": 3,
     "leaves": 2.1
   },
   "attributes": {
-    "tooltier": 2,
-    "attackpower": 1.8,
-    "attackrange": 1.0
+    "attackpower": 4.5,
+    "attackrange": 2.0,
+    "tooltier": 3,
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 5.0,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/axe" }
+    "texture": {
+      "base": "lotr:item/gondorian-axe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/gondorian-axe"
   }
 }

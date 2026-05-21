@@ -1,0 +1,23 @@
+﻿{
+  "code": "iron-hills-dwarf-shield",
+  "class": "Item",
+  "durability": 3000,
+  "attributes": {
+    "defense": 12,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/iron-hills-dwarf-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/iron-hills-dwarf-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

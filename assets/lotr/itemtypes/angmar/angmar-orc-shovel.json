@@ -1,7 +1,7 @@
 ﻿{
   "code": "angmar-orc-shovel",
   "class": "ItemTool",
-  "durability": 240,
+  "durability": 400,
   "tool": "shovel",
   "miningspeed": {
     "soil": 3.85,
@@ -9,12 +9,26 @@
     "sand": 3.08
   },
   "attributes": {
-    "tooltier": 2
+    "attackpower": 3.0,
+    "attackrange": 2.0,
+    "tooltier": 2,
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 1.0,
+      "soil": 3.5
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/shovel" }
+    "texture": {
+      "base": "lotr:item/angmar-orc-shovel"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/angmar-orc-shovel"
   }
 }

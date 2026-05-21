@@ -1,0 +1,23 @@
+﻿{
+  "code": "lindon-elf-shield",
+  "class": "Item",
+  "durability": 1500,
+  "attributes": {
+    "defense": 8,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/lindon-elf-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/lindon-elf-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

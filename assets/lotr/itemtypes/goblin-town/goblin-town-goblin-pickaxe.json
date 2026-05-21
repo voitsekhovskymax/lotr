@@ -1,7 +1,7 @@
 ﻿{
   "code": "goblin-town-goblin-pickaxe",
   "class": "ItemTool",
-  "durability": 200,
+  "durability": 400,
   "tool": "pickaxe",
   "miningspeed": {
     "stone": 4.4,
@@ -9,14 +9,26 @@
     "basemetal": 3.52
   },
   "attributes": {
-    "tooltier": 1,
-    "attackpower": 1.05,
-    "attackrange": 1.0
+    "attackpower": 3.0,
+    "attackrange": 2.0,
+    "tooltier": 2,
+    "miningspeed": {
+      "stone": 3.5,
+      "wood": 1.0,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/pickaxe" }
+    "texture": {
+      "base": "lotr:item/goblin-town-goblin-pickaxe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/goblin-town-goblin-pickaxe"
   }
 }

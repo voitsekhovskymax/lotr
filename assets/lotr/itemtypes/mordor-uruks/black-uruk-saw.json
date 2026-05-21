@@ -1,18 +1,27 @@
 ﻿{
   "code": "black-uruk-saw",
   "class": "ItemTool",
-  "durability": 300,
+  "durability": 400,
   "tool": "saw",
   "miningspeed": {
     "wood": 2.5
   },
   "attributes": {
+    "attackpower": 3.0,
+    "attackrange": 2.0,
     "tooltier": 2
   },
   "textures": {
-    "all": { "base": "game:item/tool/saw" }
+    "texture": {
+      "base": "lotr:item/black-uruk-saw"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/black-uruk-saw"
   }
 }

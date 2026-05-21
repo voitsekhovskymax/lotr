@@ -1,7 +1,7 @@
 ﻿{
   "code": "bree-shovel",
   "class": "ItemTool",
-  "durability": 210,
+  "durability": 800,
   "tool": "shovel",
   "miningspeed": {
     "soil": 3.15,
@@ -9,12 +9,26 @@
     "sand": 2.52
   },
   "attributes": {
-    "tooltier": 1
+    "attackpower": 3.2,
+    "attackrange": 2.0,
+    "tooltier": 3,
+    "miningspeed": {
+      "stone": 1.0,
+      "wood": 1.0,
+      "soil": 4.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/shovel" }
+    "texture": {
+      "base": "lotr:item/bree-shovel"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/bree-shovel"
   }
 }

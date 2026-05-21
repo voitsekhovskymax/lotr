@@ -1,7 +1,7 @@
 ﻿{
   "code": "lindon-elf-pickaxe",
   "class": "ItemTool",
-  "durability": 600,
+  "durability": 1200,
   "tool": "pickaxe",
   "miningspeed": {
     "stone": 5.2,
@@ -9,14 +9,26 @@
     "basemetal": 4.16
   },
   "attributes": {
+    "attackpower": 4.0,
+    "attackrange": 2.0,
     "tooltier": 3,
-    "attackpower": 1.5,
-    "attackrange": 1.0
+    "miningspeed": {
+      "stone": 6.0,
+      "wood": 1.0,
+      "soil": 1.0
+    }
   },
   "textures": {
-    "all": { "base": "game:item/tool/pickaxe" }
+    "texture": {
+      "base": "lotr:item/lindon-elf-pickaxe"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/lindon-elf-pickaxe"
   }
 }

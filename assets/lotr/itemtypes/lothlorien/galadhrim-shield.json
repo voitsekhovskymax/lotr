@@ -1,0 +1,23 @@
+﻿{
+  "code": "galadhrim-shield",
+  "class": "Item",
+  "durability": 1500,
+  "attributes": {
+    "defense": 8,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/galadhrim-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/galadhrim-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

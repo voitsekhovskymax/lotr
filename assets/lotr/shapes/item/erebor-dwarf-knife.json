@@ -1,0 +1,57 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/erebor-dwarf-knife"
+  },
+  "elements": [
+    {
+      "name": "handle",
+      "from": [
+        7.5,
+        7.5,
+        0.0
+      ],
+      "to": [
+        8.5,
+        8.5,
+        4.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "name": "blade",
+      "from": [
+        7.8,
+        7.8,
+        4.0
+      ],
+      "to": [
+        8.2,
+        8.2,
+        15.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            4,
+            8
+          ]
+        }
+      }
+    }
+  ]
+}

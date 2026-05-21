@@ -1,0 +1,57 @@
+﻿{
+  "textureWidth": 32,
+  "textureHeight": 32,
+  "textures": {
+    "texture": "lotr:item/rohirrim-pickaxe"
+  },
+  "elements": [
+    {
+      "name": "handle",
+      "from": [
+        7.5,
+        7.5,
+        0.0
+      ],
+      "to": [
+        8.5,
+        8.5,
+        20.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "head",
+      "from": [
+        2.5,
+        7.8,
+        18.0
+      ],
+      "to": [
+        13.5,
+        8.2,
+        20.0
+      ],
+      "faces": {
+        "all": {
+          "texture": "#texture",
+          "uv": [
+            2,
+            0,
+            14,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

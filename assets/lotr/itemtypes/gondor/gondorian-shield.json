@@ -1,0 +1,23 @@
+﻿{
+  "code": "gondorian-shield",
+  "class": "Item",
+  "durability": 2000,
+  "attributes": {
+    "defense": 10,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/gondorian-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/gondorian-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

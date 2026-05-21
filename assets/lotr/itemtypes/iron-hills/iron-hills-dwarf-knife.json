@@ -1,21 +1,28 @@
 ﻿{
   "code": "iron-hills-dwarf-knife",
   "class": "ItemTool",
-  "durability": 300,
+  "durability": 1000,
   "tool": "knife",
   "miningspeed": {
     "plant": 3.6,
     "cloth": 2.88
   },
   "attributes": {
-    "tooltier": 3,
-    "attackpower": 1.35,
-    "attackrange": 0.8
+    "attackpower": 3.5,
+    "attackrange": 1.6,
+    "tooltier": 3
   },
   "textures": {
-    "all": { "base": "game:item/tool/knife" }
+    "texture": {
+      "base": "lotr:item/iron-hills-dwarf-knife"
+    }
   },
   "creativeInventory": {
-    "lotr": ["*"]
+    "lotr": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "lotr:item/iron-hills-dwarf-knife"
   }
 }

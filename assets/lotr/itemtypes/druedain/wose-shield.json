@@ -1,0 +1,23 @@
+﻿{
+  "code": "wose-shield",
+  "class": "Item",
+  "durability": 200,
+  "attributes": {
+    "defense": 2,
+    "attackpower": 1.0,
+    "tooltier": 2
+  },
+  "shape": {
+    "base": "lotr:item/wose-shield"
+  },
+  "textures": {
+    "texture": {
+      "base": "lotr:item/wose-shield"
+    }
+  },
+  "creativeInventory": {
+    "lotr": [
+      "*"
+    ]
+  }
+}

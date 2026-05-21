@@ -1,0 +1,4 @@
+- [ ] **TASK-11: Сюжет 4.1: Патрулювання та рух (Patrol and Pathfinding Behaviors)**
+  - **Опис:** Реалізація логіки штучного інтелекту, пошуку шляху або поведінки для патрулювання та рух.
+  - **Критерій готовності:** Сутності коректно виконують заплановані AI-завдання та взаємодіють з оточенням.
+  - **Результат:** `src/Entities/AI/AiTaskPatrol_and_pathfinding.cs` або `src/Entities/Behaviors/BehaviorPatrol_and_pathfinding.cs`

@@ -1,4 +1,5 @@
 # LOTR Mod — AI Agent Context
+
 # Vintage Story v1.22 | .NET 10 | C# 13
 
 ## PROJECT OVERVIEW
@@ -69,6 +70,7 @@ Systems: Factions, Alignment, Quests, World Generation
 ## KEY API CLASSES
 
 ### Entry Point
+
 ```csharp
 public class LotrModSystem : ModSystem
 {
@@ -79,6 +81,7 @@ public class LotrModSystem : ModSystem
 ```
 
 ### Essential Namespaces
+
 ```csharp
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
@@ -89,6 +92,7 @@ using Vintagestory.GameContent;
 ```
 
 ### Entity Classes
+
 - `Entity` — base class for all entities
 - `EntityAgent` — entities with AI (NPCs, mobs) ← use this for characters
 - `EntityPlayer` — player
@@ -96,12 +100,14 @@ using Vintagestory.GameContent;
 - `AiTask` — single AI task (wander, attack, talk, patrol)
 
 ### World Access
+
 - `IBlockAccessor` — read/write blocks in the world
 - `IWorldAccessor` — full world access
 - `BlockSchematic` — load and place building schematics
 - `IChunkColumnGenerateRequest` — chunk generation callback
 
 ### Math / Position
+
 - `BlockPos` — integer block position (x, y, z)
 - `Vec3d` — double precision 3D vector
 - `Vec2f` — 2D float (used for hitbox sizes)
@@ -131,6 +137,7 @@ Balrog (boss):            hitbox x:3.0 y:8.0   eyeHeight:7.0
 - All structures are built ABOVE sea level (y > 120)
 
 Building heights from sea level (y=120):
+
 ```
 Hobbit hole:        y 120-125  (5 blocks tall)
 Edoras city:        y 120-150  (30 blocks)
@@ -311,8 +318,8 @@ namespace Lotr.Systems.[Name]
 
 ## REFERENCE LINKS
 
-- API Docs: https://apidocs.vintagestory.at/
-- Modding Wiki: https://wiki.vintagestory.at/Modding
-- Game source (vssurvivalmod): https://github.com/anegostudios/vssurvivalmod
-- Mod template: https://github.com/anegostudios/vsmodtemplate
-- Entity modding tutorial: https://wiki.vintagestory.at/Modding:Content_Tutorial_Entity_Creation_Part_1
+- API Docs: <https://apidocs.vintagestory.at/>
+- Modding Wiki: <https://wiki.vintagestory.at/Modding>
+- Game source (vssurvivalmod): <https://github.com/anegostudios/vssurvivalmod>
+- Mod template: <https://github.com/anegostudios/vsmodtemplate>
+- Entity modding tutorial: <https://wiki.vintagestory.at/Modding:Content_Tutorial_Entity_Creation_Part_1>

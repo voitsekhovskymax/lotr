@@ -1,0 +1,4 @@
+- [x] **TASK-06: Сюжет 2.6: Моделювання тролів та велетнів (Troll & Giant Creature Models)**
+  - **Опис:** Розробка та інтеграція 3D-моделі та текстур для моделювання тролів та велетнів.
+  - **Критерій готовності:** 3D-модель та текстури успішно завантажуються та відображаються на сутності в грі.
+  - **Результат:** `assets/lotr/shapes/entity/humanoid/troll_&_giant_creature.json` та `assets/lotr/textures/entity/humanoid/troll_&_giant_creature.png`

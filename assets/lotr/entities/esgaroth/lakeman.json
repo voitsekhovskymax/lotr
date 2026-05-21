@@ -1,28 +1,104 @@
 ﻿{
   "code": "lakeman",
   "class": "EntityHuman",
-  "hitboxSize": { "x": 0.6, "y": 1.9 },
+  "hitboxSize": {
+    "x": 0.6,
+    "y": 1.9
+  },
   "eyeHeight": 1.7,
   "client": {
-    "size": 1,
+    "size": 1.0,
     "renderer": "Shape",
-    "shape": { "base": "game:entity/humanoid/seraph-faceless" },
+    "shape": {
+      "base": "lotr:entity/humanoid/human-esgaroth-1",
+      "alternates": [
+        {
+          "base": "lotr:entity/humanoid/human-esgaroth-2"
+        },
+        {
+          "base": "lotr:entity/humanoid/human-esgaroth-3"
+        }
+      ]
+    },
     "behaviors": [
-      { "code": "repulseagents" },
-      { "code": "controlledphysics", "stepHeight": 0.6 },
-      { "code": "floatupwhenstuck", "onlyWhenDead": true },
-      { "code": "interpolateposition" }
-    ]
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "floatupwhenstuck",
+        "onlyWhenDead": true
+      },
+      {
+        "code": "interpolateposition"
+      }
+    ],
+    "textures": {
+      "human": {
+        "base": "lotr:entity/humanoid/human-esgaroth-1",
+        "alternates": [
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-2"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-3"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-4"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-5"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-6"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-7"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-8"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-9"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-esgaroth-10"
+          }
+        ]
+      }
+    }
   },
   "server": {
     "behaviors": [
-      { "code": "repulseagents" },
-      { "code": "controlledphysics", "stepHeight": 0.6 },
-      { "code": "health", "currenthealth": 20, "maxhealth": 20 },
-      { "code": "taskai", "aitasks": [
-        { "code": "lookaround", "priority": 0.5 },
-        { "code": "wander", "priority": 0.3, "movespeed": 0.015 }
-      ]}
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "health",
+        "currenthealth": 20,
+        "maxhealth": 20
+      },
+      {
+        "code": "taskai",
+        "aitasks": [
+          {
+            "code": "lookaround",
+            "priority": 0.5
+          },
+          {
+            "code": "wander",
+            "priority": 0.3,
+            "movespeed": 0.015
+          }
+        ]
+      }
     ]
   },
   "attributes": {

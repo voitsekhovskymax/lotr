@@ -1,0 +1,4 @@
+- [x] **TASK-04: Сюжет 2.4: Моделювання орків та гоблінів (Orc and Goblin Models)**
+  - **Опис:** Розробка та інтеграція 3D-моделі та текстур для моделювання орків та гоблінів.
+  - **Критерій готовності:** 3D-модель та текстури успішно завантажуються та відображаються на сутності в грі.
+  - **Результат:** `assets/lotr/shapes/entity/humanoid/orc_and_goblin.json` та `assets/lotr/textures/entity/humanoid/orc_and_goblin.png`

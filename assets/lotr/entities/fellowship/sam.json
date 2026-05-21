@@ -1,28 +1,62 @@
 {
   "code": "sam",
   "class": "EntityHobbit",
-  "hitboxSize": { "x": 0.4, "y": 1.1 },
+  "hitboxSize": {
+    "x": 0.4,
+    "y": 1.1
+  },
   "eyeHeight": 0.95,
   "client": {
-    "size": 0.58,
+    "size": 1.0,
     "renderer": "Shape",
-    "shape": { "base": "game:entity/humanoid/seraph-faceless" },
+    "shape": {
+      "base": "lotr:entity/humanoid/hobbit"
+    },
     "behaviors": [
-      { "code": "repulseagents" },
-      { "code": "controlledphysics", "stepHeight": 0.6 },
-      { "code": "floatupwhenstuck", "onlyWhenDead": true },
-      { "code": "interpolateposition" }
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "floatupwhenstuck",
+        "onlyWhenDead": true
+      },
+      {
+        "code": "interpolateposition"
+      }
     ]
   },
   "server": {
     "behaviors": [
-      { "code": "repulseagents" },
-      { "code": "controlledphysics", "stepHeight": 0.6 },
-      { "code": "health", "currenthealth": 15, "maxhealth": 15 },
-      { "code": "taskai", "aitasks": [
-        { "code": "lookaround", "priority": 0.5 },
-        { "code": "wander", "priority": 0.3, "movespeed": 0.015 }
-      ]}
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "health",
+        "currenthealth": 15,
+        "maxhealth": 15
+      },
+      {
+        "code": "taskai",
+        "aitasks": [
+          {
+            "code": "lookaround",
+            "priority": 0.5
+          },
+          {
+            "code": "wander",
+            "priority": 0.3,
+            "movespeed": 0.015
+          }
+        ]
+      }
     ]
   }
 }

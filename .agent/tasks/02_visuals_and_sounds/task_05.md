@@ -1,0 +1,4 @@
+- [x] **TASK-05: Сюжет 2.5: Моделювання людських підфракцій (Human Character Variants)**
+  - **Опис:** Розробка та інтеграція 3D-моделі та текстур для моделювання людських підфракцій.
+  - **Критерій готовності:** 3D-модель та текстури успішно завантажуються та відображаються на сутності в грі.
+  - **Результат:** `assets/lotr/shapes/entity/humanoid/human_character_variants.json` та `assets/lotr/textures/entity/humanoid/human_character_variants.png`

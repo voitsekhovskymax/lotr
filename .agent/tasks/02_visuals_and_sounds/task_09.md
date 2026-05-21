@@ -1,0 +1,4 @@
+- [ ] **TASK-09: Сюжет 2.9: Моделювання фракційної броні (Faction Armor Modeling)**
+  - **Опис:** Розробка та інтеграція 3D-моделі та текстур для моделювання фракційної броні.
+  - **Критерій готовності:** 3D-модель та текстури успішно завантажуються та відображаються на сутності в грі.
+  - **Результат:** `assets/lotr/shapes/entity/humanoid/faction_armor_ing.json` та `assets/lotr/textures/entity/humanoid/faction_armor_ing.png`

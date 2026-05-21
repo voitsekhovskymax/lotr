@@ -1,27 +1,96 @@
-{
+﻿{
   "code": "gandalf",
   "class": "EntityGandalf",
-  "hitboxSize": { "x": 0.6, "y": 2.0 },
+  "hitboxSize": {
+    "x": 0.6,
+    "y": 2.0
+  },
   "eyeHeight": 1.85,
   "client": {
     "renderer": "Shape",
-    "shape": { "base": "game:entity/humanoid/seraph-faceless" },
+    "shape": {
+      "base": "lotr:entity/humanoid/human-ranger-1"
+    },
     "behaviors": [
-      { "code": "repulseagents" },
-      { "code": "controlledphysics", "stepHeight": 0.6 },
-      { "code": "floatupwhenstuck", "onlyWhenDead": true },
-      { "code": "interpolateposition" }
-    ]
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "floatupwhenstuck",
+        "onlyWhenDead": true
+      },
+      {
+        "code": "interpolateposition"
+      }
+    ],
+    "size": 1.0,
+    "textures": {
+      "human": {
+        "base": "lotr:entity/humanoid/human-ranger-1",
+        "alternates": [
+          {
+            "base": "lotr:entity/humanoid/human-ranger-2"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-3"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-4"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-5"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-6"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-7"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-8"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-9"
+          },
+          {
+            "base": "lotr:entity/humanoid/human-ranger-10"
+          }
+        ]
+      }
+    }
   },
   "server": {
     "behaviors": [
-      { "code": "repulseagents" },
-      { "code": "controlledphysics", "stepHeight": 0.6 },
-      { "code": "health", "currenthealth": 40, "maxhealth": 40 },
-      { "code": "taskai", "aitasks": [
-        { "code": "lookaround", "priority": 0.5 },
-        { "code": "wander", "priority": 0.3, "movespeed": 0.018 }
-      ]}
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "health",
+        "currenthealth": 40,
+        "maxhealth": 40
+      },
+      {
+        "code": "taskai",
+        "aitasks": [
+          {
+            "code": "lookaround",
+            "priority": 0.5
+          },
+          {
+            "code": "wander",
+            "priority": 0.3,
+            "movespeed": 0.018
+          }
+        ]
+      }
     ]
   }
 }

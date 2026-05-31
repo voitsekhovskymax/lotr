@@ -1,7 +1,4 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -14,25 +11,6 @@
             "cwd": "D:\\games\\VintageStory",
             "stopAtEntry": false,
             "console": "internalConsole"
-        },
-        {
-            "name": "Launch Vintage Story (Select World)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "D:\\games\\VintageStory\\PlayVintageStory.exe",
-            "args": [
-                "--openWorld=${input:worldName}"
-            ],
-            "cwd": "D:\\games\\VintageStory",
-            "stopAtEntry": false,
-            "console": "internalConsole"
-        },
-        {
-            "name": "Attach to Vintage Story",
-            "type": "coreclr",
-            "request": "attach",
-            "processName": "Vintagestory"
         }
     ],
     "inputs": [

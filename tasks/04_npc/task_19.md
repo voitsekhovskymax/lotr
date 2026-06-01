@@ -1,4 +1,0 @@
-- [ ] **TASK-19: Сюжет 4.9: Поведінка дружніх NPC-союзників (Friendly NPC Assistance)**
-  - **Опис:** Реалізація логіки штучного інтелекту, пошуку шляху або поведінки для поведінка дружніх npc-союзників.
-  - **Критерій готовності:** Сутності коректно виконують заплановані AI-завдання та взаємодіють з оточенням.
-  - **Результат:** `src/Entities/AI/AiTaskFriendly_npc_assistance.cs` або `src/Entities/Behaviors/BehaviorFriendly_npc_assistance.cs`

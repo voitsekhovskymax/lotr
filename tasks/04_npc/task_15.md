@@ -1,4 +1,0 @@
-- [ ] **TASK-15: Сюжет 4.5: AI кавалерії та вершників (Cavalry & Mounted Combat AI)**
-  - **Опис:** Реалізація логіки штучного інтелекту, пошуку шляху або поведінки для ai кавалерії та вершників.
-  - **Критерій готовності:** Сутності коректно виконують заплановані AI-завдання та взаємодіють з оточенням.
-  - **Результат:** `src/Entities/AI/AiTaskCavalry_&_mounted_combat.cs` або `src/Entities/Behaviors/BehaviorCavalry_&_mounted_combat.cs`

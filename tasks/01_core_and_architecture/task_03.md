@@ -1,4 +1,0 @@
-- [x] **TASK-03: Сюжет 1.3: Конфігурація бази сутностей (Entity Base Configuration)**
-  - **Опис:** Конфігурація базових класів для сутностей (Entity Base Configuration).
-  - **Критерій готовності:** Базові класи сутностей успішно створено та зареєстровано.
-  - **Результат:** `src/Entities/Humanoids/EntityHobbit.cs` та `assets/lotr/entities/humanoid/frodo.json`

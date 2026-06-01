@@ -1,5 +1,5 @@
-﻿{
-  "code": "wose-knife",
+{
+  "code": "lotr:wose-knife",
   "class": "ItemTool",
   "durability": 300,
   "tool": "knife",

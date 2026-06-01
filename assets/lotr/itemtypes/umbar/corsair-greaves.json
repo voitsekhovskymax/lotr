@@ -1,27 +1,15 @@
-﻿{
-  "code": "corsair-greaves",
-  "class": "ItemArmor",
-  "durability": 1400,
+{
+  "code": "lotr:corsair-greaves",
+  "class": "Item",
+  "durability": 720,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.25,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/corsair-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 6,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/corsair-greaves"
-    }
+    "texture": { "base": "lotr:item/corsair-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/corsair-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

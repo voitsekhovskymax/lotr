@@ -1,5 +1,5 @@
-﻿{
-  "code": "ered-luin-dwarf-shield",
+{
+  "code": "lotr:ered-luin-dwarf-shield",
   "class": "Item",
   "durability": 3000,
   "attributes": {

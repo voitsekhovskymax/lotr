@@ -1,5 +1,5 @@
-﻿{
-  "code": "mordor-orc-axe",
+{
+  "code": "lotr:mordor-orc-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

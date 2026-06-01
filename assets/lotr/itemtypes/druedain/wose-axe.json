@@ -1,5 +1,5 @@
-﻿{
-  "code": "wose-axe",
+{
+  "code": "lotr:wose-axe",
   "class": "ItemTool",
   "durability": 300,
   "tool": "axe",

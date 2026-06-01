@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-dwarf-axe",
+{
+  "code": "lotr:moria-dwarf-axe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "axe",

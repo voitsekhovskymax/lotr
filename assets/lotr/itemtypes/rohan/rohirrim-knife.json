@@ -1,5 +1,5 @@
-﻿{
-  "code": "rohirrim-knife",
+{
+  "code": "lotr:rohirrim-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

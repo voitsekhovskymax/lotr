@@ -1,27 +1,15 @@
-﻿{
-  "code": "mordor-orc-helmet",
-  "class": "ItemArmor",
-  "durability": 500,
+{
+  "code": "lotr:mordor-orc-helmet",
+  "class": "Item",
+  "durability": 700,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.13,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/mordor-orc-helmet"
+    "clothescategory": "Head",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/mordor-orc-helmet"
-    }
+    "texture": { "base": "lotr:item/mordor-orc-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/mordor-orc-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,27 +1,15 @@
-﻿{
-  "code": "goblin-town-goblin-greaves",
-  "class": "ItemArmor",
-  "durability": 700,
+{
+  "code": "lotr:goblin-town-goblin-greaves",
+  "class": "Item",
+  "durability": 320,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.26,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/goblin-town-goblin-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 3,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/goblin-town-goblin-greaves"
-    }
+    "texture": { "base": "lotr:item/goblin-town-goblin-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/goblin-town-goblin-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

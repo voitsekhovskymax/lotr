@@ -1,5 +1,5 @@
-﻿{
-  "code": "angmar-orc-axe",
+{
+  "code": "lotr:angmar-orc-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

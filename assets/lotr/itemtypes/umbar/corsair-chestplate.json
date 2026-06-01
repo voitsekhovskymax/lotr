@@ -1,27 +1,15 @@
-﻿{
-  "code": "corsair-chestplate",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:corsair-chestplate",
+  "class": "Item",
+  "durability": 900,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.45,
-    "statModifiers": {
-      "walkspeed": -0.015
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/corsair-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 8,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/corsair-chestplate"
-    }
+    "texture": { "base": "lotr:item/corsair-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/corsair-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-axe",
+{
+  "code": "lotr:wood-elf-axe",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "axe",

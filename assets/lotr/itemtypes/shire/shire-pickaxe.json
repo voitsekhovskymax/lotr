@@ -1,5 +1,5 @@
-﻿{
-  "code": "shire-pickaxe",
+{
+  "code": "lotr:shire-pickaxe",
   "class": "ItemTool",
   "durability": 120,
   "tool": "pickaxe",

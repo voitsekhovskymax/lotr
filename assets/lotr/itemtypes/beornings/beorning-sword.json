@@ -1,5 +1,5 @@
-﻿{
-  "code": "beorning-sword",
+{
+  "code": "lotr:beorning-sword",
   "class": "ItemTool",
   "durability": 1600,
   "tool": "sword",

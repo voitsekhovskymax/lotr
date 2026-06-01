@@ -1,5 +1,5 @@
-﻿{
-  "code": "easterling-shovel",
+{
+  "code": "lotr:easterling-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

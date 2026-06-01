@@ -1,27 +1,15 @@
-﻿{
-  "code": "haradrim-greaves",
-  "class": "ItemArmor",
-  "durability": 1400,
+{
+  "code": "lotr:haradrim-greaves",
+  "class": "Item",
+  "durability": 800,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.25,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/haradrim-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 7,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/haradrim-greaves"
-    }
+    "texture": { "base": "lotr:item/haradrim-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/haradrim-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

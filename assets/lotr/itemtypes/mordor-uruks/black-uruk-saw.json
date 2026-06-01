@@ -1,5 +1,5 @@
-﻿{
-  "code": "black-uruk-saw",
+{
+  "code": "lotr:black-uruk-saw",
   "class": "ItemTool",
   "durability": 400,
   "tool": "saw",

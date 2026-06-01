@@ -1,5 +1,5 @@
-﻿{
-  "code": "rivendell-elf-shield",
+{
+  "code": "lotr:rivendell-elf-shield",
   "class": "Item",
   "durability": 1500,
   "attributes": {

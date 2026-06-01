@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-goblin-axe",
+{
+  "code": "lotr:moria-goblin-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

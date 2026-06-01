@@ -1,27 +1,15 @@
-﻿{
-  "code": "rohirrim-chestplate",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:rohirrim-chestplate",
+  "class": "Item",
+  "durability": 1600,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.45,
-    "statModifiers": {
-      "walkspeed": -0.015
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/rohirrim-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 13,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/rohirrim-chestplate"
-    }
+    "texture": { "base": "lotr:item/rohirrim-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/rohirrim-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

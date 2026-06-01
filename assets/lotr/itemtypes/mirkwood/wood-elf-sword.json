@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-sword",
+{
+  "code": "lotr:wood-elf-sword",
   "class": "ItemTool",
   "durability": 1500,
   "tool": "sword",

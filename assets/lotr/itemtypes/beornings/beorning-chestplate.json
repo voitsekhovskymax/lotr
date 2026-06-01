@@ -1,27 +1,15 @@
-﻿{
-  "code": "beorning-chestplate",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:beorning-chestplate",
+  "class": "Item",
+  "durability": 1200,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.45,
-    "statModifiers": {
-      "walkspeed": -0.015
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/beorning-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 10,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/beorning-chestplate"
-    }
+    "texture": { "base": "lotr:item/beorning-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/beorning-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

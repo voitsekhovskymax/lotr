@@ -1,5 +1,5 @@
-﻿{
-  "code": "rohirrim-shield",
+{
+  "code": "lotr:rohirrim-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

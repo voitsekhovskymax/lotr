@@ -1,5 +1,5 @@
 {
-  "code": "ingot-morguliron",
+  "code": "lotr:ingot-morguliron",
   "class": "Item",
   "maxstacksize": 64,
   "textures": {

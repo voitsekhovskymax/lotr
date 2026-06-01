@@ -1,27 +1,15 @@
-﻿{
-  "code": "half-orc-chestplate",
-  "class": "ItemArmor",
-  "durability": 1000,
+{
+  "code": "lotr:half-orc-chestplate",
+  "class": "Item",
+  "durability": 800,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.46,
-    "statModifiers": {
-      "walkspeed": -0.02
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/half-orc-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 7,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/half-orc-chestplate"
-    }
+    "texture": { "base": "lotr:item/half-orc-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/half-orc-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

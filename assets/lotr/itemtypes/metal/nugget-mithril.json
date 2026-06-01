@@ -1,5 +1,5 @@
 {
-  "code": "nugget-mithril",
+  "code": "lotr:nugget-mithril",
   "class": "Item",
   "maxstacksize": 64,
   "textures": {

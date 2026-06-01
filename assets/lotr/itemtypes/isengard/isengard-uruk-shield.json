@@ -1,5 +1,5 @@
-﻿{
-  "code": "isengard-uruk-shield",
+{
+  "code": "lotr:isengard-uruk-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

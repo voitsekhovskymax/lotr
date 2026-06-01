@@ -1,27 +1,15 @@
-﻿{
-  "code": "isengard-uruk-helmet",
-  "class": "ItemArmor",
-  "durability": 500,
+{
+  "code": "lotr:isengard-uruk-helmet",
+  "class": "Item",
+  "durability": 980,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.13,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/isengard-uruk-helmet"
+    "clothescategory": "Head",
+    "protection": 7,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/isengard-uruk-helmet"
-    }
+    "texture": { "base": "lotr:item/isengard-uruk-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/isengard-uruk-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

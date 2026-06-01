@@ -1,5 +1,5 @@
-﻿{
-  "code": "angmar-orc-shovel",
+{
+  "code": "lotr:angmar-orc-shovel",
   "class": "ItemTool",
   "durability": 400,
   "tool": "shovel",

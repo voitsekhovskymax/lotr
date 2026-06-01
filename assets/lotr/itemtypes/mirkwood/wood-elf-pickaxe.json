@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-pickaxe",
+{
+  "code": "lotr:wood-elf-pickaxe",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "pickaxe",

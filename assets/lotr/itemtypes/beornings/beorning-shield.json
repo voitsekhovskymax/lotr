@@ -1,5 +1,5 @@
-﻿{
-  "code": "beorning-shield",
+{
+  "code": "lotr:beorning-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

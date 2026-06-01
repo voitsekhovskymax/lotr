@@ -1,27 +1,15 @@
-﻿{
-  "code": "isengard-orc-helmet",
-  "class": "ItemArmor",
-  "durability": 500,
+{
+  "code": "lotr:isengard-orc-helmet",
+  "class": "Item",
+  "durability": 630,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.13,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/isengard-orc-helmet"
+    "clothescategory": "Head",
+    "protection": 4,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/isengard-orc-helmet"
-    }
+    "texture": { "base": "lotr:item/isengard-orc-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/isengard-orc-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

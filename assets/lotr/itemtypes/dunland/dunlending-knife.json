@@ -1,5 +1,5 @@
-﻿{
-  "code": "dunlending-knife",
+{
+  "code": "lotr:dunlending-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

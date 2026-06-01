@@ -1,5 +1,5 @@
-﻿{
-  "code": "rivendell-elf-sword",
+{
+  "code": "lotr:rivendell-elf-sword",
   "class": "ItemTool",
   "durability": 1500,
   "tool": "sword",

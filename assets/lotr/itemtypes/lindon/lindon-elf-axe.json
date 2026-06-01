@@ -1,5 +1,5 @@
-﻿{
-  "code": "lindon-elf-axe",
+{
+  "code": "lotr:lindon-elf-axe",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "axe",

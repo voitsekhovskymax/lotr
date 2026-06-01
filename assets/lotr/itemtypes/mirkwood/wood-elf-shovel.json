@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-shovel",
+{
+  "code": "lotr:wood-elf-shovel",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "shovel",

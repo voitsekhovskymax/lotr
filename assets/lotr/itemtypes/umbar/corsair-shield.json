@@ -1,5 +1,5 @@
-﻿{
-  "code": "corsair-shield",
+{
+  "code": "lotr:corsair-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

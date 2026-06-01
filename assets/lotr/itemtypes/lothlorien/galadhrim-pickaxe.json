@@ -1,5 +1,5 @@
-﻿{
-  "code": "galadhrim-pickaxe",
+{
+  "code": "lotr:galadhrim-pickaxe",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "pickaxe",

@@ -1,0 +1,18 @@
+{
+  "class": "Block",
+  "code": "lotr:grass-mordor",
+  "drawtype": "Cube",
+  "material": "Soil",
+  "blockmaterial": "Soil",
+  "resistance": 3,
+  "lightAbsorption": 99,
+  "sidessolid": { "all": true },
+  "sidesopaque": { "all": true },
+  "textures": {
+    "up":   { "base": "lotr:block/grass-mordor-top" },
+    "down": { "base": "game:block/soil/soil-medium-none" },
+    "all":  { "base": "lotr:block/grass-mordor-side" }
+  },
+  "sounds": { "place": "game:place/dirt", "break": "game:break/dirt", "walk": "game:walk/gravel" },
+  "creativeinventory": { "lotr-blocks": ["*"] }
+}

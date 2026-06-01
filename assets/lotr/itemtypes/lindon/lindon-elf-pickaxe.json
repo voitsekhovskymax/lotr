@@ -1,5 +1,5 @@
-﻿{
-  "code": "lindon-elf-pickaxe",
+{
+  "code": "lotr:lindon-elf-pickaxe",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "pickaxe",

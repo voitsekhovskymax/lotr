@@ -1,5 +1,5 @@
-﻿{
-  "code": "bree-sword",
+{
+  "code": "lotr:bree-sword",
   "class": "ItemTool",
   "durability": 1600,
   "tool": "sword",

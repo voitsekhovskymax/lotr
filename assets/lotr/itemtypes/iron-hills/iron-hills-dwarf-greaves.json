@@ -1,27 +1,15 @@
-﻿{
-  "code": "iron-hills-dwarf-greaves",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:iron-hills-dwarf-greaves",
+  "class": "Item",
+  "durability": 1600,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.3,
-    "statModifiers": {
-      "walkspeed": -0.02
-    },
-    "tooltier": 4
-  },
-  "shape": {
-    "base": "lotr:item/iron-hills-dwarf-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 11,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/iron-hills-dwarf-greaves"
-    }
+    "texture": { "base": "lotr:item/iron-hills-dwarf-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/iron-hills-dwarf-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

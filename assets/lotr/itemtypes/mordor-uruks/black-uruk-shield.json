@@ -1,5 +1,5 @@
-﻿{
-  "code": "black-uruk-shield",
+{
+  "code": "lotr:black-uruk-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

@@ -1,5 +1,5 @@
-﻿{
-  "code": "gondorian-knife",
+{
+  "code": "lotr:gondorian-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

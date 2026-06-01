@@ -1,5 +1,5 @@
-﻿{
-  "code": "iron-hills-dwarf-shovel",
+{
+  "code": "lotr:iron-hills-dwarf-shovel",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "shovel",

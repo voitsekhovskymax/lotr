@@ -1,5 +1,5 @@
-﻿{
-  "code": "goblin-town-goblin-saw",
+{
+  "code": "lotr:goblin-town-goblin-saw",
   "class": "ItemTool",
   "durability": 400,
   "tool": "saw",

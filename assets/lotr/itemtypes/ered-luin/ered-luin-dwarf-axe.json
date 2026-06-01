@@ -1,5 +1,5 @@
-﻿{
-  "code": "ered-luin-dwarf-axe",
+{
+  "code": "lotr:ered-luin-dwarf-axe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "axe",

@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-dwarf-pickaxe",
+{
+  "code": "lotr:moria-dwarf-pickaxe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "pickaxe",

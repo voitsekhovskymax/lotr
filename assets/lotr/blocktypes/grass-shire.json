@@ -1,0 +1,18 @@
+{
+  "class": "Block",
+  "code": "lotr:grass-shire",
+  "drawtype": "Cube",
+  "material": "Soil",
+  "blockmaterial": "Soil",
+  "resistance": 3,
+  "lightAbsorption": 99,
+  "sidessolid": { "all": true },
+  "sidesopaque": { "all": true },
+  "textures": {
+    "up":   { "base": "lotr:block/grass-shire-top" },
+    "down": { "base": "game:block/soil/soil-medium-low" },
+    "all":  { "base": "lotr:block/grass-shire-side" }
+  },
+  "sounds": { "place": "game:place/dirt", "break": "game:break/dirt", "walk": "game:walk/grass" },
+  "creativeinventory": { "lotr-blocks": ["*"] }
+}

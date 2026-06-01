@@ -1,5 +1,5 @@
-﻿{
-  "code": "dunlending-shovel",
+{
+  "code": "lotr:dunlending-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

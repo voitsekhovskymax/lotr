@@ -1,5 +1,5 @@
-﻿{
-  "code": "half-orc-shovel",
+{
+  "code": "lotr:half-orc-shovel",
   "class": "ItemTool",
   "durability": 400,
   "tool": "shovel",

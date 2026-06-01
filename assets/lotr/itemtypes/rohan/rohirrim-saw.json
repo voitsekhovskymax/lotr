@@ -1,5 +1,5 @@
-﻿{
-  "code": "rohirrim-saw",
+{
+  "code": "lotr:rohirrim-saw",
   "class": "ItemTool",
   "durability": 800,
   "tool": "saw",

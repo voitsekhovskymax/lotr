@@ -1,5 +1,5 @@
-﻿{
-  "code": "corsair-knife",
+{
+  "code": "lotr:corsair-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

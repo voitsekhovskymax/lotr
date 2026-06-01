@@ -1,5 +1,5 @@
-﻿{
-  "code": "laketown-knife",
+{
+  "code": "lotr:laketown-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

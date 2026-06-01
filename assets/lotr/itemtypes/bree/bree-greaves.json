@@ -1,27 +1,15 @@
-﻿{
-  "code": "bree-greaves",
-  "class": "ItemArmor",
-  "durability": 1400,
+{
+  "code": "lotr:bree-greaves",
+  "class": "Item",
+  "durability": 640,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.25,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/bree-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/bree-greaves"
-    }
+    "texture": { "base": "lotr:item/bree-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/bree-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

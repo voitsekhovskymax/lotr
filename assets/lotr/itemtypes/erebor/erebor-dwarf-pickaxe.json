@@ -1,5 +1,5 @@
-﻿{
-  "code": "erebor-dwarf-pickaxe",
+{
+  "code": "lotr:erebor-dwarf-pickaxe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "pickaxe",

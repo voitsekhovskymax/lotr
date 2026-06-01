@@ -1,5 +1,5 @@
-﻿{
-  "code": "iron-hills-dwarf-pickaxe",
+{
+  "code": "lotr:iron-hills-dwarf-pickaxe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "pickaxe",

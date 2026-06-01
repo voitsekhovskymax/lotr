@@ -1,5 +1,5 @@
-﻿{
-  "code": "isengard-uruk-pickaxe",
+{
+  "code": "lotr:isengard-uruk-pickaxe",
   "class": "ItemTool",
   "durability": 400,
   "tool": "pickaxe",

@@ -1,5 +1,5 @@
-﻿{
-  "code": "goblin-town-goblin-pickaxe",
+{
+  "code": "lotr:goblin-town-goblin-pickaxe",
   "class": "ItemTool",
   "durability": 400,
   "tool": "pickaxe",

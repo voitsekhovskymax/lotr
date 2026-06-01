@@ -1,5 +1,5 @@
-﻿{
-  "code": "isengard-orc-shovel",
+{
+  "code": "lotr:isengard-orc-shovel",
   "class": "ItemTool",
   "durability": 400,
   "tool": "shovel",

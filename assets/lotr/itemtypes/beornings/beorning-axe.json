@@ -1,5 +1,5 @@
-﻿{
-  "code": "beorning-axe",
+{
+  "code": "lotr:beorning-axe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "axe",

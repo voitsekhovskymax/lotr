@@ -1,5 +1,5 @@
-﻿{
-  "code": "ered-luin-dwarf-shovel",
+{
+  "code": "lotr:ered-luin-dwarf-shovel",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "shovel",

@@ -1,5 +1,5 @@
-﻿{
-  "code": "haradrim-knife",
+{
+  "code": "lotr:haradrim-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

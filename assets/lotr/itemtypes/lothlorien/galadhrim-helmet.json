@@ -1,27 +1,15 @@
-﻿{
-  "code": "galadhrim-helmet",
-  "class": "ItemArmor",
-  "durability": 1200,
+{
+  "code": "lotr:galadhrim-helmet",
+  "class": "Item",
+  "durability": 1120,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.1,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/galadhrim-helmet"
+    "clothescategory": "Head",
+    "protection": 7,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/galadhrim-helmet"
-    }
+    "texture": { "base": "lotr:item/galadhrim-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/galadhrim-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

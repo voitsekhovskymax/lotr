@@ -1,5 +1,5 @@
-﻿{
-  "code": "sting",
+{
+  "code": "lotr:sting",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "sword",

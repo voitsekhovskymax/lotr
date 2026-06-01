@@ -1,5 +1,5 @@
-﻿{
-  "code": "laketown-pickaxe",
+{
+  "code": "lotr:laketown-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

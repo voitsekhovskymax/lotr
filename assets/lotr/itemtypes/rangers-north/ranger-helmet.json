@@ -1,27 +1,15 @@
-﻿{
-  "code": "ranger-helmet",
-  "class": "ItemArmor",
-  "durability": 1000,
+{
+  "code": "lotr:ranger-helmet",
+  "class": "Item",
+  "durability": 770,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.12,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/ranger-helmet"
+    "clothescategory": "Head",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/ranger-helmet"
-    }
+    "texture": { "base": "lotr:item/ranger-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/ranger-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

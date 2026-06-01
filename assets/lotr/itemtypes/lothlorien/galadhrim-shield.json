@@ -1,5 +1,5 @@
-﻿{
-  "code": "galadhrim-shield",
+{
+  "code": "lotr:galadhrim-shield",
   "class": "Item",
   "durability": 1500,
   "attributes": {

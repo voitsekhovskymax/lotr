@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-shield",
+{
+  "code": "lotr:wood-elf-shield",
   "class": "Item",
   "durability": 1500,
   "attributes": {

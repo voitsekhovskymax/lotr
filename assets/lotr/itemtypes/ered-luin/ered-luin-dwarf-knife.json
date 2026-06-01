@@ -1,5 +1,5 @@
-﻿{
-  "code": "ered-luin-dwarf-knife",
+{
+  "code": "lotr:ered-luin-dwarf-knife",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "knife",

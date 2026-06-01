@@ -1,5 +1,5 @@
-﻿{
-  "code": "gundabad-orc-sword",
+{
+  "code": "lotr:gundabad-orc-sword",
   "class": "ItemTool",
   "durability": 500,
   "tool": "sword",

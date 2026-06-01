@@ -1,5 +1,5 @@
-﻿{
-  "code": "gundabad-orc-shovel",
+{
+  "code": "lotr:gundabad-orc-shovel",
   "class": "ItemTool",
   "durability": 400,
   "tool": "shovel",

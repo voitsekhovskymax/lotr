@@ -1,5 +1,5 @@
-﻿{
-  "code": "isengard-uruk-saw",
+{
+  "code": "lotr:isengard-uruk-saw",
   "class": "ItemTool",
   "durability": 400,
   "tool": "saw",

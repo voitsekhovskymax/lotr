@@ -1,5 +1,5 @@
-﻿{
-  "code": "dale-shield",
+{
+  "code": "lotr:dale-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

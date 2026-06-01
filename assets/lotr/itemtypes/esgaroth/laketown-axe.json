@@ -1,5 +1,5 @@
-﻿{
-  "code": "laketown-axe",
+{
+  "code": "lotr:laketown-axe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "axe",

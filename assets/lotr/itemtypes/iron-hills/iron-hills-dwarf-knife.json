@@ -1,5 +1,5 @@
-﻿{
-  "code": "iron-hills-dwarf-knife",
+{
+  "code": "lotr:iron-hills-dwarf-knife",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "knife",

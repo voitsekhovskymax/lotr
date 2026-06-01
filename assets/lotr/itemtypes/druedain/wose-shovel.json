@@ -1,5 +1,5 @@
-﻿{
-  "code": "wose-shovel",
+{
+  "code": "lotr:wose-shovel",
   "class": "ItemTool",
   "durability": 300,
   "tool": "shovel",

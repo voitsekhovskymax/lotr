@@ -1,0 +1,14 @@
+{
+  "class": "Block",
+  "code": "lotr:block-mithril",
+  "drawtype": "Cube",
+  "material": "Metal",
+  "blockmaterial": "Metal",
+  "resistance": 30,
+  "lightAbsorption": 99,
+  "sidessolid": { "all": true },
+  "sidesopaque": { "all": true },
+  "textures": { "all": { "base": "lotr:block/block-mithril" } },
+  "sounds": { "place": "game:place/stone", "break": "game:break/stone", "walk": "game:walk/stone" },
+  "creativeinventory": { "lotr-blocks": ["*"] }
+}

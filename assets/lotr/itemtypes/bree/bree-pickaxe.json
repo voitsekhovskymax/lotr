@@ -1,5 +1,5 @@
-﻿{
-  "code": "bree-pickaxe",
+{
+  "code": "lotr:bree-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

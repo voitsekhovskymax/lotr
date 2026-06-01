@@ -1,5 +1,5 @@
-﻿{
-  "code": "dunlending-pickaxe",
+{
+  "code": "lotr:dunlending-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

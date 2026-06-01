@@ -1,5 +1,5 @@
-﻿{
-  "code": "laketown-shield",
+{
+  "code": "lotr:laketown-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

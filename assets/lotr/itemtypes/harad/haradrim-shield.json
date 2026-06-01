@@ -1,5 +1,5 @@
-﻿{
-  "code": "haradrim-shield",
+{
+  "code": "lotr:haradrim-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

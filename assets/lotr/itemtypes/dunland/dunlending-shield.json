@@ -1,5 +1,5 @@
-﻿{
-  "code": "dunlending-shield",
+{
+  "code": "lotr:dunlending-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

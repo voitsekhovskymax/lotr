@@ -1,5 +1,5 @@
-﻿{
-  "code": "half-orc-knife",
+{
+  "code": "lotr:half-orc-knife",
   "class": "ItemTool",
   "durability": 400,
   "tool": "knife",

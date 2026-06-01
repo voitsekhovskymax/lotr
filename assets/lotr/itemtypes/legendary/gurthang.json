@@ -1,5 +1,5 @@
-﻿{
-  "code": "gurthang",
+{
+  "code": "lotr:gurthang",
   "class": "ItemTool",
   "durability": 4500,
   "tool": "sword",

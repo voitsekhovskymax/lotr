@@ -1,5 +1,5 @@
-﻿{
-  "code": "beorning-pickaxe",
+{
+  "code": "lotr:beorning-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

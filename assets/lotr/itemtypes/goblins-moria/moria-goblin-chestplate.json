@@ -1,27 +1,15 @@
-﻿{
-  "code": "moria-goblin-chestplate",
-  "class": "ItemArmor",
-  "durability": 1000,
+{
+  "code": "lotr:moria-goblin-chestplate",
+  "class": "Item",
+  "durability": 500,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.46,
-    "statModifiers": {
-      "walkspeed": -0.02
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/moria-goblin-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/moria-goblin-chestplate"
-    }
+    "texture": { "base": "lotr:item/moria-goblin-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/moria-goblin-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,0 +1,14 @@
+{
+  "class": "Block",
+  "code": "lotr:stone-moria",
+  "drawtype": "Cube",
+  "material": "Stone",
+  "blockmaterial": "Stone",
+  "resistance": 14,
+  "lightAbsorption": 99,
+  "sidessolid": { "all": true },
+  "sidesopaque": { "all": true },
+  "textures": { "all": { "base": "lotr:block/stone-moria" } },
+  "sounds": { "place": "game:place/stone", "break": "game:break/stone", "walk": "game:walk/stone" },
+  "creativeinventory": { "lotr-blocks": ["*"] }
+}

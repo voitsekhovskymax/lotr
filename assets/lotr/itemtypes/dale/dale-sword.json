@@ -1,5 +1,5 @@
-﻿{
-  "code": "dale-sword",
+{
+  "code": "lotr:dale-sword",
   "class": "ItemTool",
   "durability": 1600,
   "tool": "sword",

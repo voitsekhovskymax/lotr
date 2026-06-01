@@ -1,5 +1,5 @@
-﻿{
-  "code": "aeglos",
+{
+  "code": "lotr:aeglos",
   "class": "ItemTool",
   "durability": 3800,
   "tool": "sword",

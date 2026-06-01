@@ -1,27 +1,15 @@
-﻿{
-  "code": "wose-greaves",
-  "class": "ItemArmor",
-  "durability": 350,
+{
+  "code": "lotr:wose-greaves",
+  "class": "Item",
+  "durability": 480,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.08,
-    "statModifiers": {
-      "walkspeed": 0.01
-    },
-    "tooltier": 1
-  },
-  "shape": {
-    "base": "lotr:item/wose-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 4,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/wose-greaves"
-    }
+    "texture": { "base": "lotr:item/wose-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/wose-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

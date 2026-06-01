@@ -1,8 +1,8 @@
-﻿{
-  "code": "shire-grass",
+{
+  "code": "lotr:shire-grass",
   "variantgroups": [
     {
-      "code": "type",
+      "code": "lotr:type",
       "states": [
         "default"
       ]

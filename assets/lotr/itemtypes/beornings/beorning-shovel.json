@@ -1,5 +1,5 @@
-﻿{
-  "code": "beorning-shovel",
+{
+  "code": "lotr:beorning-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

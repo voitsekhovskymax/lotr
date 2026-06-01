@@ -1,27 +1,15 @@
-﻿{
-  "code": "dunlending-chestplate",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:dunlending-chestplate",
+  "class": "Item",
+  "durability": 700,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.45,
-    "statModifiers": {
-      "walkspeed": -0.015
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/dunlending-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 6,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/dunlending-chestplate"
-    }
+    "texture": { "base": "lotr:item/dunlending-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/dunlending-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

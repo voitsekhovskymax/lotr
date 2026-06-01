@@ -1,27 +1,15 @@
-﻿{
-  "code": "bree-helmet",
-  "class": "ItemArmor",
-  "durability": 1000,
+{
+  "code": "lotr:bree-helmet",
+  "class": "Item",
+  "durability": 560,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.12,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/bree-helmet"
+    "clothescategory": "Head",
+    "protection": 4,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/bree-helmet"
-    }
+    "texture": { "base": "lotr:item/bree-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/bree-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

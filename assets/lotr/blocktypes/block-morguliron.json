@@ -1,0 +1,14 @@
+{
+  "class": "Block",
+  "code": "lotr:block-morguliron",
+  "drawtype": "Cube",
+  "material": "Metal",
+  "blockmaterial": "Metal",
+  "resistance": 20,
+  "lightAbsorption": 99,
+  "sidessolid": { "all": true },
+  "sidesopaque": { "all": true },
+  "textures": { "all": { "base": "lotr:block/block-morguliron" } },
+  "sounds": { "place": "game:place/stone", "break": "game:break/stone", "walk": "game:walk/stone" },
+  "creativeinventory": { "lotr-blocks": ["*"] }
+}

@@ -1,5 +1,5 @@
-﻿{
-  "code": "easterling-knife",
+{
+  "code": "lotr:easterling-knife",
   "class": "ItemTool",
   "durability": 800,
   "tool": "knife",

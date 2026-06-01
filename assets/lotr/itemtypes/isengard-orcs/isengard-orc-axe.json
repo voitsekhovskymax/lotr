@@ -1,5 +1,5 @@
-﻿{
-  "code": "isengard-orc-axe",
+{
+  "code": "lotr:isengard-orc-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

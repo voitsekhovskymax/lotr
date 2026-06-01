@@ -1,27 +1,15 @@
-﻿{
-  "code": "angmar-orc-greaves",
-  "class": "ItemArmor",
-  "durability": 700,
+{
+  "code": "lotr:angmar-orc-greaves",
+  "class": "Item",
+  "durability": 720,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.26,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/angmar-orc-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 6,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/angmar-orc-greaves"
-    }
+    "texture": { "base": "lotr:item/angmar-orc-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/angmar-orc-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,27 +1,15 @@
-﻿{
-  "code": "isengard-orc-chestplate",
-  "class": "ItemArmor",
-  "durability": 1000,
+{
+  "code": "lotr:isengard-orc-chestplate",
+  "class": "Item",
+  "durability": 900,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.46,
-    "statModifiers": {
-      "walkspeed": -0.02
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/isengard-orc-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 8,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/isengard-orc-chestplate"
-    }
+    "texture": { "base": "lotr:item/isengard-orc-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/isengard-orc-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

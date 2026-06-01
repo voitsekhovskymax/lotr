@@ -1,5 +1,5 @@
-﻿{
-  "code": "wose-pickaxe",
+{
+  "code": "lotr:wose-pickaxe",
   "class": "ItemTool",
   "durability": 300,
   "tool": "pickaxe",

@@ -1,5 +1,5 @@
-﻿{
-  "code": "orcrist",
+{
+  "code": "lotr:orcrist",
   "class": "ItemTool",
   "durability": 4000,
   "tool": "sword",

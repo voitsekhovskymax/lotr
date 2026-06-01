@@ -1,5 +1,5 @@
-﻿{
-  "code": "iron-hills-dwarf-saw",
+{
+  "code": "lotr:iron-hills-dwarf-saw",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "saw",

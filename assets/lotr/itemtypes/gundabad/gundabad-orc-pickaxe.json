@@ -1,5 +1,5 @@
-﻿{
-  "code": "gundabad-orc-pickaxe",
+{
+  "code": "lotr:gundabad-orc-pickaxe",
   "class": "ItemTool",
   "durability": 400,
   "tool": "pickaxe",

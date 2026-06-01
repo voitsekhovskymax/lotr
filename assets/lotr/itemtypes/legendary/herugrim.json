@@ -1,5 +1,5 @@
-﻿{
-  "code": "herugrim",
+{
+  "code": "lotr:herugrim",
   "class": "ItemTool",
   "durability": 3200,
   "tool": "sword",

@@ -1,27 +1,15 @@
-﻿{
-  "code": "gondorian-greaves",
-  "class": "ItemArmor",
-  "durability": 1400,
+{
+  "code": "lotr:gondorian-greaves",
+  "class": "Item",
+  "durability": 1440,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.25,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/gondorian-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 10,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/gondorian-greaves"
-    }
+    "texture": { "base": "lotr:item/gondorian-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/gondorian-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

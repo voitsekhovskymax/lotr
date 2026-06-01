@@ -1,5 +1,5 @@
-﻿{
-  "code": "dunlending-sword",
+{
+  "code": "lotr:dunlending-sword",
   "class": "ItemTool",
   "durability": 1600,
   "tool": "sword",

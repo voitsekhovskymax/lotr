@@ -1,5 +1,5 @@
-﻿{
-  "code": "erebor-dwarf-axe",
+{
+  "code": "lotr:erebor-dwarf-axe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "axe",

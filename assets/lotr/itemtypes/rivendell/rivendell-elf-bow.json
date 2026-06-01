@@ -1,5 +1,5 @@
-﻿{
-  "code": "rivendell-elf-bow",
+{
+  "code": "lotr:rivendell-elf-bow",
   "class": "Item",
   "durability": 1500,
   "attributes": {

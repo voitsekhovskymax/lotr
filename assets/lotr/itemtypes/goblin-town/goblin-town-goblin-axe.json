@@ -1,5 +1,5 @@
-﻿{
-  "code": "goblin-town-goblin-axe",
+{
+  "code": "lotr:goblin-town-goblin-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

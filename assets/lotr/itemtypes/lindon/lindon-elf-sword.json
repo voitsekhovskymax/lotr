@@ -1,5 +1,5 @@
-﻿{
-  "code": "lindon-elf-sword",
+{
+  "code": "lotr:lindon-elf-sword",
   "class": "ItemTool",
   "durability": 1500,
   "tool": "sword",

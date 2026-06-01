@@ -1,5 +1,5 @@
-﻿{
-  "code": "laketown-saw",
+{
+  "code": "lotr:laketown-saw",
   "class": "ItemTool",
   "durability": 800,
   "tool": "saw",

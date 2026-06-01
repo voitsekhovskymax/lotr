@@ -1,27 +1,15 @@
-﻿{
-  "code": "bree-chestplate",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:bree-chestplate",
+  "class": "Item",
+  "durability": 800,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.45,
-    "statModifiers": {
-      "walkspeed": -0.015
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/bree-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 7,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/bree-chestplate"
-    }
+    "texture": { "base": "lotr:item/bree-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/bree-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

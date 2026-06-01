@@ -1,5 +1,5 @@
-﻿{
-  "code": "mordor-orc-shield",
+{
+  "code": "lotr:mordor-orc-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

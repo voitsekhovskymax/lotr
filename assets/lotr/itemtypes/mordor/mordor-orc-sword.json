@@ -1,5 +1,5 @@
-﻿{
-  "code": "mordor-orc-sword",
+{
+  "code": "lotr:mordor-orc-sword",
   "class": "ItemTool",
   "durability": 500,
   "tool": "sword",

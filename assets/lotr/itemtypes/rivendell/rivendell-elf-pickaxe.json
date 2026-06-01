@@ -1,5 +1,5 @@
-﻿{
-  "code": "rivendell-elf-pickaxe",
+{
+  "code": "lotr:rivendell-elf-pickaxe",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "pickaxe",

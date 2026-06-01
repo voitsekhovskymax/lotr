@@ -1,27 +1,15 @@
-﻿{
-  "code": "wood-elf-helmet",
-  "class": "ItemArmor",
-  "durability": 1200,
+{
+  "code": "lotr:wood-elf-helmet",
+  "class": "Item",
+  "durability": 980,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.1,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/wood-elf-helmet"
+    "clothescategory": "Head",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/wood-elf-helmet"
-    }
+    "texture": { "base": "lotr:item/wood-elf-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/wood-elf-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

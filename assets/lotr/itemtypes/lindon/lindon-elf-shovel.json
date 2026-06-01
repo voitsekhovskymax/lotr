@@ -1,5 +1,5 @@
-﻿{
-  "code": "lindon-elf-shovel",
+{
+  "code": "lotr:lindon-elf-shovel",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "shovel",

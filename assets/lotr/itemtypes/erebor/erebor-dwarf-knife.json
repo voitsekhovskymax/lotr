@@ -1,5 +1,5 @@
-﻿{
-  "code": "erebor-dwarf-knife",
+{
+  "code": "lotr:erebor-dwarf-knife",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "knife",

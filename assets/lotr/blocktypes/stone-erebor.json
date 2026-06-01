@@ -1,0 +1,14 @@
+{
+  "class": "Block",
+  "code": "lotr:stone-erebor",
+  "drawtype": "Cube",
+  "material": "Stone",
+  "blockmaterial": "Stone",
+  "resistance": 16,
+  "lightAbsorption": 99,
+  "sidessolid": { "all": true },
+  "sidesopaque": { "all": true },
+  "textures": { "all": { "base": "lotr:block/stone-erebor" } },
+  "sounds": { "place": "game:place/stone", "break": "game:break/stone", "walk": "game:walk/stone" },
+  "creativeinventory": { "lotr-blocks": ["*"] }
+}

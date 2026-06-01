@@ -1,27 +1,15 @@
-﻿{
-  "code": "half-orc-greaves",
-  "class": "ItemArmor",
-  "durability": 700,
+{
+  "code": "lotr:half-orc-greaves",
+  "class": "Item",
+  "durability": 640,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.26,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/half-orc-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/half-orc-greaves"
-    }
+    "texture": { "base": "lotr:item/half-orc-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/half-orc-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,27 +1,15 @@
-﻿{
-  "code": "gundabad-orc-chestplate",
-  "class": "ItemArmor",
+{
+  "code": "lotr:gundabad-orc-chestplate",
+  "class": "Item",
   "durability": 1000,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.46,
-    "statModifiers": {
-      "walkspeed": -0.02
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/gundabad-orc-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 9,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/gundabad-orc-chestplate"
-    }
+    "texture": { "base": "lotr:item/gundabad-orc-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/gundabad-orc-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

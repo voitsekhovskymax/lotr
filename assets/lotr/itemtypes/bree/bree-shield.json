@@ -1,5 +1,5 @@
-﻿{
-  "code": "bree-shield",
+{
+  "code": "lotr:bree-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

@@ -1,5 +1,5 @@
-﻿{
-  "code": "easterling-pickaxe",
+{
+  "code": "lotr:easterling-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

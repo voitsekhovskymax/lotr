@@ -1,27 +1,15 @@
-﻿{
-  "code": "lindon-elf-greaves",
-  "class": "ItemArmor",
-  "durability": 1600,
+{
+  "code": "lotr:lindon-elf-greaves",
+  "class": "Item",
+  "durability": 1200,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.2,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/lindon-elf-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 8,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/lindon-elf-greaves"
-    }
+    "texture": { "base": "lotr:item/lindon-elf-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/lindon-elf-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

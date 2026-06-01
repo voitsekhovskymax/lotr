@@ -1,5 +1,5 @@
-﻿{
-  "code": "rivendell-elf-shovel",
+{
+  "code": "lotr:rivendell-elf-shovel",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "shovel",

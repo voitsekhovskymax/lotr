@@ -1,5 +1,5 @@
-﻿{
-  "code": "shire-shield",
+{
+  "code": "lotr:shire-shield",
   "class": "Item",
   "durability": 200,
   "attributes": {

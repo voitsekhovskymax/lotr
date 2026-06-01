@@ -1,5 +1,5 @@
-﻿{
-  "code": "glamdring",
+{
+  "code": "lotr:glamdring",
   "class": "ItemTool",
   "durability": 4000,
   "tool": "sword",

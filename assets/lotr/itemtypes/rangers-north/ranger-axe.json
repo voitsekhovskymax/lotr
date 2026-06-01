@@ -1,5 +1,5 @@
-﻿{
-  "code": "ranger-axe",
+{
+  "code": "lotr:ranger-axe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "axe",

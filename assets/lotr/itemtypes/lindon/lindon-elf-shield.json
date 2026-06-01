@@ -1,5 +1,5 @@
-﻿{
-  "code": "lindon-elf-shield",
+{
+  "code": "lotr:lindon-elf-shield",
   "class": "Item",
   "durability": 1500,
   "attributes": {

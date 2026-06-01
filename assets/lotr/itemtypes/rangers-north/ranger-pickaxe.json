@@ -1,5 +1,5 @@
-﻿{
-  "code": "ranger-pickaxe",
+{
+  "code": "lotr:ranger-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

@@ -1,27 +1,15 @@
-﻿{
-  "code": "iron-hills-dwarf-chestplate",
-  "class": "ItemArmor",
-  "durability": 3000,
+{
+  "code": "lotr:iron-hills-dwarf-chestplate",
+  "class": "Item",
+  "durability": 2000,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.55,
-    "statModifiers": {
-      "walkspeed": -0.03
-    },
-    "tooltier": 4
-  },
-  "shape": {
-    "base": "lotr:item/iron-hills-dwarf-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 15,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/iron-hills-dwarf-chestplate"
-    }
+    "texture": { "base": "lotr:item/iron-hills-dwarf-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/iron-hills-dwarf-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

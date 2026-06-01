@@ -1,27 +1,15 @@
-﻿{
-  "code": "rivendell-elf-greaves",
-  "class": "ItemArmor",
-  "durability": 1600,
+{
+  "code": "lotr:rivendell-elf-greaves",
+  "class": "Item",
+  "durability": 1280,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.2,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/rivendell-elf-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 8,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/rivendell-elf-greaves"
-    }
+    "texture": { "base": "lotr:item/rivendell-elf-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/rivendell-elf-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

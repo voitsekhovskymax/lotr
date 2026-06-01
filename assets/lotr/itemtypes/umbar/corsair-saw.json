@@ -1,5 +1,5 @@
-﻿{
-  "code": "corsair-saw",
+{
+  "code": "lotr:corsair-saw",
   "class": "ItemTool",
   "durability": 800,
   "tool": "saw",

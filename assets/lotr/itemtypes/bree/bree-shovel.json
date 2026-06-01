@@ -1,5 +1,5 @@
-﻿{
-  "code": "bree-shovel",
+{
+  "code": "lotr:bree-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

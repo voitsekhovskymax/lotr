@@ -1,4 +1,4 @@
-﻿{
+{
   "class": "Block",
   "sounds": {
     "place": "game:place/stone",
@@ -8,7 +8,7 @@
   "sidessolid": {
     "all": true
   },
-  "code": "ore-morguliron",
+  "code": "lotr:ore-morguliron",
   "replaceable": 0,
   "lightAbsorption": 99,
   "drawtype": "Cube",

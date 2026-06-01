@@ -1,5 +1,5 @@
-﻿{
-  "code": "half-orc-axe",
+{
+  "code": "lotr:half-orc-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

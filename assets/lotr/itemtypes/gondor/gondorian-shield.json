@@ -1,5 +1,5 @@
-﻿{
-  "code": "gondorian-shield",
+{
+  "code": "lotr:gondorian-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

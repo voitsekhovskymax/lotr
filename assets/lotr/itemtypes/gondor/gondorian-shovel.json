@@ -1,5 +1,5 @@
-﻿{
-  "code": "gondorian-shovel",
+{
+  "code": "lotr:gondorian-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

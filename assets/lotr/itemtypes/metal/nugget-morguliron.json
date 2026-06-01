@@ -1,5 +1,5 @@
 {
-  "code": "nugget-morguliron",
+  "code": "lotr:nugget-morguliron",
   "class": "Item",
   "maxstacksize": 64,
   "textures": {

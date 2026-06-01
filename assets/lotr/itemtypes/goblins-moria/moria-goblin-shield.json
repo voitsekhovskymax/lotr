@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-goblin-shield",
+{
+  "code": "lotr:moria-goblin-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

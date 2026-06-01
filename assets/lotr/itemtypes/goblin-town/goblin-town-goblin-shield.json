@@ -1,5 +1,5 @@
-﻿{
-  "code": "goblin-town-goblin-shield",
+{
+  "code": "lotr:goblin-town-goblin-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

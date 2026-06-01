@@ -1,5 +1,5 @@
 {
-  "code": "ingot-dwarvensteel",
+  "code": "lotr:ingot-dwarvensteel",
   "class": "Item",
   "maxstacksize": 64,
   "textures": {

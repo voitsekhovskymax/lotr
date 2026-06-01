@@ -1,5 +1,5 @@
-﻿{
-  "code": "erebor-dwarf-shovel",
+{
+  "code": "lotr:erebor-dwarf-shovel",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "shovel",

@@ -1,5 +1,5 @@
-﻿{
-  "code": "gondorian-sword",
+{
+  "code": "lotr:gondorian-sword",
   "class": "ItemTool",
   "durability": 1600,
   "tool": "sword",

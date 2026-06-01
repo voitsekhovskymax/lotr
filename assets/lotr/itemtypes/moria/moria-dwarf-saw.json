@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-dwarf-saw",
+{
+  "code": "lotr:moria-dwarf-saw",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "saw",

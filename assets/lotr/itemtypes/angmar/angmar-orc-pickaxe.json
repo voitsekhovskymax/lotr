@@ -1,5 +1,5 @@
-﻿{
-  "code": "angmar-orc-pickaxe",
+{
+  "code": "lotr:angmar-orc-pickaxe",
   "class": "ItemTool",
   "durability": 400,
   "tool": "pickaxe",

@@ -1,5 +1,5 @@
-﻿{
-  "code": "lembas",
+{
+  "code": "lotr:lembas",
   "class": "ItemLembas",
   "maxstacksize": 16,
   "durability": 1,

@@ -1,27 +1,15 @@
-﻿{
-  "code": "rivendell-elf-helmet",
-  "class": "ItemArmor",
-  "durability": 1200,
+{
+  "code": "lotr:rivendell-elf-helmet",
+  "class": "Item",
+  "durability": 1120,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.1,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/rivendell-elf-helmet"
+    "clothescategory": "Head",
+    "protection": 6,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/rivendell-elf-helmet"
-    }
+    "texture": { "base": "lotr:item/rivendell-elf-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/rivendell-elf-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

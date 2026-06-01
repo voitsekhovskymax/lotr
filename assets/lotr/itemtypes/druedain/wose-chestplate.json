@@ -1,27 +1,15 @@
-﻿{
-  "code": "wose-chestplate",
-  "class": "ItemArmor",
-  "durability": 500,
+{
+  "code": "lotr:wose-chestplate",
+  "class": "Item",
+  "durability": 600,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.15,
-    "statModifiers": {
-      "walkspeed": 0.01
-    },
-    "tooltier": 1
-  },
-  "shape": {
-    "base": "lotr:item/wose-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 5,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/wose-chestplate"
-    }
+    "texture": { "base": "lotr:item/wose-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/wose-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

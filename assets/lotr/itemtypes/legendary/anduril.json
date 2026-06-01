@@ -1,5 +1,5 @@
-﻿{
-  "code": "anduril",
+{
+  "code": "lotr:anduril",
   "class": "ItemTool",
   "durability": 5000,
   "tool": "sword",

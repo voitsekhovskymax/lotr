@@ -1,5 +1,5 @@
-﻿{
-  "code": "galadhrim-shovel",
+{
+  "code": "lotr:galadhrim-shovel",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "shovel",

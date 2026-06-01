@@ -1,27 +1,15 @@
-﻿{
-  "code": "isengard-orc-greaves",
-  "class": "ItemArmor",
-  "durability": 700,
+{
+  "code": "lotr:isengard-orc-greaves",
+  "class": "Item",
+  "durability": 720,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.26,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/isengard-orc-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 6,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/isengard-orc-greaves"
-    }
+    "texture": { "base": "lotr:item/isengard-orc-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/isengard-orc-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

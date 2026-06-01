@@ -1,5 +1,5 @@
-﻿{
-  "code": "angmar-orc-shield",
+{
+  "code": "lotr:angmar-orc-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

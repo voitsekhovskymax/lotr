@@ -1,5 +1,5 @@
-﻿{
-  "code": "rohirrim-shovel",
+{
+  "code": "lotr:rohirrim-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

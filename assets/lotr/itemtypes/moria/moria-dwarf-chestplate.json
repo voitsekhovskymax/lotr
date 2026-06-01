@@ -1,27 +1,15 @@
-﻿{
-  "code": "moria-dwarf-chestplate",
-  "class": "ItemArmor",
-  "durability": 3000,
+{
+  "code": "lotr:moria-dwarf-chestplate",
+  "class": "Item",
+  "durability": 1600,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.55,
-    "statModifiers": {
-      "walkspeed": -0.03
-    },
-    "tooltier": 4
-  },
-  "shape": {
-    "base": "lotr:item/moria-dwarf-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 12,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/moria-dwarf-chestplate"
-    }
+    "texture": { "base": "lotr:item/moria-dwarf-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/moria-dwarf-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

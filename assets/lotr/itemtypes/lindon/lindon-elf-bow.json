@@ -1,5 +1,5 @@
-﻿{
-  "code": "lindon-elf-bow",
+{
+  "code": "lotr:lindon-elf-bow",
   "class": "Item",
   "durability": 1500,
   "attributes": {

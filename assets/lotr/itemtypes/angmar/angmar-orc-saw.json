@@ -1,5 +1,5 @@
-﻿{
-  "code": "angmar-orc-saw",
+{
+  "code": "lotr:angmar-orc-saw",
   "class": "ItemTool",
   "durability": 400,
   "tool": "saw",

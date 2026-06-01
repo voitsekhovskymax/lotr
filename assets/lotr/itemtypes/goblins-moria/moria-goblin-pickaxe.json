@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-goblin-pickaxe",
+{
+  "code": "lotr:moria-goblin-pickaxe",
   "class": "ItemTool",
   "durability": 400,
   "tool": "pickaxe",

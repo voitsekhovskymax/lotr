@@ -1,27 +1,15 @@
-﻿{
-  "code": "lindon-elf-chestplate",
-  "class": "ItemArmor",
-  "durability": 2400,
+{
+  "code": "lotr:lindon-elf-chestplate",
+  "class": "Item",
+  "durability": 1500,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.4,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/lindon-elf-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 11,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/lindon-elf-chestplate"
-    }
+    "texture": { "base": "lotr:item/lindon-elf-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/lindon-elf-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

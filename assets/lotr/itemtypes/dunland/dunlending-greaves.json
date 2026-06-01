@@ -1,27 +1,15 @@
-﻿{
-  "code": "dunlending-greaves",
-  "class": "ItemArmor",
-  "durability": 1400,
+{
+  "code": "lotr:dunlending-greaves",
+  "class": "Item",
+  "durability": 560,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.25,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/dunlending-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 4,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/dunlending-greaves"
-    }
+    "texture": { "base": "lotr:item/dunlending-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/dunlending-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,5 +1,5 @@
-﻿{
-  "code": "shire-knife",
+{
+  "code": "lotr:shire-knife",
   "class": "ItemTool",
   "durability": 120,
   "tool": "knife",

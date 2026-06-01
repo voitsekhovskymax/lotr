@@ -1,5 +1,5 @@
-﻿{
-  "code": "ered-luin-dwarf-pickaxe",
+{
+  "code": "lotr:ered-luin-dwarf-pickaxe",
   "class": "ItemTool",
   "durability": 2500,
   "tool": "pickaxe",

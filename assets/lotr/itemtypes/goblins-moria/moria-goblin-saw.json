@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-goblin-saw",
+{
+  "code": "lotr:moria-goblin-saw",
   "class": "ItemTool",
   "durability": 400,
   "tool": "saw",

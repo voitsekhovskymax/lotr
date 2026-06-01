@@ -1,5 +1,5 @@
-﻿{
-  "code": "laketown-shovel",
+{
+  "code": "lotr:laketown-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

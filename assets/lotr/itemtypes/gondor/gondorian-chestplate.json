@@ -1,27 +1,15 @@
-﻿{
-  "code": "gondorian-chestplate",
-  "class": "ItemArmor",
-  "durability": 2000,
+{
+  "code": "lotr:gondorian-chestplate",
+  "class": "Item",
+  "durability": 1800,
   "attributes": {
-    "clippingReference": "chestplate",
-    "wearableAttachment": "body",
-    "protectionModifier": 0.45,
-    "statModifiers": {
-      "walkspeed": -0.015
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/gondorian-chestplate"
+    "clothescategory": "UpperBody",
+    "protection": 14,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/gondorian-chestplate"
-    }
+    "texture": { "base": "lotr:item/gondorian-chestplate" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/gondorian-chestplate" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

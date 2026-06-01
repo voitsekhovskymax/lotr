@@ -1,5 +1,5 @@
-﻿{
-  "code": "ranger-sword",
+{
+  "code": "lotr:ranger-sword",
   "class": "ItemTool",
   "durability": 1600,
   "tool": "sword",

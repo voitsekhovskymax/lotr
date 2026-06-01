@@ -1,5 +1,5 @@
-﻿{
-  "code": "durin-axe",
+{
+  "code": "lotr:durin-axe",
   "class": "ItemTool",
   "durability": 6000,
   "tool": "axe",

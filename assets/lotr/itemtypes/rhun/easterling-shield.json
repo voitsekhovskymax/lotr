@@ -1,5 +1,5 @@
-﻿{
-  "code": "easterling-shield",
+{
+  "code": "lotr:easterling-shield",
   "class": "Item",
   "durability": 2000,
   "attributes": {

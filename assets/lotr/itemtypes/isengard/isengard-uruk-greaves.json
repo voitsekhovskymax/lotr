@@ -1,27 +1,15 @@
-﻿{
-  "code": "isengard-uruk-greaves",
-  "class": "ItemArmor",
-  "durability": 700,
+{
+  "code": "lotr:isengard-uruk-greaves",
+  "class": "Item",
+  "durability": 1120,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.26,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/isengard-uruk-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 9,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/isengard-uruk-greaves"
-    }
+    "texture": { "base": "lotr:item/isengard-uruk-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/isengard-uruk-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

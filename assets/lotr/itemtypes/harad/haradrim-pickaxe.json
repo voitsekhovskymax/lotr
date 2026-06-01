@@ -1,5 +1,5 @@
-﻿{
-  "code": "haradrim-pickaxe",
+{
+  "code": "lotr:haradrim-pickaxe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "pickaxe",

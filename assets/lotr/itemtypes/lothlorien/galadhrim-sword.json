@@ -1,5 +1,5 @@
-﻿{
-  "code": "galadhrim-sword",
+{
+  "code": "lotr:galadhrim-sword",
   "class": "ItemTool",
   "durability": 1500,
   "tool": "sword",

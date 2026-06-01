@@ -1,27 +1,15 @@
-﻿{
-  "code": "galadhrim-greaves",
-  "class": "ItemArmor",
-  "durability": 1600,
+{
+  "code": "lotr:galadhrim-greaves",
+  "class": "Item",
+  "durability": 1280,
   "attributes": {
-    "clippingReference": "greaves",
-    "wearableAttachment": "legs",
-    "protectionModifier": 0.2,
-    "statModifiers": {
-      "walkspeed": 0.0
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/galadhrim-greaves"
+    "clothescategory": "LowerBody",
+    "protection": 9,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/galadhrim-greaves"
-    }
+    "texture": { "base": "lotr:item/galadhrim-greaves" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/galadhrim-greaves" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

@@ -1,27 +1,15 @@
-﻿{
-  "code": "dunlending-helmet",
-  "class": "ItemArmor",
-  "durability": 1000,
+{
+  "code": "lotr:dunlending-helmet",
+  "class": "Item",
+  "durability": 490,
   "attributes": {
-    "clippingReference": "helmet",
-    "wearableAttachment": "head",
-    "protectionModifier": 0.12,
-    "statModifiers": {
-      "walkspeed": -0.01
-    },
-    "tooltier": 3
-  },
-  "shape": {
-    "base": "lotr:item/dunlending-helmet"
+    "clothescategory": "Head",
+    "protection": 3,
+    "weightMul": 1.0
   },
   "textures": {
-    "texture": {
-      "base": "lotr:item/dunlending-helmet"
-    }
+    "texture": { "base": "lotr:item/dunlending-helmet" }
   },
-  "creativeinventory": {
-    "lotr-items": [
-      "*"
-    ]
-  }
+  "shape": { "base": "lotr:item/dunlending-helmet" },
+  "creativeinventory": { "lotr-items": ["*"] }
 }

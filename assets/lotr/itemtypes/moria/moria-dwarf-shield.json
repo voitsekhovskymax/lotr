@@ -1,5 +1,5 @@
-﻿{
-  "code": "moria-dwarf-shield",
+{
+  "code": "lotr:moria-dwarf-shield",
   "class": "Item",
   "durability": 3000,
   "attributes": {

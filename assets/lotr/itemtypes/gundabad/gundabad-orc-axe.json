@@ -1,5 +1,5 @@
-﻿{
-  "code": "gundabad-orc-axe",
+{
+  "code": "lotr:gundabad-orc-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

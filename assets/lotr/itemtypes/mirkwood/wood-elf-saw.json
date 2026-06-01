@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-saw",
+{
+  "code": "lotr:wood-elf-saw",
   "class": "ItemTool",
   "durability": 1200,
   "tool": "saw",

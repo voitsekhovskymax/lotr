@@ -1,5 +1,5 @@
-﻿{
-  "code": "ranger-shovel",
+{
+  "code": "lotr:ranger-shovel",
   "class": "ItemTool",
   "durability": 800,
   "tool": "shovel",

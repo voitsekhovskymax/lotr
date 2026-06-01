@@ -1,5 +1,5 @@
-﻿{
-  "code": "wose-shield",
+{
+  "code": "lotr:wose-shield",
   "class": "Item",
   "durability": 200,
   "attributes": {

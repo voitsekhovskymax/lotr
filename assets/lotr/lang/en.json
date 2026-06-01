@@ -116,9 +116,17 @@
   "lotr:ingot-dwarvensteel": "Dwarven Steel Ingot",
 
   "lotr:shire-grass-default": "Shire Grass",
+  "lotr:grass-shire": "Shire Grass",
+  "lotr:grass-mordor": "Mordor Ash Grass",
   "lotr:stone-gondor": "Gondor Stone",
   "lotr:stone-mordor": "Mordor Stone",
   "lotr:stone-orthanc": "Orthanc Stone",
+  "lotr:stone-rivendell": "Rivendell Stone",
+  "lotr:stone-moria": "Moria Stone",
+  "lotr:stone-rohan": "Rohan Stone",
+  "lotr:stone-erebor": "Erebor Stone",
+  "lotr:block-mithril": "Mithril Block",
+  "lotr:block-morguliron": "Morguliron Block",
 
   "lotr:sting": "Sting",
   "lotr:anduril": "Andúril — Flame of the West",

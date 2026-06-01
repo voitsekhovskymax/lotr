@@ -1,5 +1,5 @@
-﻿{
-  "code": "gundabad-orc-shield",
+{
+  "code": "lotr:gundabad-orc-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

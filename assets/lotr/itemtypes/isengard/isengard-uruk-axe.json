@@ -1,5 +1,5 @@
-﻿{
-  "code": "isengard-uruk-axe",
+{
+  "code": "lotr:isengard-uruk-axe",
   "class": "ItemTool",
   "durability": 450,
   "tool": "axe",

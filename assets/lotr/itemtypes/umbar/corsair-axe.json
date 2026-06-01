@@ -1,5 +1,5 @@
-﻿{
-  "code": "corsair-axe",
+{
+  "code": "lotr:corsair-axe",
   "class": "ItemTool",
   "durability": 1000,
   "tool": "axe",

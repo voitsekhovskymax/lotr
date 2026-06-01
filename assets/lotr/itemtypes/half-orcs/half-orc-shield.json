@@ -1,5 +1,5 @@
-﻿{
-  "code": "half-orc-shield",
+{
+  "code": "lotr:half-orc-shield",
   "class": "Item",
   "durability": 600,
   "attributes": {

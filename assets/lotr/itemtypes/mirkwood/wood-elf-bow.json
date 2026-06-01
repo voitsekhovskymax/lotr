@@ -1,5 +1,5 @@
-﻿{
-  "code": "wood-elf-bow",
+{
+  "code": "lotr:wood-elf-bow",
   "class": "Item",
   "durability": 1500,
   "attributes": {

@@ -1,7 +1,9 @@
-using Vintagestory.API.Common;
-using Vintagestory.API.Common.Entities;
+using Lotr.Entities;
 
 namespace Lotr.Entities.Humanoids;
 
-/// <summary>Base class for Elven NPCs (Legolas, Galadriel, etc.)</summary>
-public class EntityElf : EntityAgent { }
+/// <summary>
+/// Base class for Elven NPCs: Legolas, Galadriel, Rivendell Elf, Galadhrim, Wood Elf, Lindon Elf.
+/// Hitbox x:0.55 y:2.1, eyeHeight 1.95.
+/// </summary>
+public class EntityElf : EntityRaceBase { }

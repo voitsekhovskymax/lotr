@@ -5,6 +5,7 @@ using Lotr.Factions;
 using Lotr.Items;
 using Lotr.Quests;
 using Lotr.Regions;
+using Lotr.Utilities;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.API.Client;
@@ -22,12 +23,13 @@ public class LotrModSystem : ModSystem
         base.Start(api);
         api.Logger.Notification($"{LotrConstants.LogPrefix} Initializing Middle-earth...");
 
-        // Entity classes
+        // Entity classes — register all races here as they are implemented
         api.RegisterEntity("EntityHobbit",  typeof(EntityHobbit));
         api.RegisterEntity("EntityHuman",   typeof(EntityHuman));
         api.RegisterEntity("EntityElf",     typeof(EntityElf));
         api.RegisterEntity("EntityDwarf",   typeof(EntityDwarf));
         api.RegisterEntity("EntityGandalf", typeof(EntityGandalf));
+        api.RegisterEntity("EntityOrc",     typeof(EntityOrc));
 
         // Item classes
         api.RegisterItemClass("ItemLembas", typeof(ItemLembas));
@@ -44,6 +46,8 @@ public class LotrModSystem : ModSystem
         Quests.LoadQuests();
         Regions   = new RegionSystem(api);
         Regions.Load();
+
+        new EntityAssetValidator(api).ValidateAll();
 
         // DefaultSpawnPosition is NOT available at SaveGameLoaded — use PlayerJoin instead
         api.Event.PlayerJoin += p =>
@@ -246,6 +250,7 @@ public class LotrModSystem : ModSystem
 
     public override void Dispose()
     {
+        EntityModelCache.Clear();
         base.Dispose();
     }
 }

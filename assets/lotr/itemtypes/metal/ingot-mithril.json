@@ -1,15 +1,17 @@
-﻿{
-    "creativeInventory":  {
-                              "lotr":  [
-                                           "*"
-                                       ]
-                          },
-    "code":  "ingot-mithril",
-    "textures":  {
-                     "all":  {
-                                 "base":  "game:item/resource/ingot"
-                             }
-                 },
-    "class":  "Item",
-    "maxstacksize":  64
+{
+  "code": "ingot-mithril",
+  "class": "Item",
+  "maxstacksize": 64,
+  "textures": {
+    "all": { "base": "game:item/resource/ingot" }
+  },
+  "combustibleProps": {
+    "meltingPoint": 1800,
+    "meltingDuration": 30,
+    "smeltedRatio": 1,
+    "smeltedStack": { "type": "item", "code": "lotr:ingot-mithril", "quantity": 1 }
+  },
+  "creativeInventory": {
+    "lotr": [ "*" ]
+  }
 }

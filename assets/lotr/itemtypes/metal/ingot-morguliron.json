@@ -1,15 +1,17 @@
-﻿{
-    "creativeInventory":  {
-                              "lotr":  [
-                                           "*"
-                                       ]
-                          },
-    "code":  "ingot-morguliron",
-    "textures":  {
-                     "all":  {
-                                 "base":  "game:item/resource/ingot"
-                             }
-                 },
-    "class":  "Item",
-    "maxstacksize":  64
+{
+  "code": "ingot-morguliron",
+  "class": "Item",
+  "maxstacksize": 64,
+  "textures": {
+    "all": { "base": "game:item/resource/ingot" }
+  },
+  "combustibleProps": {
+    "meltingPoint": 1500,
+    "meltingDuration": 25,
+    "smeltedRatio": 1,
+    "smeltedStack": { "type": "item", "code": "lotr:ingot-morguliron", "quantity": 1 }
+  },
+  "creativeInventory": {
+    "lotr": [ "*" ]
+  }
 }

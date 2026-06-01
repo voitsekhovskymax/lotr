@@ -1,0 +1,9 @@
+{
+  "code": "lotr:dwarvensteel",
+  "ingredients": [
+    { "type": "item", "code": "game:ingot-iron", "ratio": 3 },
+    { "type": "item", "code": "lotr:ingot-mithril", "ratio": 1 }
+  ],
+  "smeltedStack": { "type": "item", "code": "lotr:ingot-dwarvensteel", "quantity": 4 },
+  "meltingPoint": 1350
+}

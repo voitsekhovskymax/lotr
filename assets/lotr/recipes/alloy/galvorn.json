@@ -1,0 +1,9 @@
+{
+  "code": "lotr:galvorn",
+  "ingredients": [
+    { "type": "item", "code": "lotr:ingot-mithril", "ratio": 2 },
+    { "type": "item", "code": "lotr:ingot-morguliron", "ratio": 1 }
+  ],
+  "smeltedStack": { "type": "item", "code": "lotr:ingot-galvorn", "quantity": 3 },
+  "meltingPoint": 1600
+}

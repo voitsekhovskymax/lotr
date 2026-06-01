@@ -1,15 +1,17 @@
-﻿{
-    "creativeInventory":  {
-                              "lotr":  [
-                                           "*"
-                                       ]
-                          },
-    "code":  "nugget-mithril",
-    "textures":  {
-                     "all":  {
-                                 "base":  "game:item/resource/nugget"
-                             }
-                 },
-    "class":  "Item",
-    "maxstacksize":  64
+{
+  "code": "nugget-mithril",
+  "class": "Item",
+  "maxstacksize": 64,
+  "textures": {
+    "all": { "base": "game:item/resource/nugget" }
+  },
+  "combustibleProps": {
+    "meltingPoint": 1800,
+    "meltingDuration": 30,
+    "smeltedRatio": 10,
+    "smeltedStack": { "type": "item", "code": "lotr:ingot-mithril", "quantity": 1 }
+  },
+  "creativeInventory": {
+    "lotr": [ "*" ]
+  }
 }

@@ -1,15 +1,17 @@
-﻿{
-    "creativeInventory":  {
-                              "lotr":  [
-                                           "*"
-                                       ]
-                          },
-    "code":  "ingot-dwarvensteel",
-    "textures":  {
-                     "all":  {
-                                 "base":  "game:item/resource/ingot"
-                             }
-                 },
-    "class":  "Item",
-    "maxstacksize":  64
+{
+  "code": "ingot-dwarvensteel",
+  "class": "Item",
+  "maxstacksize": 64,
+  "textures": {
+    "all": { "base": "game:item/resource/ingot" }
+  },
+  "combustibleProps": {
+    "meltingPoint": 1350,
+    "meltingDuration": 20,
+    "smeltedRatio": 1,
+    "smeltedStack": { "type": "item", "code": "lotr:ingot-dwarvensteel", "quantity": 1 }
+  },
+  "creativeInventory": {
+    "lotr": [ "*" ]
+  }
 }

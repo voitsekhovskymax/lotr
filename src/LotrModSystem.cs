@@ -1,13 +1,17 @@
 using System.Text;
 using Lotr.Constants;
+using Lotr.Entities;
 using Lotr.Entities.Humanoids;
 using Lotr.Entities.Creatures;
 using Lotr.Factions;
 using Lotr.Items;
+using Lotr.Network;
 using Lotr.Quests;
 using Lotr.Regions;
+using Lotr.UI;
 using Lotr.Utilities;
 using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Server;
 using Vintagestory.API.Client;
 
@@ -15,29 +19,41 @@ namespace Lotr;
 
 public class LotrModSystem : ModSystem
 {
-    public AlignmentSystem? Alignment { get; private set; }
-    public QuestSystem?     Quests    { get; private set; }
-    public RegionSystem?    Regions   { get; private set; }
+    // Server-side systems
+    public AlignmentSystem?      Alignment  { get; private set; }
+    public QuestSystem?          Quests     { get; private set; }
+    public RegionSystem?         Regions    { get; private set; }
+    public AlignmentDecaySystem? Decay      { get; private set; }
+    public CombatAlignmentHandler? Combat   { get; private set; }
+    public FactionAggroSystem?   Aggro      { get; private set; }
+    public DisguiseSystem?       Disguise   { get; private set; }
+    public BountySystem?         Bounty     { get; private set; }
+    public AlignmentPerksSystem? Perks      { get; private set; }
+
+    // Client-side
+    private GuiDialogFactions?    _factionsDialog;
+    private IClientNetworkChannel? _clientChannel;
+
+    // Network
+    private IServerNetworkChannel? _serverChannel;
 
     public override void Start(ICoreAPI api)
     {
         base.Start(api);
         api.Logger.Notification($"{LotrConstants.LogPrefix} Initializing Middle-earth...");
 
-        // Entity classes — register all races here as they are implemented
-        api.RegisterEntity("EntityHobbit",  typeof(EntityHobbit));
-        api.RegisterEntity("EntityHuman",   typeof(EntityHuman));
-        api.RegisterEntity("EntityElf",     typeof(EntityElf));
-        api.RegisterEntity("EntityDwarf",   typeof(EntityDwarf));
-        api.RegisterEntity("EntityGandalf", typeof(EntityGandalf));
-        api.RegisterEntity("EntityOrc",     typeof(EntityOrc));
-        api.RegisterEntity("EntityGoblin",  typeof(EntityGoblin));
-        api.RegisterEntity("EntityTroll",   typeof(EntityTroll));
-        api.RegisterEntity("EntityEnt",     typeof(EntityEnt));
-        api.RegisterEntity("EntityBalrog",  typeof(EntityBalrog));
+        api.RegisterEntity("EntityHobbit",   typeof(EntityHobbit));
+        api.RegisterEntity("EntityHuman",    typeof(EntityHuman));
+        api.RegisterEntity("EntityElf",      typeof(EntityElf));
+        api.RegisterEntity("EntityDwarf",    typeof(EntityDwarf));
+        api.RegisterEntity("EntityGandalf",  typeof(EntityGandalf));
+        api.RegisterEntity("EntityOrc",      typeof(EntityOrc));
+        api.RegisterEntity("EntityGoblin",   typeof(EntityGoblin));
+        api.RegisterEntity("EntityTroll",    typeof(EntityTroll));
+        api.RegisterEntity("EntityEnt",      typeof(EntityEnt));
+        api.RegisterEntity("EntityBalrog",   typeof(EntityBalrog));
         api.RegisterEntity("EntityCreature", typeof(EntityCreature));
 
-        // Item classes
         api.RegisterItemClass("ItemLembas", typeof(ItemLembas));
 
         api.Logger.Notification($"{LotrConstants.LogPrefix} Classes registered.");
@@ -47,24 +63,103 @@ public class LotrModSystem : ModSystem
     {
         base.StartServerSide(api);
 
+        // Core systems
         Alignment = new AlignmentSystem(api);
         Quests    = new QuestSystem(api, Alignment);
         Quests.LoadQuests();
         Regions   = new RegionSystem(api);
         Regions.Load();
 
+        // Faction & alignment systems
+        Disguise = new DisguiseSystem(Alignment);
+        Combat   = new CombatAlignmentHandler(api, Alignment);
+        Aggro    = new FactionAggroSystem(Alignment, Disguise);
+        Decay    = new AlignmentDecaySystem(api, Alignment);
+        Bounty   = new BountySystem(api, Alignment);
+        Perks    = new AlignmentPerksSystem(Alignment);
+
+        // Wire up entity kill event
+        EntityRaceBase.Killed += (entity, damage) => Combat.OnEntityKilled(entity, damage);
+
+        // Network channel — server side
+        _serverChannel = api.Network
+            .RegisterChannel(LotrConstants.NetworkChannel)
+            .RegisterMessageType<AlignmentQueryPacket>()
+            .RegisterMessageType<AlignmentResponsePacket>()
+            .SetMessageHandler<AlignmentQueryPacket>(OnAlignmentQueryReceived);
+
         new EntityAssetValidator(api).ValidateAll();
 
-        // DefaultSpawnPosition is NOT available at SaveGameLoaded — use PlayerJoin instead
-        api.Event.PlayerJoin += p =>
-        {
-            if (Regions.SpawnX == 0) Regions.CacheSpawn();
-        };
+        api.Event.PlayerJoin += OnPlayerJoin;
 
-        api.Logger.Notification($"{LotrConstants.LogPrefix} Alignment + Quest + Region systems started.");
+        api.Logger.Notification($"{LotrConstants.LogPrefix} All faction/alignment systems started.");
 
         RegisterCommands(api);
     }
+
+    private void OnPlayerJoin(IServerPlayer player)
+    {
+        if (Regions?.SpawnX == 0) Regions.CacheSpawn();
+
+        // Restore disguise state
+        if (Disguise != null && Alignment != null)
+        {
+            var data = Alignment.LoadData(player);
+            Disguise.RestoreFromSave(player, data);
+        }
+    }
+
+    private void OnAlignmentQueryReceived(IServerPlayer player, AlignmentQueryPacket packet)
+    {
+        if (Alignment == null || Bounty == null || Alignment == null) return;
+
+        var entries = new System.Collections.Generic.List<FactionEntry>();
+        foreach (var fid in LotrConstants.Factions.All)
+        {
+            int score = Alignment.GetAlignment(player, fid);
+            entries.Add(new FactionEntry
+            {
+                FactionId = fid,
+                Score     = score,
+                Tier      = AlignmentSystem.ScoreToTier(score).ToString()
+            });
+        }
+
+        var (hasBounty, bFaction, bAmount, _) = Bounty.GetBountyStatus(player);
+        var data = Alignment.LoadData(player);
+
+        var response = new AlignmentResponsePacket
+        {
+            Entries         = entries,
+            HasBounty       = hasBounty,
+            BountyFaction   = bFaction,
+            BountyAmount    = bAmount,
+            IsDisguised     = data.IsDisguised,
+            DisguisedFaction = data.DisguisedFactionId
+        };
+
+        _serverChannel?.SendPacket(response, player);
+    }
+
+    public override void StartClientSide(ICoreClientAPI api)
+    {
+        base.StartClientSide(api);
+
+        _factionsDialog = new GuiDialogFactions(api);
+
+        _clientChannel = api.Network
+            .RegisterChannel(LotrConstants.NetworkChannel)
+            .RegisterMessageType<AlignmentQueryPacket>()
+            .RegisterMessageType<AlignmentResponsePacket>()
+            .SetMessageHandler<AlignmentResponsePacket>(OnAlignmentResponseReceived);
+    }
+
+    private void OnAlignmentResponseReceived(AlignmentResponsePacket packet)
+    {
+        _factionsDialog?.OpenWith(packet);
+    }
+
+    // ── Commands ─────────────────────────────────────────────────
 
     private void RegisterCommands(ICoreServerAPI api)
     {
@@ -73,19 +168,21 @@ public class LotrModSystem : ModSystem
             .WithDescription("LOTR mod commands")
             .RequiresPrivilege(Vintagestory.API.Server.Privilege.chat);
 
-        // /lotr region
         lotr.BeginSubCommand("region")
             .WithDescription("Show which Middle-earth region you are in")
             .HandleWith(OnRegionCommand)
         .EndSubCommand();
 
-        // /lotr alignment
         lotr.BeginSubCommand("alignment")
             .WithDescription("Show your faction alignment scores")
             .HandleWith(OnAlignmentCommand)
         .EndSubCommand();
 
-        // /lotr setalignment <faction> <value>
+        lotr.BeginSubCommand("factions")
+            .WithDescription("Show faction standings (also opens GUI via /lotrfactions)")
+            .HandleWith(OnAlignmentCommand)
+        .EndSubCommand();
+
         lotr.BeginSubCommand("setalignment")
             .WithDescription("Set alignment: /lotr setalignment <faction> <value>")
             .RequiresPrivilege(Vintagestory.API.Server.Privilege.controlserver)
@@ -93,7 +190,35 @@ public class LotrModSystem : ModSystem
             .HandleWith(OnSetAlignmentCommand)
         .EndSubCommand();
 
-        // /lotr quest list
+        lotr.BeginSubCommand("disguise")
+            .WithDescription("Disguise as faction: /lotr disguise <factionId>")
+            .WithArgs(api.ChatCommands.Parsers.Word("factionId"))
+            .HandleWith(OnDisguiseCommand)
+        .EndSubCommand();
+
+        lotr.BeginSubCommand("undisguise")
+            .WithDescription("Remove disguise")
+            .HandleWith(OnUndisguiseCommand)
+        .EndSubCommand();
+
+        lotr.BeginSubCommand("perks")
+            .WithDescription("Show your active faction perks")
+            .HandleWith(OnPerksCommand)
+        .EndSubCommand();
+
+        lotr.BeginSubCommand("bounty")
+            .WithDescription("Check your bounty status")
+            .HandleWith(OnBountyCommand)
+        .EndSubCommand();
+
+        lotr.BeginSubCommand("ui")
+            .WithDescription("Open LOTR UI panels")
+            .BeginSubCommand("factions")
+                .WithDescription("Open faction standings window")
+                .HandleWith(OnUiFactions)
+            .EndSubCommand()
+        .EndSubCommand();
+
         lotr.BeginSubCommand("quest")
             .WithDescription("Quest commands")
             .BeginSubCommand("list")
@@ -119,7 +244,7 @@ public class LotrModSystem : ModSystem
         .EndSubCommand();
     }
 
-    // ── Region command ───────────────────────────────────────────
+    // ── Command handlers ─────────────────────────────────────────
 
     private TextCommandResult OnRegionCommand(TextCommandCallingArgs args)
     {
@@ -131,10 +256,10 @@ public class LotrModSystem : ModSystem
 
         if (region == null)
         {
-            double rx = pos.X - (Regions.SpawnX);
-            double rz = pos.Z - (Regions.SpawnZ);
+            double rx = pos.X - Regions.SpawnX;
+            double rz = pos.Z - Regions.SpawnZ;
             return TextCommandResult.Success(
-                $"You are in the Wilderness. No named region.\n  World pos: X={pos.X:F0} Z={pos.Z:F0}\n  Spawn-relative: X={rx:F0} Z={rz:F0}");
+                $"You are in the Wilderness.\n  World pos: X={pos.X:F0} Z={pos.Z:F0}\n  Spawn-relative: X={rx:F0} Z={rz:F0}");
         }
 
         var sb = new StringBuilder();
@@ -146,15 +271,12 @@ public class LotrModSystem : ModSystem
             sb.AppendLine($"  Biome:   {biome.DisplayName}");
             sb.AppendLine($"  Temp:    {biome.TempMin}..{biome.TempMax} °C");
             sb.AppendLine($"  Rain:    {biome.RainMin:F2}..{biome.RainMax:F2}");
-            sb.AppendLine($"  Fertility: {biome.FertilityMin:F2}..{biome.FertilityMax:F2}");
             if (biome.Flora.Count > 0)
                 sb.AppendLine($"  Flora:   {string.Join(", ", biome.Flora)}");
         }
         sb.AppendLine($"  Pos:     X={pos.X:F0}  Y={pos.Y:F0}  Z={pos.Z:F0}");
         return TextCommandResult.Success(sb.ToString().TrimEnd());
     }
-
-    // ── Alignment commands ───────────────────────────────────────
 
     private TextCommandResult OnAlignmentCommand(TextCommandCallingArgs args)
     {
@@ -165,10 +287,19 @@ public class LotrModSystem : ModSystem
         sb.AppendLine("=== Middle-earth Alignment ===");
         foreach (var (fid, score) in Alignment.GetAllAlignments(player))
         {
-            var tier = Alignment.GetTier(player, fid);
+            var tier      = AlignmentSystem.ScoreToTier(score);
             var shortName = fid.Replace("lotr:faction-", "");
-            sb.AppendLine($"  {shortName,-12} {score,6:+0;-0;0}  [{tier}]");
+            sb.AppendLine($"  {shortName,-20} {score,6:+0;-0;0}  [{tier}]");
         }
+
+        // Show disguise / bounty status
+        var data = Alignment.LoadData(player);
+        if (data.IsDisguised)
+            sb.AppendLine($"  [Disguised as {data.DisguisedFactionId.Replace("lotr:faction-", "")}]");
+        if (data.HasActiveBounty)
+            sb.AppendLine($"  [WANTED by {data.BountyFactionId.Replace("lotr:faction-", "")} — {data.BountyAmount} silver]");
+
+        sb.AppendLine("(Open visual dialog: /lotr ui factions)");
         return TextCommandResult.Success(sb.ToString().TrimEnd());
     }
 
@@ -178,11 +309,58 @@ public class LotrModSystem : ModSystem
         if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
 
         string factionId = (string)args[0];
-        int value = (int)args[1];
+        int value        = (int)args[1];
         if (!factionId.StartsWith("lotr:")) factionId = $"lotr:faction-{factionId}";
 
         Alignment.SetAlignment(player, factionId, value);
         return TextCommandResult.Success($"Set {factionId} = {value} [{Alignment.GetTier(player, factionId)}]");
+    }
+
+    private TextCommandResult OnDisguiseCommand(TextCommandCallingArgs args)
+    {
+        if (Disguise == null) return TextCommandResult.Error("Disguise system not running.");
+        if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
+
+        string factionId = (string)args[0];
+        var (ok, msg) = Disguise.Activate(player, factionId);
+        return ok ? TextCommandResult.Success(msg) : TextCommandResult.Error(msg);
+    }
+
+    private TextCommandResult OnUndisguiseCommand(TextCommandCallingArgs args)
+    {
+        if (Disguise == null) return TextCommandResult.Error("Disguise system not running.");
+        if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
+
+        var (_, msg) = Disguise.Deactivate(player);
+        return TextCommandResult.Success(msg);
+    }
+
+    private TextCommandResult OnPerksCommand(TextCommandCallingArgs args)
+    {
+        if (Perks == null) return TextCommandResult.Error("Perks system not running.");
+        if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
+        return TextCommandResult.Success(Perks.GetPerkSummary(player));
+    }
+
+    private TextCommandResult OnUiFactions(TextCommandCallingArgs args)
+    {
+        if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
+        OnAlignmentQueryReceived(player, new AlignmentQueryPacket());
+        return TextCommandResult.Success("");
+    }
+
+    private TextCommandResult OnBountyCommand(TextCommandCallingArgs args)
+    {
+        if (Bounty == null) return TextCommandResult.Error("Bounty system not running.");
+        if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
+
+        var (hasBounty, faction, amount, expiry) = Bounty.GetBountyStatus(player);
+        if (!hasBounty) return TextCommandResult.Success("No active bounties on you.");
+
+        string name     = faction.Replace("lotr:faction-", "");
+        var expiryDate  = System.DateTimeOffset.FromUnixTimeSeconds(expiry);
+        return TextCommandResult.Success(
+            $"WANTED by {name} — {amount} silver — expires {expiryDate:HH:mm:ss} UTC");
     }
 
     // ── Quest commands ───────────────────────────────────────────
@@ -192,9 +370,9 @@ public class LotrModSystem : ModSystem
         if (Quests == null) return TextCommandResult.Error("Quest system not running.");
         if (args.Caller.Player is not IServerPlayer player) return TextCommandResult.Error("Server only.");
 
-        var sb = new StringBuilder();
+        var sb        = new StringBuilder();
         var available = Quests.GetAvailable(player);
-        var active = Quests.GetActive(player);
+        var active    = Quests.GetActive(player);
 
         sb.AppendLine("=== Quests ===");
         if (active.Count > 0)
@@ -249,14 +427,12 @@ public class LotrModSystem : ModSystem
         return TextCommandResult.Success($"{questId}: {state}");
     }
 
-    public override void StartClientSide(ICoreClientAPI api)
-    {
-        base.StartClientSide(api);
-    }
+    // ── Dispose ──────────────────────────────────────────────────
 
     public override void Dispose()
     {
         EntityModelCache.Clear();
+        EntityRaceBase.Killed -= null;
         base.Dispose();
     }
 }

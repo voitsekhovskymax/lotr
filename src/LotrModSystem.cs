@@ -1,6 +1,7 @@
 using System.Text;
 using Lotr.Constants;
 using Lotr.Entities.Humanoids;
+using Lotr.Entities.Creatures;
 using Lotr.Factions;
 using Lotr.Items;
 using Lotr.Quests;
@@ -30,6 +31,11 @@ public class LotrModSystem : ModSystem
         api.RegisterEntity("EntityDwarf",   typeof(EntityDwarf));
         api.RegisterEntity("EntityGandalf", typeof(EntityGandalf));
         api.RegisterEntity("EntityOrc",     typeof(EntityOrc));
+        api.RegisterEntity("EntityGoblin",  typeof(EntityGoblin));
+        api.RegisterEntity("EntityTroll",   typeof(EntityTroll));
+        api.RegisterEntity("EntityEnt",     typeof(EntityEnt));
+        api.RegisterEntity("EntityBalrog",  typeof(EntityBalrog));
+        api.RegisterEntity("EntityCreature", typeof(EntityCreature));
 
         // Item classes
         api.RegisterItemClass("ItemLembas", typeof(ItemLembas));

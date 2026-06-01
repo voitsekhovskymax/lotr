@@ -1,104 +1,59 @@
-﻿{
-  "code": "ent",
-  "class": "EntityAgent",
-  "hitboxSize": {
-    "x": 2,
-    "y": 6
-  },
-  "eyeHeight": 5,
+{
+  "code": "lotr:ent",
+  "class": "EntityEnt",
+  "hitboxSize": { "x": 2.0, "y": 6.0 },
+  "deadHitboxSize": { "x": 2.0, "y": 1.5 },
+  "eyeHeight": 5.0,
   "client": {
     "size": 1.0,
     "renderer": "Shape",
     "shape": {
       "base": "lotr:entity/humanoid/ent-1",
       "alternates": [
-        {
-          "base": "lotr:entity/humanoid/ent-2"
-        },
-        {
-          "base": "lotr:entity/humanoid/ent-3"
-        }
+        { "base": "lotr:entity/humanoid/ent-2" },
+        { "base": "lotr:entity/humanoid/ent-3" }
       ]
     },
-    "behaviors": [
-      {
-        "code": "repulseagents"
-      },
-      {
-        "code": "controlledphysics",
-        "stepHeight": 0.6
-      },
-      {
-        "code": "floatupwhenstuck",
-        "onlyWhenDead": true
-      },
-      {
-        "code": "interpolateposition"
-      }
-    ],
     "textures": {
       "ent": {
         "base": "lotr:entity/humanoid/ent-1",
         "alternates": [
-          {
-            "base": "lotr:entity/humanoid/ent-2"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-3"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-4"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-5"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-6"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-7"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-8"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-9"
-          },
-          {
-            "base": "lotr:entity/humanoid/ent-10"
-          }
+          { "base": "lotr:entity/humanoid/ent-2" },
+          { "base": "lotr:entity/humanoid/ent-3" },
+          { "base": "lotr:entity/humanoid/ent-4" },
+          { "base": "lotr:entity/humanoid/ent-5" },
+          { "base": "lotr:entity/humanoid/ent-6" },
+          { "base": "lotr:entity/humanoid/ent-7" },
+          { "base": "lotr:entity/humanoid/ent-8" },
+          { "base": "lotr:entity/humanoid/ent-9" },
+          { "base": "lotr:entity/humanoid/ent-10" }
         ]
       }
-    }
+    },
+    "behaviors": [
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 1.5 },
+      { "code": "floatupwhenstuck", "onlyWhenDead": true },
+      { "code": "interpolateposition" }
+    ],
+    "animations": [
+      { "code": "idle",  "animation": "idle",  "animationSpeed": 0.4, "blendMode": "AddAverage", "weight": 1,  "triggeredBy": { "defaultAnim": true } },
+      { "code": "walk",  "animation": "walk",  "animationSpeed": 0.4, "blendMode": "Average",    "weight": 1  },
+      { "code": "hurt",  "animation": "hurt",  "animationSpeed": 1.0, "blendMode": "AddAverage", "weight": 10 },
+      { "code": "die",   "animation": "die",   "animationSpeed": 0.4, "blendMode": "Average",    "weight": 10, "triggeredBy": { "onControls": ["dead"] } }
+    ]
   },
   "server": {
     "behaviors": [
-      {
-        "code": "repulseagents"
-      },
-      {
-        "code": "controlledphysics",
-        "stepHeight": 0.6
-      },
-      {
-        "code": "health",
-        "currenthealth": 300,
-        "maxhealth": 300
-      },
-      {
-        "code": "taskai",
-        "aitasks": [
-          {
-            "code": "lookaround",
-            "priority": 0.5
-          },
-          {
-            "code": "wander",
-            "priority": 0.3,
-            "movespeed": 0.015
-          }
-        ]
-      }
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 1.5 },
+      { "code": "health", "currenthealth": 300, "maxhealth": 300 },
+      { "code": "deaddecay", "hoursToDecay": 96 },
+      { "code": "floatupwhenstuck" },
+      { "code": "taskai", "aitasks": [
+        { "code": "lookaround", "priority": 0.5 },
+        { "code": "wander", "priority": 0.3, "movespeed": 0.008, "animation": "walk" }
+      ]}
     ]
   },
   "attributes": {

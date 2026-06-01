@@ -1,10 +1,8 @@
-﻿{
-  "code": "gimli",
+{
+  "code": "lotr:gimli",
   "class": "EntityDwarf",
-  "hitboxSize": {
-    "x": 0.5,
-    "y": 1.4
-  },
+  "hitboxSize": { "x": 0.5, "y": 1.4 },
+  "deadHitboxSize": { "x": 0.5, "y": 0.5 },
   "eyeHeight": 1.2,
   "client": {
     "size": 1.0,
@@ -12,85 +10,49 @@
     "shape": {
       "base": "lotr:entity/humanoid/dwarf-erebor-1"
     },
-    "behaviors": [
-      {
-        "code": "repulseagents"
-      },
-      {
-        "code": "controlledphysics",
-        "stepHeight": 0.6
-      },
-      {
-        "code": "floatupwhenstuck",
-        "onlyWhenDead": true
-      },
-      {
-        "code": "interpolateposition"
-      }
-    ],
     "textures": {
       "dwarf": {
         "base": "lotr:entity/humanoid/dwarf-erebor-1",
         "alternates": [
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-2"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-3"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-4"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-5"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-6"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-7"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-8"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-9"
-          },
-          {
-            "base": "lotr:entity/humanoid/dwarf-erebor-10"
-          }
+          { "base": "lotr:entity/humanoid/dwarf-erebor-2" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-3" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-4" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-5" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-6" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-7" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-8" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-9" },
+          { "base": "lotr:entity/humanoid/dwarf-erebor-10" }
         ]
       }
-    }
+    },
+    "behaviors": [
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 0.6 },
+      { "code": "floatupwhenstuck", "onlyWhenDead": true },
+      { "code": "interpolateposition" }
+    ],
+    "animations": [
+      { "code": "idle",  "animation": "idle",  "animationSpeed": 1.0, "blendMode": "AddAverage", "weight": 1,  "triggeredBy": { "defaultAnim": true } },
+      { "code": "walk",  "animation": "walk",  "animationSpeed": 1.0, "blendMode": "Average",    "weight": 1  },
+      { "code": "hurt",  "animation": "hurt",  "animationSpeed": 2.0, "blendMode": "AddAverage", "weight": 10 },
+      { "code": "die",   "animation": "die",   "animationSpeed": 1.0, "blendMode": "Average",    "weight": 10, "triggeredBy": { "onControls": ["dead"] } }
+    ]
   },
   "server": {
     "behaviors": [
-      {
-        "code": "repulseagents"
-      },
-      {
-        "code": "controlledphysics",
-        "stepHeight": 0.6
-      },
-      {
-        "code": "health",
-        "currenthealth": 35,
-        "maxhealth": 35
-      },
-      {
-        "code": "taskai",
-        "aitasks": [
-          {
-            "code": "lookaround",
-            "priority": 0.5
-          },
-          {
-            "code": "wander",
-            "priority": 0.3,
-            "movespeed": 0.018
-          }
-        ]
-      }
+      { "code": "repulseagents" },
+      { "code": "controlledphysics", "stepHeight": 0.6 },
+      { "code": "health", "currenthealth": 35, "maxhealth": 35 },
+      { "code": "deaddecay", "hoursToDecay": 24 },
+      { "code": "floatupwhenstuck" },
+      { "code": "taskai", "aitasks": [
+        { "code": "lookaround", "priority": 0.5 },
+        { "code": "wander", "priority": 0.3, "movespeed": 0.018, "animation": "walk" }
+      ]}
     ]
+  },
+  "attributes": {
+    "faction": "lotr:faction-erebor"
   }
 }

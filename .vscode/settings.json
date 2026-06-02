@@ -1,1 +1,22 @@
-{}
+{
+    "openInExternalApp.associations": [
+    {
+        "extension": "json",
+        "apps": [
+            {
+                "title": "Open in Blockbench",
+                "openCommand": "C:\\Program Files\\Blockbench\\Blockbench.exe" 
+            }
+        ]
+    },
+    {
+        "extension": "bbmodel",
+        "apps": [
+            {
+                "title": "Open in Blockbench",
+                "openCommand": "C:\\Program Files\\Blockbench\\Blockbench.exe"
+            }
+        ]
+    }
+]
+}

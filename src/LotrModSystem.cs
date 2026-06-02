@@ -1,6 +1,7 @@
 using System.Text;
 using Lotr.Constants;
 using Lotr.Entities;
+using Lotr.Entities.AI;
 using Lotr.Entities.Humanoids;
 using Lotr.Entities.Creatures;
 using Lotr.Factions;
@@ -8,27 +9,32 @@ using Lotr.Items;
 using Lotr.Network;
 using Lotr.Quests;
 using Lotr.Regions;
+using Lotr.Systems.FactionGuardAlert;
+using Lotr.Systems.NpcMorale;
 using Lotr.UI;
 using Lotr.Utilities;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Server;
 using Vintagestory.API.Client;
+using Vintagestory.GameContent;
 
 namespace Lotr;
 
 public class LotrModSystem : ModSystem
 {
     // Server-side systems
-    public AlignmentSystem?      Alignment  { get; private set; }
-    public QuestSystem?          Quests     { get; private set; }
-    public RegionSystem?         Regions    { get; private set; }
-    public AlignmentDecaySystem? Decay      { get; private set; }
-    public CombatAlignmentHandler? Combat   { get; private set; }
-    public FactionAggroSystem?   Aggro      { get; private set; }
-    public DisguiseSystem?       Disguise   { get; private set; }
-    public BountySystem?         Bounty     { get; private set; }
-    public AlignmentPerksSystem? Perks      { get; private set; }
+    public AlignmentSystem?        Alignment  { get; private set; }
+    public QuestSystem?            Quests     { get; private set; }
+    public RegionSystem?           Regions    { get; private set; }
+    public AlignmentDecaySystem?   Decay      { get; private set; }
+    public CombatAlignmentHandler? Combat     { get; private set; }
+    public FactionAggroSystem?     Aggro      { get; private set; }
+    public DisguiseSystem?         Disguise   { get; private set; }
+    public BountySystem?           Bounty     { get; private set; }
+    public AlignmentPerksSystem?   Perks      { get; private set; }
+    public FactionGuardAlertSystem? GuardAlert { get; private set; }
+    public NpcMoraleSystem?        Morale     { get; private set; }
 
     // Client-side
     private GuiDialogFactions?    _factionsDialog;
@@ -56,6 +62,8 @@ public class LotrModSystem : ModSystem
 
         api.RegisterItemClass("ItemLembas", typeof(ItemLembas));
 
+        // Phase 8: AI task registration — method TBD (see StartServerSide)
+
         api.Logger.Notification($"{LotrConstants.LogPrefix} Classes registered.");
     }
 
@@ -78,8 +86,15 @@ public class LotrModSystem : ModSystem
         Bounty   = new BountySystem(api, Alignment);
         Perks    = new AlignmentPerksSystem(Alignment);
 
+        // Phase 8: AI tasks auto-discovered by VS from assembly — code = class name minus "AiTask" prefix, lowercased
+
+        // Phase 8: guard alert & morale systems
+        GuardAlert = new FactionGuardAlertSystem(api);
+        Morale     = new NpcMoraleSystem(api);
+
         // Wire up entity kill event
         EntityRaceBase.Killed += (entity, damage) => Combat.OnEntityKilled(entity, damage);
+        EntityRaceBase.Killed += (entity, damage) => Morale.OnEntityKilled(entity, damage);
 
         // Network channel — server side
         _serverChannel = api.Network

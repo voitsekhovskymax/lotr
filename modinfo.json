@@ -5,8 +5,8 @@
   "authors": [
     "Max"
   ],
-  "description": "Starter scaffold for the LOTR Vintage Story mod.",
-  "version": "0.1.0",
+  "description": "Lord of the Rings — Middle-earth for Vintage Story.",
+  "version": "0.1.1",
   "dependencies": {
     "game": "1.22.0",
     "survival": "1.22.0"

@@ -11,6 +11,7 @@ using Lotr.Quests;
 using Lotr.Regions;
 using Lotr.Systems.FactionGuardAlert;
 using Lotr.Systems.NpcMorale;
+using Lotr.Systems.World;
 using Lotr.UI;
 using Lotr.Utilities;
 using Vintagestory.API.Common;
@@ -35,6 +36,7 @@ public class LotrModSystem : ModSystem
     public AlignmentPerksSystem?   Perks      { get; private set; }
     public FactionGuardAlertSystem? GuardAlert { get; private set; }
     public NpcMoraleSystem?        Morale     { get; private set; }
+    public LotrWorldConfigSystem?  WorldConfig { get; private set; }
 
     // Client-side
     private GuiDialogFactions?    _factionsDialog;
@@ -89,8 +91,10 @@ public class LotrModSystem : ModSystem
         // Phase 8: AI tasks auto-discovered by VS from assembly — code = class name minus "AiTask" prefix, lowercased
 
         // Phase 8: guard alert & morale systems
-        GuardAlert = new FactionGuardAlertSystem(api);
-        Morale     = new NpcMoraleSystem(api);
+        GuardAlert  = new FactionGuardAlertSystem(api);
+        Morale      = new NpcMoraleSystem(api);
+        WorldConfig = new LotrWorldConfigSystem(api);
+        WorldConfig.Start();
 
         // Wire up entity kill event
         EntityRaceBase.Killed += (entity, damage) => Combat.OnEntityKilled(entity, damage);

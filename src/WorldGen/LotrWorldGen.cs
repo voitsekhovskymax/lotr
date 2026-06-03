@@ -7,8 +7,8 @@ using Vintagestory.API.Server;
 namespace Lotr.WorldGen;
 
 /// <summary>
-/// Phase 5 — hooks into VS chunk generation to override surface blocks
-/// per LOTR region (Mordor = basalt/ash, Shire = fertile soil, etc.).
+/// Hooks into the "lotr" world type chunk generation to override surface
+/// blocks per Middle-earth region (Mordor = basalt, Shire = fertile soil).
 ///
 /// ExecuteOrder() = 0.2 → runs after base terrain (0.0) but before
 /// vanilla decorators (0.5+), so our surface is decorated normally.
@@ -19,13 +19,13 @@ public class LotrWorldGen : ModSystem
     IWorldGenBlockAccessor blockAccessor = null!;
     RegionSystem?          regions;
 
-    // Block IDs — resolved once in StartServerSide after all assets loaded
+    // Block IDs — resolved once after assets loaded
     int idBasalt;
     int idGravel;
     int idSand;
-    int idSoilLow;   // soil-low (base fertile soil)
-    int idSoilMed;   // soil-medium
-    int idStone;     // rock-granite (mountains)
+    int idSoilLow;
+    int idSoilMed;
+    int idStone;
 
     // ── ModSystem lifecycle ──────────────────────────────────────────
 
@@ -41,11 +41,19 @@ public class LotrWorldGen : ModSystem
         // Must register block accessor FIRST before any other worldgen event
         api.Event.GetWorldgenBlockAccessor(OnGetBlockAccessor);
 
-        // Hook into Vegetation pass (pass 3) — terrain shape already done,
-        // we just replace the top surface block here
+        // InitWorldGenerator fires once per new world before first chunk gen
+        api.Event.InitWorldGenerator(OnInitWorldGenerator, "standard");
+
+        // Hook into Vegetation pass — terrain shape already done,
+        // we just replace the top surface block per region
         api.Event.ChunkColumnGeneration(OnChunkColumnGen, EnumWorldGenPass.Vegetation, "standard");
 
         api.Event.SaveGameLoaded += OnSaveGameLoaded;
+    }
+
+    void OnInitWorldGenerator()
+    {
+        sapi!.Logger.Notification("[LOTR] Middle-earth world generator initializing.");
     }
 
     void OnSaveGameLoaded()

@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-anduin-vale",
+  "displayName": "Anduin Vale",
+  "tempMin": 10,
+  "tempMax": 20,
+  "rainMin": 0.4,
+  "rainMax": 0.6,
+  "fertilityMin": 0.45,
+  "fertilityMax": 0.65,
+  "landformHint": "river-valley",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#3DA05F"
+}

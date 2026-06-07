@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-mirkwood-mountains",
+  "displayName": "Mirkwood Mountains",
+  "tempMin": 6,
+  "tempMax": 16,
+  "rainMin": 0.45,
+  "rainMax": 0.7,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.6,
+  "landformHint": "dense-forest",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#92AC50"
+}

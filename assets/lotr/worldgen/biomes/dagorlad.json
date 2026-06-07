@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-dagorlad",
+  "displayName": "Dagorlad",
+  "tempMin": 5,
+  "tempMax": 18,
+  "rainMin": 0.05,
+  "rainMax": 0.15,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.08,
+  "landformHint": "barren-plain",
+  "surfaceBlock": "gravel-grey",
+  "referenceColor": "#28241B"
+}

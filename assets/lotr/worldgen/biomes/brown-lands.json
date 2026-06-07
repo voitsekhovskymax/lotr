@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-brown-lands",
+  "displayName": "Brown Lands",
+  "tempMin": 5,
+  "tempMax": 18,
+  "rainMin": 0.05,
+  "rainMax": 0.2,
+  "fertilityMin": 0.02,
+  "fertilityMax": 0.1,
+  "landformHint": "barren-wasteland",
+  "surfaceBlock": "gravel-grey",
+  "referenceColor": "#827E50"
+}

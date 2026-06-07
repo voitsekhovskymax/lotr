@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-lossarnach",
+  "displayName": "Lossarnach",
+  "tempMin": 12,
+  "tempMax": 22,
+  "rainMin": 0.3,
+  "rainMax": 0.55,
+  "fertilityMin": 0.35,
+  "fertilityMax": 0.65,
+  "landformHint": "mountainous-foothills",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#A6BD64"
+}

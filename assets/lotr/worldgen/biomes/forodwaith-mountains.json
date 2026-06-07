@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-forodwaith-mountains",
+  "displayName": "Forodwaith Mountains",
+  "tempMin": -30,
+  "tempMax": -10,
+  "rainMin": 0.1,
+  "rainMax": 0.2,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.03,
+  "landformHint": "alpine-peaks",
+  "surfaceBlock": "rock",
+  "referenceColor": "#ABB5B2"
+}

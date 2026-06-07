@@ -1,15 +1,13 @@
 {
   "id": "lotr:biome-ocean",
-  "displayName": "The Great Sea",
-  "tempMin": 8,
-  "tempMax": 16,
-  "rainMin": 0.7,
+  "displayName": "Belegaer Ocean",
+  "tempMin": 5,
+  "tempMax": 20,
+  "rainMin": 1.0,
   "rainMax": 1.0,
   "fertilityMin": 0.0,
-  "fertilityMax": 0.1,
-  "landformHint": "ocean",
-  "surfaceBlock": "sand-gravel",
-  "flora": [],
-  "fauna": ["fish"],
-  "notes": "Belegaer - the Great Sea west of Middle-earth"
+  "fertilityMax": 0.0,
+  "landformHint": "water",
+  "surfaceBlock": "water",
+  "referenceColor": "#6BB25C"
 }

@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-blackroot-vale",
+  "displayName": "Blackroot Vale",
+  "tempMin": 12,
+  "tempMax": 22,
+  "rainMin": 0.4,
+  "rainMax": 0.6,
+  "fertilityMin": 0.45,
+  "fertilityMax": 0.7,
+  "landformHint": "valley-forest",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#8E8D4E"
+}

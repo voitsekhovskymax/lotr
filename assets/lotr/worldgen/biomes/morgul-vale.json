@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-morgul-vale",
+  "displayName": "Morgul Vale",
+  "tempMin": 8,
+  "tempMax": 20,
+  "rainMin": 0.1,
+  "rainMax": 0.25,
+  "fertilityMin": 0.05,
+  "fertilityMax": 0.15,
+  "landformHint": "dark-valley",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#689641"
+}

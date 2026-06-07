@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-angmar-mountains",
+  "displayName": "Angmar Mountains",
+  "tempMin": -15,
+  "tempMax": 0,
+  "rainMin": 0.05,
+  "rainMax": 0.2,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.08,
+  "landformHint": "cold-highland",
+  "surfaceBlock": "gravel-grey",
+  "referenceColor": "#4DA853"
+}

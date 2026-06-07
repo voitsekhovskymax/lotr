@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-rhun-land-steppe",
+  "displayName": "Rhun Steppe",
+  "tempMin": 8,
+  "tempMax": 20,
+  "rainMin": 0.15,
+  "rainMax": 0.3,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.25,
+  "landformHint": "flat-steppe",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#D3C387"
+}

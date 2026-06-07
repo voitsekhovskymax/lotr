@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-swanfleet",
+  "displayName": "Swanfleet",
+  "tempMin": 5,
+  "tempMax": 16,
+  "rainMin": 0.6,
+  "rainMax": 0.85,
+  "fertilityMin": 0.15,
+  "fertilityMax": 0.4,
+  "landformHint": "boggy-marsh",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#709E46"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-forodwaith-coast",
+  "displayName": "Forodwaith Coast",
+  "tempMin": -20,
+  "tempMax": -5,
+  "rainMin": 0.1,
+  "rainMax": 0.25,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.05,
+  "landformHint": "coastal",
+  "surfaceBlock": "gravel-grey",
+  "referenceColor": "#DD8568"
+}

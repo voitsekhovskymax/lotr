@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-river",
+  "displayName": "River",
+  "tempMin": 5,
+  "tempMax": 20,
+  "rainMin": 1.0,
+  "rainMax": 1.0,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.0,
+  "landformHint": "water",
+  "surfaceBlock": "water",
+  "referenceColor": "#367CB5"
+}

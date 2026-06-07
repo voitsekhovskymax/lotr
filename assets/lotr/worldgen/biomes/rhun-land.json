@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-rhun-land",
+  "displayName": "Rhun Lands",
+  "tempMin": 8,
+  "tempMax": 20,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.3,
+  "landformHint": "flat-plains",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#91793E"
+}

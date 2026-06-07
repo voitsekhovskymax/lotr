@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-fangorn",
+  "displayName": "Fangorn",
+  "tempMin": 6,
+  "tempMax": 14,
+  "rainMin": 0.5,
+  "rainMax": 0.75,
+  "fertilityMin": 0.5,
+  "fertilityMax": 0.7,
+  "landformHint": "ancient-forest",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#427519"
+}

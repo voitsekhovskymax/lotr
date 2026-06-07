@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-tower-hills",
+  "displayName": "Tower Hills",
+  "tempMin": 6,
+  "tempMax": 14,
+  "rainMin": 0.3,
+  "rainMax": 0.5,
+  "fertilityMin": 0.2,
+  "fertilityMax": 0.4,
+  "landformHint": "rolling-hills",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#7F8278"
+}

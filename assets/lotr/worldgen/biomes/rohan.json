@@ -9,7 +9,5 @@
   "fertilityMax": 0.6,
   "landformHint": "flat-plains",
   "surfaceBlock": "soil-low-normal",
-  "flora": ["tallgrass", "wheat-wild", "fern"],
-  "fauna": ["horse", "deer"],
-  "notes": "The Riddermark - vast grasslands of the Rohirrim"
+  "referenceColor": "#70AD45"
 }

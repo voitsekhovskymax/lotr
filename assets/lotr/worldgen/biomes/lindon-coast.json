@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-lindon-coast",
+  "displayName": "Lindon Coast",
+  "tempMin": 10,
+  "tempMax": 20,
+  "rainMin": 0.35,
+  "rainMax": 0.55,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.25,
+  "landformHint": "coastal",
+  "surfaceBlock": "sand",
+  "referenceColor": "#7B8E52"
+}

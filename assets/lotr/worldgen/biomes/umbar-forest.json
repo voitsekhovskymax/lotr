@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-umbar-forest",
+  "displayName": "Umbar Forest",
+  "tempMin": 20,
+  "tempMax": 30,
+  "rainMin": 0.4,
+  "rainMax": 0.6,
+  "fertilityMin": 0.35,
+  "fertilityMax": 0.6,
+  "landformHint": "coastal-forest",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#8BA850"
+}

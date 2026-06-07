@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-rhun-forest",
+  "displayName": "Rhun Forest",
+  "tempMin": 8,
+  "tempMax": 18,
+  "rainMin": 0.4,
+  "rainMax": 0.65,
+  "fertilityMin": 0.35,
+  "fertilityMax": 0.6,
+  "landformHint": "dense-forest",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#242F0F"
+}

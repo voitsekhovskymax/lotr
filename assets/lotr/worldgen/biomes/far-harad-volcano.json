@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-far-harad-volcano",
+  "displayName": "Far Harad Volcano",
+  "tempMin": 30,
+  "tempMax": 50,
+  "rainMin": 0.0,
+  "rainMax": 0.05,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.02,
+  "landformHint": "volcanic",
+  "surfaceBlock": "gravel-basalt",
+  "referenceColor": "#5C5C47"
+}

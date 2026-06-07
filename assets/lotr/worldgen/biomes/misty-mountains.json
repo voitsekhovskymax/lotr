@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-misty-mountains",
+  "displayName": "Misty Mountains",
+  "tempMin": -10,
+  "tempMax": 4,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.02,
+  "fertilityMax": 0.15,
+  "landformHint": "alpine-peaks",
+  "surfaceBlock": "rock",
+  "referenceColor": "#E8E7E1"
+}

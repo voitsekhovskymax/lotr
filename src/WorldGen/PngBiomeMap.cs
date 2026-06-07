@@ -122,6 +122,7 @@ public class PngBiomeMap
             int pos = 8;
             int w = 0, h = 0, bitDepth = 0, colorType = 0;
             var idatChunks = new List<byte[]>();
+            int[] palette = Array.Empty<int>(); // PLTE for indexed PNG
 
             while (pos + 12 <= data.Length)
             {
@@ -135,6 +136,14 @@ public class PngBiomeMap
                     bitDepth  = data[pos + 8];
                     colorType = data[pos + 9];
                 }
+                else if (ct == "PLTE")
+                {
+                    // Each entry is 3 bytes (R, G, B); len must be divisible by 3
+                    int entries = len / 3;
+                    palette = new int[entries];
+                    for (int i = 0; i < entries; i++)
+                        palette[i] = (data[pos + i * 3] << 16) | (data[pos + i * 3 + 1] << 8) | data[pos + i * 3 + 2];
+                }
                 else if (ct == "IDAT")
                 {
                     var chunk = new byte[len];
@@ -147,10 +156,9 @@ public class PngBiomeMap
             }
 
             if (w == 0 || h == 0 || idatChunks.Count == 0) return false;
-            // Only support 8-bit RGB (2) or RGBA (6)
-            if (bitDepth != 8 || (colorType != 2 && colorType != 6)) return false;
-
-            int channels = colorType == 6 ? 4 : 3;
+            // Support 8-bit RGB (2), RGBA (6), and indexed/palette (3)
+            if (bitDepth != 8 || (colorType != 2 && colorType != 6 && colorType != 3)) return false;
+            if (colorType == 3 && palette.Length == 0) return false;
 
             // Combine IDAT chunks and decompress
             int totalLen = 0;
@@ -169,27 +177,51 @@ public class PngBiomeMap
                 raw = out_.ToArray();
             }
 
-            // Reconstruct scanlines with PNG filter
             pixels = new int[w * h];
-            int stride = w * channels;
-            byte[] prev = new byte[stride];
 
-            for (int y = 0; y < h; y++)
+            if (colorType == 3)
             {
-                int rowStart = y * (stride + 1);
-                int filterType = raw[rowStart];
-                byte[] row = new byte[stride];
-                Array.Copy(raw, rowStart + 1, row, 0, stride);
-
-                ApplyFilter(filterType, row, prev, channels);
-
-                for (int x = 0; x < w; x++)
+                // Indexed PNG: 1 byte per pixel = palette index, filter byte per row
+                byte[] prev = new byte[w];
+                for (int y = 0; y < h; y++)
                 {
-                    int i = x * channels;
-                    pixels[y * w + x] = (row[i] << 16) | (row[i + 1] << 8) | row[i + 2];
-                }
+                    int rowStart = y * (w + 1);
+                    int filterType = raw[rowStart];
+                    byte[] row = new byte[w];
+                    Array.Copy(raw, rowStart + 1, row, 0, w);
 
-                prev = row;
+                    ApplyFilter(filterType, row, prev, 1);
+
+                    for (int x = 0; x < w; x++)
+                        pixels[y * w + x] = palette[row[x]];
+
+                    prev = row;
+                }
+            }
+            else
+            {
+                // RGB (2) or RGBA (6): 3 or 4 bytes per pixel
+                int channels = colorType == 6 ? 4 : 3;
+                int stride = w * channels;
+                byte[] prev = new byte[stride];
+
+                for (int y = 0; y < h; y++)
+                {
+                    int rowStart = y * (stride + 1);
+                    int filterType = raw[rowStart];
+                    byte[] row = new byte[stride];
+                    Array.Copy(raw, rowStart + 1, row, 0, stride);
+
+                    ApplyFilter(filterType, row, prev, channels);
+
+                    for (int x = 0; x < w; x++)
+                    {
+                        int i = x * channels;
+                        pixels[y * w + x] = (row[i] << 16) | (row[i + 1] << 8) | row[i + 2];
+                    }
+
+                    prev = row;
+                }
             }
 
             width = w; height = h;

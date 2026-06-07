@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-rhun-land-hills",
+  "displayName": "Rhun Hills",
+  "tempMin": 5,
+  "tempMax": 16,
+  "rainMin": 0.25,
+  "rainMax": 0.45,
+  "fertilityMin": 0.15,
+  "fertilityMax": 0.35,
+  "landformHint": "rolling-hills",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#D3D3D3"
+}

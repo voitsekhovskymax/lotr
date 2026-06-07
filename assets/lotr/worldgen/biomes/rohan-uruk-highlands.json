@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-rohan-uruk-highlands",
+  "displayName": "Rohan Uruk Highlands",
+  "tempMin": 10,
+  "tempMax": 20,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.25,
+  "fertilityMax": 0.45,
+  "landformHint": "highland-plains",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#7E935A"
+}

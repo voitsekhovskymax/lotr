@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-angmar",
+  "displayName": "Angmar",
+  "biome": "lotr:biome-angmar",
+  "faction": "lotr:faction-angmar",
+  "centerX": -5120,
+  "centerZ": -41984,
+  "radiusX": 3072,
+  "radiusZ": 2048,
+  "priority": 10,
+  "notes": "Realm of the Witch-king, frozen wastelands north of Ettenmoors"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-eastern-desolation",
+  "displayName": "Eastern Desolation",
+  "tempMin": -5,
+  "tempMax": 35,
+  "rainMin": 0.0,
+  "rainMax": 0.03,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.03,
+  "landformHint": "volcanic-wasteland",
+  "surfaceBlock": "gravel-basalt",
+  "referenceColor": "#598C2E"
+}

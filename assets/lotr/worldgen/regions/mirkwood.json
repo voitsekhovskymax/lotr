@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-mirkwood",
+  "displayName": "Mirkwood",
+  "biome": "lotr:biome-mirkwood",
+  "faction": "lotr:faction-mirkwood-spiders",
+  "centerX": 20480,
+  "centerZ": -17920,
+  "radiusX": 3072,
+  "radiusZ": 5120,
+  "priority": 10,
+  "notes": "Great dark forest east of the Misty Mountains, from Gol Guldur to Woodland Realm"
+}

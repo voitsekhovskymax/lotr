@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-umbar-hills",
+  "displayName": "Umbar Hills",
+  "tempMin": 18,
+  "tempMax": 28,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.15,
+  "fertilityMax": 0.35,
+  "landformHint": "coastal-hills",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#A2A365"
+}

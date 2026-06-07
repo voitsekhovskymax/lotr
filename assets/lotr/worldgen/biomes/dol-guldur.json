@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-dol-guldur",
+  "displayName": "Dol Guldur",
+  "tempMin": 4,
+  "tempMax": 14,
+  "rainMin": 0.45,
+  "rainMax": 0.7,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.3,
+  "landformHint": "dark-corrupted-forest",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#998D5B"
+}

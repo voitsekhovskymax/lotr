@@ -1,0 +1,12 @@
+{
+  "id": "lotr:misty-mountains-range",
+  "displayName": "Misty Mountains Peak",
+  "biomes": ["lotr:biome-misty-mountains", "lotr:biome-grey-mountains", "lotr:biome-angmar-mountains"],
+  "spawnChance": 0.18,
+  "peakHeightMin": 20,
+  "peakHeightMax": 55,
+  "peakRadiusMin": 5,
+  "peakRadiusMax": 12,
+  "rockBlock": "game:rock-granite",
+  "gravelBlock": "game:gravel-granite"
+}

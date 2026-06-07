@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-coldfells",
+  "displayName": "Coldfells",
+  "tempMin": -5,
+  "tempMax": 8,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.05,
+  "fertilityMax": 0.2,
+  "landformHint": "moorland",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#6C7C52"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-far-harad-cloud-forest",
+  "displayName": "Far Harad Cloud Forest",
+  "tempMin": 18,
+  "tempMax": 26,
+  "rainMin": 0.75,
+  "rainMax": 0.95,
+  "fertilityMin": 0.55,
+  "fertilityMax": 0.8,
+  "landformHint": "cloud-forest",
+  "surfaceBlock": "soil-rich-normal",
+  "referenceColor": "#878E4D"
+}

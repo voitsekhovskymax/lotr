@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-white-mountains-foothills",
+  "displayName": "White Mountains Foothills",
+  "tempMin": 2,
+  "tempMax": 12,
+  "rainMin": 0.25,
+  "rainMax": 0.45,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.3,
+  "landformHint": "mountain-foothills",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#D8C377"
+}

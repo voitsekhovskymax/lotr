@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-far-harad-jungle-edge",
+  "displayName": "Far Harad Jungle Edge",
+  "tempMin": 25,
+  "tempMax": 35,
+  "rainMin": 0.7,
+  "rainMax": 0.95,
+  "fertilityMin": 0.5,
+  "fertilityMax": 0.8,
+  "landformHint": "jungle",
+  "surfaceBlock": "soil-rich-normal",
+  "referenceColor": "#CBD3A9"
+}

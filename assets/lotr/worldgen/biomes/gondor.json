@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-gondor",
+  "displayName": "Gondor",
+  "tempMin": 12,
+  "tempMax": 22,
+  "rainMin": 0.3,
+  "rainMax": 0.55,
+  "fertilityMin": 0.35,
+  "fertilityMax": 0.65,
+  "landformHint": "mountainous-foothills",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#88B445"
+}

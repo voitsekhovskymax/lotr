@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-nurn",
+  "displayName": "Nurn",
+  "tempMin": 15,
+  "tempMax": 28,
+  "rainMin": 0.15,
+  "rainMax": 0.3,
+  "fertilityMin": 0.1,
+  "fertilityMax": 0.25,
+  "landformHint": "inland-sea-shore",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#3D3B2B"
+}

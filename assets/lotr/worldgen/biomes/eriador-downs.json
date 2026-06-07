@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-eriador-downs",
+  "displayName": "Eriador Downs",
+  "tempMin": 6,
+  "tempMax": 14,
+  "rainMin": 0.3,
+  "rainMax": 0.5,
+  "fertilityMin": 0.2,
+  "fertilityMax": 0.4,
+  "landformHint": "rolling-hills",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#748C47"
+}

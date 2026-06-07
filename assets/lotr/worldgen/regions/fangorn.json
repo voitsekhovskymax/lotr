@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-fangorn",
+  "displayName": "Fangorn",
+  "biome": "lotr:biome-fangorn",
+  "faction": "lotr:faction-fangorn",
+  "centerX": -2560,
+  "centerZ": 5632,
+  "radiusX": 1536,
+  "radiusZ": 1536,
+  "priority": 10,
+  "notes": "Ancient forest at the southern feet of the Misty Mountains"
+}

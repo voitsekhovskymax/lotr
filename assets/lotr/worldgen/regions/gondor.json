@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-gondor",
+  "displayName": "Gondor",
+  "biome": "lotr:biome-gondor",
+  "faction": "lotr:faction-gondor",
+  "centerX": 18432,
+  "centerZ": 7680,
+  "radiusX": 4096,
+  "radiusZ": 3072,
+  "priority": 10,
+  "notes": "Realm of Gondor — from Minas Tirith to the Anduin delta"
+}

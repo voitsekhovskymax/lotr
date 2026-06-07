@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-shire-moors",
+  "displayName": "Shire Moors",
+  "tempMin": 6,
+  "tempMax": 14,
+  "rainMin": 0.4,
+  "rainMax": 0.65,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.5,
+  "landformHint": "moorland",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#685734"
+}

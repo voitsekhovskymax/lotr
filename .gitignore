@@ -30,3 +30,5 @@ Releases/
 
 # Vintage Story local deploy/test artifacts
 *.zip
+
+/references/

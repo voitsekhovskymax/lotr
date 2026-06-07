@@ -80,6 +80,12 @@ public class StructureSpawner : ModSystem
             case "lotr:region-minas-tirith":
                 TrySpawnMinasTirithWall(baseX, baseZ, chunkSize, region.Id);
                 break;
+
+            case "lotr:region-misty-mountains":
+            case "lotr:region-grey-mountains":
+            case "lotr:region-angmar-mountains":
+                TrySpawnMountainPeak(baseX, baseZ, chunkSize);
+                break;
         }
     }
 
@@ -158,6 +164,28 @@ public class StructureSpawner : ModSystem
         placedUnique.Add(key);
 
         sapi!.Logger.Notification($"[LOTR] Spawned MinasTirith wall at {wx},{surfaceY},{wz}");
+    }
+
+    void TrySpawnMountainPeak(int baseX, int baseZ, int chunkSize)
+    {
+        // ~18% chance per chunk — peaks clustered throughout mountain range
+        if (rng.NextDouble() > 0.18) return;
+
+        int lx = 8 + rng.Next(chunkSize - 16);
+        int lz = 8 + rng.Next(chunkSize - 16);
+        int wx = baseX + lx;
+        int wz = baseZ + lz;
+
+        int surfaceY = GetSurfaceY(wx, wz);
+        if (surfaceY <= 10) return;
+
+        int peakH  = 20 + rng.Next(36);  // 20–55 blocks tall
+        int radius = 5  + rng.Next(8);   // 5–12 block base radius
+
+        var peak = new MistyMountainsRange(sapi!, blockAccessor);
+        peak.GeneratePeak(wx, surfaceY, wz, peakH, radius, spawnSubSpires: true);
+
+        sapi!.Logger.Notification($"[LOTR] Spawned MountainPeak h={peakH} r={radius} at {wx},{surfaceY},{wz}");
     }
 
     // ── Helpers ──────────────────────────────────────────────────────

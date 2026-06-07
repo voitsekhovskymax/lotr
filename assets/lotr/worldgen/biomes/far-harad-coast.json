@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-far-harad-coast",
+  "displayName": "Far Harad Coast",
+  "tempMin": 22,
+  "tempMax": 32,
+  "rainMin": 0.3,
+  "rainMax": 0.5,
+  "fertilityMin": 0.15,
+  "fertilityMax": 0.35,
+  "landformHint": "coastal",
+  "surfaceBlock": "sand",
+  "referenceColor": "#EDEDED"
+}

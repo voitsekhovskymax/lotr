@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-rhun-island",
+  "displayName": "Rhun Island",
+  "tempMin": 10,
+  "tempMax": 20,
+  "rainMin": 0.35,
+  "rainMax": 0.6,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.55,
+  "landformHint": "island",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#86B72A"
+}

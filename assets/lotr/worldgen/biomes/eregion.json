@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-eregion",
+  "displayName": "Eregion",
+  "tempMin": 8,
+  "tempMax": 15,
+  "rainMin": 0.4,
+  "rainMax": 0.6,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.55,
+  "landformHint": "ancient-ruins",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#74AD45"
+}

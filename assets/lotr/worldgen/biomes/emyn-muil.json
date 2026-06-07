@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-emyn-muil",
+  "displayName": "Emyn Muil",
+  "tempMin": 5,
+  "tempMax": 15,
+  "rainMin": 0.2,
+  "rainMax": 0.35,
+  "fertilityMin": 0.05,
+  "fertilityMax": 0.2,
+  "landformHint": "rocky-labyrinth",
+  "surfaceBlock": "rock",
+  "referenceColor": "#968C72"
+}

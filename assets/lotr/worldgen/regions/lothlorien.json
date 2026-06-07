@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-lothlorien",
+  "displayName": "Lothlórien",
+  "biome": "lotr:biome-lothlorien",
+  "faction": "lotr:faction-lothlorien",
+  "centerX": 10240,
+  "centerZ": -5120,
+  "radiusX": 2048,
+  "radiusZ": 2048,
+  "priority": 10,
+  "notes": "Golden Wood of the Galadhrim, between the Misty Mountains and Anduin"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-celebrant",
+  "displayName": "River Celebrant",
+  "tempMin": 8,
+  "tempMax": 16,
+  "rainMin": 0.55,
+  "rainMax": 0.8,
+  "fertilityMin": 0.75,
+  "fertilityMax": 0.95,
+  "landformHint": "flat-forest-floor",
+  "surfaceBlock": "soil-rich-normal",
+  "referenceColor": "#74AF46"
+}

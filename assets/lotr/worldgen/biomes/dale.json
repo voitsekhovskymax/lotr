@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-dale",
+  "displayName": "Dale",
+  "tempMin": 5,
+  "tempMax": 15,
+  "rainMin": 0.35,
+  "rainMax": 0.55,
+  "fertilityMin": 0.4,
+  "fertilityMax": 0.6,
+  "landformHint": "river-valley",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#93A66C"
+}

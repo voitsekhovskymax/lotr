@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-dorwinion-hills",
+  "displayName": "Dorwinion Hills",
+  "tempMin": 12,
+  "tempMax": 22,
+  "rainMin": 0.4,
+  "rainMax": 0.65,
+  "fertilityMin": 0.5,
+  "fertilityMax": 0.75,
+  "landformHint": "vineyard-hills",
+  "surfaceBlock": "soil-rich-normal",
+  "referenceColor": "#9FB258"
+}

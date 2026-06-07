@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-tundra",
+  "displayName": "Tundra",
+  "tempMin": -15,
+  "tempMax": 2,
+  "rainMin": 0.1,
+  "rainMax": 0.25,
+  "fertilityMin": 0.02,
+  "fertilityMax": 0.1,
+  "landformHint": "frozen-tundra",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#43831D"
+}

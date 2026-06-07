@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-far-harad-swamp",
+  "displayName": "Far Harad Swamp",
+  "tempMin": 22,
+  "tempMax": 32,
+  "rainMin": 0.65,
+  "rainMax": 0.85,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.55,
+  "landformHint": "tropical-swamp",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#7F7934"
+}

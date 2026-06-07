@@ -1,22 +1,13 @@
 {
   "id": "lotr:biome-blue-mountains",
-  "displayName": "Blue Mountains (Ered Luin)",
-  "tempMin": 0,
-  "tempMax": 8,
-  "rainMin": 0.4,
-  "rainMax": 0.6,
-  "fertilityMin": 0.2,
-  "fertilityMax": 0.4,
-  "landformHint": "high-mountains",
-  "surfaceBlock": "gravel-granite",
-  "flora": [
-    "pine",
-    "alpine-flowers"
-  ],
-  "fauna": [
-    "goat",
-    "eagle"
-  ],
-  "snowAboveY": 0.7,
-  "notes": "Snow-capped dwarven mountains"
+  "displayName": "Blue Mountains",
+  "tempMin": -10,
+  "tempMax": 4,
+  "rainMin": 0.2,
+  "rainMax": 0.4,
+  "fertilityMin": 0.02,
+  "fertilityMax": 0.15,
+  "landformHint": "alpine-peaks",
+  "surfaceBlock": "rock",
+  "referenceColor": "#282D1D"
 }

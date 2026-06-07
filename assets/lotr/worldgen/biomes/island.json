@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-island",
+  "displayName": "Island",
+  "tempMin": 12,
+  "tempMax": 20,
+  "rainMin": 0.4,
+  "rainMax": 0.65,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.55,
+  "landformHint": "island",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#8B9660"
+}

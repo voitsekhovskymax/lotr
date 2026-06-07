@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-far-harad-arid-hills",
+  "displayName": "Far Harad Arid Hills",
+  "tempMin": 28,
+  "tempMax": 42,
+  "rainMin": 0.0,
+  "rainMax": 0.08,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.06,
+  "landformHint": "arid-desert",
+  "surfaceBlock": "sand",
+  "referenceColor": "#99913E"
+}

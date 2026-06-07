@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-near-harad-hills",
+  "displayName": "Near Harad Hills",
+  "tempMin": 26,
+  "tempMax": 40,
+  "rainMin": 0.05,
+  "rainMax": 0.15,
+  "fertilityMin": 0.05,
+  "fertilityMax": 0.15,
+  "landformHint": "arid-plains",
+  "surfaceBlock": "soil-low-normal",
+  "referenceColor": "#38821D"
+}

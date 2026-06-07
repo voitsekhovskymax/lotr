@@ -1,0 +1,12 @@
+{
+  "id": "lotr:region-misty-mountains",
+  "displayName": "Misty Mountains",
+  "biome": "lotr:biome-misty-mountains",
+  "faction": "lotr:faction-goblins-moria",
+  "centerX": 5120,
+  "centerZ": -15360,
+  "radiusX": 1024,
+  "radiusZ": 8192,
+  "priority": 10,
+  "notes": "Hithaeglir — great north-south mountain chain, home of goblins and Balrog"
+}

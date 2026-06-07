@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-harad-mountains",
+  "displayName": "Harad Mountains",
+  "tempMin": 20,
+  "tempMax": 35,
+  "rainMin": 0.05,
+  "rainMax": 0.2,
+  "fertilityMin": 0.03,
+  "fertilityMax": 0.1,
+  "landformHint": "alpine-peaks",
+  "surfaceBlock": "rock",
+  "referenceColor": "#7D864A"
+}

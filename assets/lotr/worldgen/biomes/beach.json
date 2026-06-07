@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-beach",
+  "displayName": "Beach",
+  "tempMin": 12,
+  "tempMax": 22,
+  "rainMin": 0.3,
+  "rainMax": 0.5,
+  "fertilityMin": 0.05,
+  "fertilityMax": 0.15,
+  "landformHint": "coastal-beach",
+  "surfaceBlock": "sand",
+  "referenceColor": "#94A041"
+}

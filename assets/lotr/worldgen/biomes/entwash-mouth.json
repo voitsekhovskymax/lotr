@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-entwash-mouth",
+  "displayName": "Entwash Mouth",
+  "tempMin": 8,
+  "tempMax": 18,
+  "rainMin": 0.35,
+  "rainMax": 0.55,
+  "fertilityMin": 0.3,
+  "fertilityMax": 0.55,
+  "landformHint": "open-lands",
+  "surfaceBlock": "soil-medium-normal",
+  "referenceColor": "#8EBF45"
+}

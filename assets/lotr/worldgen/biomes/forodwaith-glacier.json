@@ -1,0 +1,13 @@
+{
+  "id": "lotr:biome-forodwaith-glacier",
+  "displayName": "Forodwaith Glacier",
+  "tempMin": -35,
+  "tempMax": -15,
+  "rainMin": 0.05,
+  "rainMax": 0.15,
+  "fertilityMin": 0.0,
+  "fertilityMax": 0.02,
+  "landformHint": "glacial",
+  "surfaceBlock": "ice",
+  "referenceColor": "#9695A0"
+}

@@ -97,6 +97,26 @@ public class PngBiomeMap
         return colorToRegion.TryGetValue(rgb, out var id) ? id : null;
     }
 
+    /// <summary>
+    /// Debug: returns pixel coordinates and raw RGB for a spawn-relative position.
+    /// Format: "px=NNN pz=NNN rgb=#RRGGBB [matched/unmatched/oob/not-loaded]"
+    /// </summary>
+    public string GetDebugInfo(double relX, double relZ)
+    {
+        if (pixels == null) return "map not loaded";
+
+        int px = centerPixelX + (int)Math.Round(relX / pixelsPerBlock);
+        int pz = centerPixelZ + (int)Math.Round(relZ / pixelsPerBlock);
+
+        if (px < 0 || px >= mapWidth || pz < 0 || pz >= mapHeight)
+            return $"px={px} pz={pz} [out-of-bounds, map={mapWidth}x{mapHeight} center={centerPixelX},{centerPixelZ} scale={pixelsPerBlock}]";
+
+        int rgb = pixels[pz * mapWidth + px];
+        string hexRgb = $"#{rgb:X6}";
+        string match  = colorToRegion.TryGetValue(rgb, out var id) ? $"→ {id}" : "(no match in colormap)";
+        return $"px={px} pz={pz} rgb={hexRgb} {match}";
+    }
+
     // ── JSON model ────────────────────────────────────────────────────
 
     class ColormapFile

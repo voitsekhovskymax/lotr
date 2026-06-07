@@ -138,4 +138,13 @@ public class RegionSystem
         var biome  = region is not null ? GetBiome(region) : null;
         return (region, biome);
     }
+
+    /// <summary>Debug info about the PNG pixel at this world position (for /lotr region command).</summary>
+    public string GetMapDebugInfo(double x, double z)
+    {
+        if (pngMap is not { IsLoaded: true }) return "PNG map not loaded";
+        double rx = x - SpawnX;
+        double rz = z - SpawnZ;
+        return pngMap.GetDebugInfo(rx, rz);
+    }
 }

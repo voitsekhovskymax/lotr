@@ -277,8 +277,9 @@ public class LotrModSystem : ModSystem
         {
             double rx = pos.X - Regions.SpawnX;
             double rz = pos.Z - Regions.SpawnZ;
+            string mapDbg = Regions.GetMapDebugInfo(pos.X, pos.Z);
             return TextCommandResult.Success(
-                $"You are in the Wilderness.\n  World pos: X={pos.X:F0} Z={pos.Z:F0}\n  Spawn-relative: X={rx:F0} Z={rz:F0}");
+                $"You are in the Wilderness.\n  World pos: X={pos.X:F0} Z={pos.Z:F0}\n  Spawn-relative: X={rx:F0} Z={rz:F0}\n  Map: {mapDbg}");
         }
 
         var sb = new StringBuilder();

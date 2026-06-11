@@ -8,6 +8,65 @@
   "fertilityMin": 0.35,
   "fertilityMax": 0.65,
   "landformHint": "mountainous-foothills",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#A6BD64"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#A6BD64",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.26,
+  "decorations": [
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-orangemallow-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-catmint-free",
+      "weight": 2
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:fruitingbush-wild-strawberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.006,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:greenspirecypress",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:walnut",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-catmint-free",
+    "game:flower-orangemallow-free",
+    "game:flower-wilddaisy-free",
+    "game:fruitingbush-wild-strawberry-free",
+    "game:greenspirecypress",
+    "game:tallgrass-tall-free",
+    "game:walnut"
+  ]
 }

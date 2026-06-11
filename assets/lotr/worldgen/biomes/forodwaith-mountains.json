@@ -8,6 +8,21 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.03,
   "landformHint": "alpine-peaks",
-  "surfaceBlock": "rock",
-  "referenceColor": "#ABB5B2"
+  "surfaceBlock": "game:rock-granite",
+  "referenceColor": "#ABB5B2",
+  "subSurfaceBlock": "game:gravel-granite",
+  "decorationChance": 0.01,
+  "decorations": [
+    {
+      "block": "game:flower-edelweiss-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:flower-edelweiss-free"
+  ]
 }

@@ -8,6 +8,51 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.55,
   "landformHint": "ancient-ruins",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#74AD45"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#74AD45",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.16,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-heather-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.003,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 4,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {
+    "nativecopper": 1.5
+  },
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-heather-free",
+    "game:flower-wilddaisy-free",
+    "game:silverbirch",
+    "game:tallgrass-medium-free"
+  ]
 }

@@ -8,6 +8,63 @@
   "fertilityMin": 0.75,
   "fertilityMax": 0.95,
   "landformHint": "flat-forest-floor",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#FBD83F"
+  "surfaceBlock": "game:soil-rich-normal",
+  "referenceColor": "#FBD83F",
+  "subSurfaceBlock": "game:soil-medium-normal",
+  "decorationChance": 0.28,
+  "decorations": [
+    {
+      "block": "game:flower-daffodil-free",
+      "weight": 5
+    },
+    {
+      "block": "game:flower-goldenpoppy-free",
+      "weight": 4
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 8
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.016,
+  "trees": [
+    {
+      "code": "game:sugarmaple",
+      "weight": 10,
+      "size": 1.2
+    },
+    {
+      "code": "game:norwaymaple",
+      "weight": 3,
+      "size": 1.1
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 2,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox"
+  ],
+  "flora": [
+    "game:flower-daffodil-free",
+    "game:flower-goldenpoppy-free",
+    "game:flower-lilyofthevalley-free",
+    "game:flower-wilddaisy-free",
+    "game:norwaymaple",
+    "game:silverbirch",
+    "game:sugarmaple",
+    "game:tallgrass-tall-free"
+  ]
 }

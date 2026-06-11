@@ -8,6 +8,14 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "coastal-beach",
-  "surfaceBlock": "sand",
-  "referenceColor": "#969075"
+  "surfaceBlock": "game:gravel-granite",
+  "referenceColor": "#969075",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.0,
+  "decorations": [],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": []
 }

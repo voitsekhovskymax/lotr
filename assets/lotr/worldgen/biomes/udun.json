@@ -8,6 +8,27 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.03,
   "landformHint": "volcanic-wasteland",
-  "surfaceBlock": "gravel-basalt",
-  "referenceColor": "#7DA34F"
+  "surfaceBlock": "game:rock-basalt",
+  "referenceColor": "#7DA34F",
+  "subSurfaceBlock": "game:sand-ash",
+  "decorationChance": 0.02,
+  "decorations": [
+    {
+      "block": "game:fire",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {
+    "bismuthinite": 1.8,
+    "sphalerite": 1.5,
+    "hematite": 1.5
+  },
+  "fauna": [
+    "lotr:orc-mordor"
+  ],
+  "flora": [
+    "game:fire"
+  ]
 }

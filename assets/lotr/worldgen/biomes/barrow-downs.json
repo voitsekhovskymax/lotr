@@ -8,6 +8,31 @@
   "fertilityMin": 0.2,
   "fertilityMax": 0.4,
   "landformHint": "rolling-hills",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#6D8746"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#6D8746",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.1,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-heather-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:flower-heather-free",
+    "game:flower-mugwort-free",
+    "game:tallgrass-short-free"
+  ]
 }

@@ -8,6 +8,38 @@
   "fertilityMin": 0.2,
   "fertilityMax": 0.4,
   "landformHint": "boggy-lowlands",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#779B4F"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#779B4F",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-verytall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-forgetmenot-free",
+      "weight": 1
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "lotr:orc-mordor"
+  ],
+  "flora": [
+    "game:flower-forgetmenot-free",
+    "game:flower-mugwort-free",
+    "game:tallgrass-tall-free",
+    "game:tallgrass-verytall-free"
+  ]
 }

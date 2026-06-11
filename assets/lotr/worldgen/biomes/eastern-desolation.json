@@ -8,6 +8,14 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.03,
   "landformHint": "volcanic-wasteland",
-  "surfaceBlock": "gravel-basalt",
-  "referenceColor": "#598C2E"
+  "surfaceBlock": "game:rock-basalt",
+  "referenceColor": "#598C2E",
+  "subSurfaceBlock": "game:sand-ash",
+  "decorationChance": 0.0,
+  "decorations": [],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": []
 }

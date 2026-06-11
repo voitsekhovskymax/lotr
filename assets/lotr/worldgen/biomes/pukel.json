@@ -8,6 +8,57 @@
   "fertilityMin": 0.35,
   "fertilityMax": 0.65,
   "landformHint": "mountainous-foothills",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#A5B157"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#A5B157",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 2
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.016,
+  "trees": [
+    {
+      "code": "game:oldenglishoak",
+      "weight": 6,
+      "size": 1.1
+    },
+    {
+      "code": "game:scotspine",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:deepforestlarch",
+      "weight": 3,
+      "size": 1.1
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:wolf",
+    "game:pig-wild",
+    "game:bear",
+    "game:raccoon"
+  ],
+  "flora": [
+    "game:deepforestlarch",
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free",
+    "game:oldenglishoak",
+    "game:scotspine",
+    "game:tallgrass-short-free"
+  ]
 }

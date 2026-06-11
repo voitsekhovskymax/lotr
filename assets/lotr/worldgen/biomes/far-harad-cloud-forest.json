@@ -8,6 +8,57 @@
   "fertilityMin": 0.55,
   "fertilityMax": 0.8,
   "landformHint": "cloud-forest",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#878E4D"
+  "surfaceBlock": "game:soil-rich-normal",
+  "referenceColor": "#878E4D",
+  "subSurfaceBlock": "game:soil-medium-normal",
+  "decorationChance": 0.24,
+  "decorations": [
+    {
+      "block": "game:tallgrass-verytall-free",
+      "weight": 5
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 5
+    },
+    {
+      "block": "game:flower-forgetmenot-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.018,
+  "trees": [
+    {
+      "code": "game:kapok",
+      "weight": 5,
+      "size": 1.0
+    },
+    {
+      "code": "game:himalayanbirch",
+      "weight": 4,
+      "size": 1.1
+    },
+    {
+      "code": "game:redwoodpine",
+      "weight": 2,
+      "size": 1.1
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:chicken"
+  ],
+  "flora": [
+    "game:flower-forgetmenot-free",
+    "game:flower-lilyofthevalley-free",
+    "game:himalayanbirch",
+    "game:kapok",
+    "game:redwoodpine",
+    "game:tallgrass-tall-free",
+    "game:tallgrass-verytall-free"
+  ]
 }

@@ -8,6 +8,14 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.02,
   "landformHint": "glacial",
-  "surfaceBlock": "ice",
-  "referenceColor": "#9695A0"
+  "surfaceBlock": "game:glacierice",
+  "referenceColor": "#9695A0",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.0,
+  "decorations": [],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": []
 }

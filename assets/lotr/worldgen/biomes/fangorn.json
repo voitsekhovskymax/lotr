@@ -8,6 +8,64 @@
   "fertilityMin": 0.5,
   "fertilityMax": 0.7,
   "landformHint": "ancient-forest",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#427519"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#427519",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.16,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 5
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-bluebell-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.022,
+  "trees": [
+    {
+      "code": "game:oldenglishoak",
+      "weight": 8,
+      "size": 1.3
+    },
+    {
+      "code": "game:englishoak",
+      "weight": 4,
+      "size": 1.2
+    },
+    {
+      "code": "game:walnut",
+      "weight": 3,
+      "size": 1.1
+    },
+    {
+      "code": "game:deepforestlarch",
+      "weight": 2,
+      "size": 1.2
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:bear",
+    "game:wolf"
+  ],
+  "flora": [
+    "game:deepforestlarch",
+    "game:englishoak",
+    "game:flower-bluebell-free",
+    "game:flower-ghostpipered-free",
+    "game:flower-lilyofthevalley-free",
+    "game:oldenglishoak",
+    "game:tallgrass-medium-free",
+    "game:walnut"
+  ]
 }

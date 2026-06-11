@@ -8,17 +8,70 @@
   "fertilityMin": 0.6,
   "fertilityMax": 0.8,
   "landformHint": "deep-valley",
-  "surfaceBlock": "soil-medium-normal",
+  "surfaceBlock": "game:soil-medium-normal",
   "flora": [
-    "birch",
-    "beech",
-    "fern",
-    "flowers"
+    "game:flower-bluebell-free",
+    "game:flower-catmint-free",
+    "game:flower-forgetmenot-free",
+    "game:flower-lilyofthevalley-free",
+    "game:himalayanbirch",
+    "game:norwaymaple",
+    "game:scotspine",
+    "game:silverbirch",
+    "game:tallgrass-tall-free"
   ],
   "fauna": [
-    "deer",
-    "bird"
+    "game:hare",
+    "game:fox"
   ],
   "water": "waterfalls-and-streams",
-  "notes": "Hidden elven valley between mountains"
+  "notes": "Hidden elven valley between mountains",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-bluebell-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-forgetmenot-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-catmint-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.01,
+  "trees": [
+    {
+      "code": "game:silverbirch",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:himalayanbirch",
+      "weight": 4,
+      "size": 1.1
+    },
+    {
+      "code": "game:scotspine",
+      "weight": 3,
+      "size": 1.0
+    },
+    {
+      "code": "game:norwaymaple",
+      "weight": 2,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {}
 }

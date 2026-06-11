@@ -8,6 +8,46 @@
   "fertilityMin": 0.5,
   "fertilityMax": 0.8,
   "landformHint": "jungle",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#CBD3A9"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#CBD3A9",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-verytall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 5
+    },
+    {
+      "block": "game:flower-orangemallow-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.012,
+  "trees": [
+    {
+      "code": "game:kapok",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:acacia",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:chicken"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:flower-orangemallow-free",
+    "game:kapok",
+    "game:tallgrass-tall-free",
+    "game:tallgrass-verytall-free"
+  ]
 }

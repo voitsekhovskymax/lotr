@@ -1,40 +1,34 @@
 using System;
 using System.Collections.Generic;
 using Lotr.Regions;
-using Lotr.WorldGen.Biomes;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
+
 namespace Lotr.WorldGen;
 
 /// <summary>
-/// Hooks into the "lotr" world type chunk generation to override surface
-/// blocks per Middle-earth region (Mordor = basalt, Shire = fertile soil).
+/// Hooks into the "lotr" world type chunk generation. Fully data-driven:
+/// each biome JSON (assets/lotr/worldgen/biomes/) declares surfaceBlock,
+/// subSurfaceBlock, decorations, trees and oreBoost — this system applies them.
 ///
 /// ExecuteOrder() = 0.2 → runs after base terrain (0.0) but before
 /// vanilla decorators (0.5+), so our surface is decorated normally.
 /// </summary>
 public class LotrWorldGen : ModSystem
 {
+    const int ChunkSize = 32;
+
     ICoreServerAPI?        sapi;
     IWorldGenBlockAccessor blockAccessor = null!;
     RegionSystem?          regions;
 
-    // Block IDs — resolved once after assets loaded
-    int idBasalt;
-    int idGravel;
-    int idSand;
-    int idSoilLow;
-    int idSoilMed;
-    int idStone;
-
-    readonly BiomeShire     shireGen     = new();
-    readonly BiomeMordor    mordorGen    = new();
-    readonly BiomeRohan     rohanGen     = new();
-    readonly BiomeGondor    gondorGen    = new();
-    readonly BiomeLothlorien lothlorienGen = new();
-    readonly BiomeFangorn   fangornGen   = new();
+    readonly Dictionary<string, BiomeDecorator> decorators = new();
     readonly Random worldgenRng = new();
+    LCGRandom treeRng = null!;
+
+    // Ore grades tried per boosted vein, most common first
+    static readonly string[] OreGrades = ["poor", "medium", "rich"];
 
     // ── ModSystem lifecycle ──────────────────────────────────────────
 
@@ -67,31 +61,22 @@ public class LotrWorldGen : ModSystem
 
     void OnSaveGameLoaded()
     {
-        // Resolve block IDs after world has loaded its block registry
-        idBasalt  = sapi!.World.GetBlock(new AssetLocation("game:rock-basalt"))?.Id   ?? 0;
-        idGravel  = sapi!.World.GetBlock(new AssetLocation("game:gravel-granite"))?.Id ?? 0;
-        idSand    = sapi!.World.GetBlock(new AssetLocation("game:sand-ash"))?.Id
-                 ?? sapi!.World.GetBlock(new AssetLocation("game:sand-volcanic"))?.Id
-                 ?? sapi!.World.GetBlock(new AssetLocation("game:sand"))?.Id           ?? 0;
-        idSoilLow = sapi!.World.GetBlock(new AssetLocation("game:soil-low-none"))?.Id ?? 0;
-        idSoilMed = sapi!.World.GetBlock(new AssetLocation("game:soil-medium-none"))?.Id ?? 0;
-        idStone   = sapi!.World.GetBlock(new AssetLocation("game:rock-granite"))?.Id  ?? 0;
-
-        shireGen.ResolveBlocks(sapi!);
-        mordorGen.ResolveBlocks(sapi!);
-        rohanGen.ResolveBlocks(sapi!);
-        gondorGen.ResolveBlocks(sapi!);
-        lothlorienGen.ResolveBlocks(sapi!);
-        fangornGen.ResolveBlocks(sapi!);
+        treeRng = new LCGRandom(sapi!.World.Seed);
 
         // Grab the RegionSystem from the LOTR mod instance
         var lotrMod = sapi!.ModLoader.GetModSystem<LotrModSystem>();
         regions = lotrMod?.Regions;
 
+        decorators.Clear();
+        if (regions != null)
+        {
+            foreach (var (id, biome) in regions.Biomes)
+                decorators[id] = BiomeDecorator.Build(biome, sapi!);
+        }
+
         sapi!.Logger.Notification(
-            $"[LOTR] WorldGen ready. basalt={idBasalt} gravel={idGravel} sand={idSand} " +
-            $"soilLow={idSoilLow} soilMed={idSoilMed} stone={idStone} " +
-            $"regions={(regions?.Regions.Count ?? 0)}");
+            $"[LOTR] WorldGen ready: {decorators.Count} biome decorators, " +
+            $"{regions?.Regions.Count ?? 0} regions.");
     }
 
     void OnGetBlockAccessor(IChunkProviderThread chunkProvider)
@@ -106,311 +91,141 @@ public class LotrWorldGen : ModSystem
 
         if (regions == null || regions.SpawnX == 0) return;
 
-        const int chunkSize = 32; // GlobalConstants.ChunkSize
-        int baseX     = request.ChunkX * chunkSize;
-        int baseZ     = request.ChunkZ * chunkSize;
+        int baseX = request.ChunkX * ChunkSize;
+        int baseZ = request.ChunkZ * ChunkSize;
+        var heightMap = request.Chunks[^1].MapChunk.WorldGenTerrainHeightMap;
 
-        for (int lx = 0; lx < chunkSize; lx++)
-        for (int lz = 0; lz < chunkSize; lz++)
+        var surfacePos = new BlockPos(0);
+        var scratch    = new BlockPos(0);
+
+        for (int lx = 0; lx < ChunkSize; lx++)
+        for (int lz = 0; lz < ChunkSize; lz++)
         {
-            double wx = baseX + lx;
-            double wz = baseZ + lz;
-
-            var (region, biome) = regions.GetAt(wx, wz);
+            var (region, biome) = regions.GetAt(baseX + lx, baseZ + lz);
             if (region == null || biome == null) continue;
+            if (!decorators.TryGetValue(biome.Id, out var deco)) continue;
 
-            // Determine which surface block to place based on biome
-            int targetBlock = SurfaceBlockFor(biome.Id);
-            if (targetBlock == 0) continue;
+            int surfaceY = heightMap[lz * ChunkSize + lx];
+            if (surfaceY <= 1) continue;
 
-            // Find the surface Y for this XZ column
-            int surfaceY = request.Chunks[^1].MapChunk.WorldGenTerrainHeightMap[lz * chunkSize + lx];
-            if (surfaceY <= 0) continue;
+            surfacePos.Set(baseX + lx, surfaceY, baseZ + lz);
+            int existing = blockAccessor.GetBlock(surfacePos).Id;
+            if (!IsSurfaceReplaceable(existing)) continue;
 
-            // Replace only the top 1-2 blocks so we don't destroy strata
-            var pos = new BlockPos(baseX + lx, surfaceY, baseZ + lz);
-            int existing = blockAccessor.GetBlock(pos).Id;
+            if (deco.SurfaceBlockId != 0)
+                blockAccessor.SetBlock(deco.SurfaceBlockId, surfacePos);
 
-            // Only replace soil/grass/stone surface blocks — not water, air, etc.
-            if (IsSurfaceReplaceable(existing))
+            deco.DecorateColumn(blockAccessor, surfacePos, scratch, worldgenRng);
+
+            TrySpawnTree(deco, surfacePos, worldgenRng);
+        }
+
+        ApplyOreBoost(request, baseX, baseZ, heightMap, scratch);
+    }
+
+    // ── Trees ───────────────────────────────────────────────────────
+
+    void TrySpawnTree(BiomeDecorator deco, BlockPos surfacePos, Random rng)
+    {
+        var pick = deco.RollTree(rng);
+        if (pick == null) return;
+
+        var (code, size) = pick.Value;
+        var generators = sapi!.World.TreeGenerators;
+        if (generators == null || !generators.TryGetValue(code, out var gen)) return;
+
+        // Trunk base = first air block above the surface
+        var treePos = surfacePos.UpCopy();
+        treeRng.InitPositionSeed(treePos.X, treePos.Z);
+
+        gen.GrowTree(blockAccessor, treePos, new TreeGenParams
+        {
+            size = size,
+            skipForestFloor = true,
+        }, treeRng);
+    }
+
+    // ── Ore boost ───────────────────────────────────────────────────
+
+    /// <summary>
+    /// Spawns extra small ore veins for biomes with oreBoost multipliers.
+    /// multiplier 2.0 ≈ 3 extra vein attempts per chunk for that ore type.
+    /// </summary>
+    void ApplyOreBoost(IChunkColumnGenerateRequest request, int baseX, int baseZ,
+                       ushort[] heightMap, BlockPos scratch)
+    {
+        // Sample biome at chunk center — ore boost is coarse by design
+        var (_, biome) = regions!.GetAt(baseX + ChunkSize / 2, baseZ + ChunkSize / 2);
+        if (biome == null) return;
+        if (!decorators.TryGetValue(biome.Id, out var deco) || deco.OreBoost.Count == 0) return;
+
+        foreach (var (oreType, multiplier) in deco.OreBoost)
+        {
+            int tries = (int)Math.Round((multiplier - 1.0) * 3.0);
+            for (int i = 0; i < tries; i++)
             {
-                blockAccessor.SetBlock(targetBlock, pos);
+                int lx = worldgenRng.Next(ChunkSize);
+                int lz = worldgenRng.Next(ChunkSize);
+                int surfaceY = heightMap[lz * ChunkSize + lx];
+                if (surfaceY < 24) continue;
 
-                switch (biome.Id)
-                {
-                    case "lotr:biome-shire":
-                    case "lotr:biome-shire-woodlands":
-                    case "lotr:biome-white-downs":
-                    case "lotr:biome-shire-moors":
-                        shireGen.DecorateColumn(blockAccessor, pos, worldgenRng);
-                        break;
+                int y = 8 + worldgenRng.Next(surfaceY - 16);
+                scratch.Set(baseX + lx, y, baseZ + lz);
 
-                    case "lotr:biome-mordor":
-                    case "lotr:biome-gorgoroth":
-                    case "lotr:biome-udun":
-                    case "lotr:biome-morgul-vale":
-                    case "lotr:biome-eastern-desolation":
-                        mordorGen.DecorateColumn(blockAccessor, pos, worldgenRng);
-                        break;
+                var host = blockAccessor.GetBlock(scratch);
+                var hostCode = host?.Code?.Path ?? "";
+                if (!hostCode.StartsWith("rock-")) continue;
 
-                    case "lotr:biome-rohan":
-                    case "lotr:biome-rohan-woodlands":
-                    case "lotr:biome-wold":
-                    case "lotr:biome-adornland":
-                        rohanGen.DecorateColumn(blockAccessor, pos, worldgenRng);
-                        break;
+                string rockType = hostCode[5..];
+                int oreId = ResolveOreBlock(oreType, rockType, worldgenRng);
+                if (oreId == 0) continue;
 
-                    case "lotr:biome-gondor":
-                    case "lotr:biome-ithilien":
-                    case "lotr:biome-lossarnach":
-                    case "lotr:biome-lebennin":
-                    case "lotr:biome-pelargir":
-                        gondorGen.DecorateColumn(blockAccessor, pos, worldgenRng);
-                        break;
-
-                    case "lotr:biome-lothlorien":
-                    case "lotr:biome-lothlorien-edge":
-                    case "lotr:biome-celebrant":
-                        lothlorienGen.DecorateColumn(blockAccessor, pos, worldgenRng);
-                        break;
-
-                    case "lotr:biome-fangorn":
-                    case "lotr:biome-fangorn-clearing":
-                    case "lotr:biome-old-forest":
-                    case "lotr:biome-woodland-realm":
-                    case "lotr:biome-mirkwood-north":
-                        fangornGen.DecorateColumn(blockAccessor, pos, worldgenRng);
-                        break;
-
-                    // Mountains: gravel sub-surface
-                    case "lotr:biome-blue-mountains":
-                    case "lotr:biome-misty-mountains":
-                    case "lotr:biome-grey-mountains":
-                    case "lotr:biome-angmar-mountains":
-                    case "lotr:biome-white-mountains":
-                    case "lotr:biome-moria":
-                        if (surfaceY > 1)
-                        {
-                            var below = new BlockPos(baseX + lx, surfaceY - 1, baseZ + lz);
-                            if (IsSurfaceReplaceable(blockAccessor.GetBlock(below).Id))
-                                blockAccessor.SetBlock(idGravel, below);
-                        }
-                        break;
-                }
+                PlaceVein(oreId, scratch, worldgenRng);
             }
         }
     }
 
-    // ── Helpers ─────────────────────────────────────────────────────
-
-    int SurfaceBlockFor(string biomeId)
+    /// <summary>Resolves ore-{grade}-{type}-{rock}, rolling grade (50% poor / 35% medium / 15% rich).</summary>
+    int ResolveOreBlock(string oreType, string rockType, Random rng)
     {
-        // Exact overrides for specific biomes
-        return biomeId switch
+        int roll = rng.Next(100);
+        string grade = roll < 50 ? "poor" : roll < 85 ? "medium" : "rich";
+
+        // Preferred grade first, then the rest — not every combo exists per rock
+        int id = OreId(grade, oreType, rockType);
+        if (id != 0) return id;
+
+        foreach (var g in OreGrades)
         {
-            // ── Shire & surroundings (rich/medium soil) ─────────────────
-            "lotr:biome-shire"               => shireGen.SurfaceBlock,
-            "lotr:biome-shire-woodlands"     => shireGen.SurfaceBlock,
-            "lotr:biome-white-downs"         => shireGen.SurfaceBlock,
-            "lotr:biome-shire-moors"         => idSoilLow,
-            "lotr:biome-shire-marshes"       => idSoilLow,
-            "lotr:biome-old-forest"          => idSoilMed,
-            "lotr:biome-barrow-downs"        => idSoilLow,
-
-            // ── Rohan (medium grassland) ─────────────────────────────────
-            "lotr:biome-rohan"               => idSoilMed,
-            "lotr:biome-rohan-woodlands"     => idSoilMed,
-            "lotr:biome-rohan-uruk-highlands"=> idSoilLow,
-            "lotr:biome-wold"                => idSoilLow,
-            "lotr:biome-adornland"           => idSoilMed,
-
-            // ── Gondor & surroundings ────────────────────────────────────
-            "lotr:biome-gondor"              => idSoilLow,
-            "lotr:biome-minas-tirith"        => idSoilLow,
-            "lotr:biome-ithilien"            => idSoilMed,
-            "lotr:biome-ithilien-hills"      => idSoilLow,
-            "lotr:biome-ithilien-wasteland"  => idSand,
-            "lotr:biome-pelargir"            => idSoilLow,
-            "lotr:biome-lossarnach"          => idSoilMed,
-            "lotr:biome-imloth-melui"        => idSoilMed,
-            "lotr:biome-lamedon"             => idSoilLow,
-            "lotr:biome-lamedon-hills"       => idSoilLow,
-            "lotr:biome-blackroot-vale"      => idSoilMed,
-            "lotr:biome-pinnath-gelin"       => idSoilLow,
-            "lotr:biome-dor-en-ernil"        => idSoilLow,
-            "lotr:biome-dor-en-ernil-hills"  => idSoilLow,
-            "lotr:biome-andrast"             => idSoilLow,
-            "lotr:biome-lebennin"            => idSoilMed,
-            "lotr:biome-gondor-woodlands"    => idSoilMed,
-            "lotr:biome-pelennor"            => idSoilLow,
-            "lotr:biome-pukel"               => idSoilLow,
-            "lotr:biome-nan-curunir"         => idSoilMed,
-            "lotr:biome-white-mountains-foothills" => idGravel,
-
-            // ── White/Grey Mountains (stone) ─────────────────────────────
-            "lotr:biome-white-mountains"     => idStone,
-            "lotr:biome-grey-mountains"      => idStone,
-            "lotr:biome-grey-mountains-foothills" => idGravel,
-
-            // ── Bree & Eriador ────────────────────────────────────────────
-            "lotr:biome-bree"                => idSoilLow,
-            "lotr:biome-breeland"            => idSoilLow,
-            "lotr:biome-chetwood"            => idSoilMed,
-            "lotr:biome-eriador"             => idSoilLow,
-            "lotr:biome-eriador-downs"       => idSoilLow,
-            "lotr:biome-midgewater"          => idSoilLow,
-            "lotr:biome-lone-lands"          => idSoilLow,
-            "lotr:biome-lone-lands-hills"    => idSoilLow,
-            "lotr:biome-angle"               => idSoilMed,
-            "lotr:biome-coldfells"           => idGravel,
-            "lotr:biome-ettenmoors"          => idSoilLow,
-            "lotr:biome-tower-hills"         => idSoilLow,
-
-            // ── Rivendell & Trollshaws ────────────────────────────────────
-            "lotr:biome-rivendell"           => idSoilMed,
-            "lotr:biome-trollshaws"          => idSoilMed,
-            "lotr:biome-eregion"             => idSoilMed,
-
-            // ── Blue Mountains ────────────────────────────────────────────
-            "lotr:biome-blue-mountains"      => idStone,
-            "lotr:biome-blue-mountains-foothills" => idGravel,
-            "lotr:biome-lindon"              => idSoilMed,
-            "lotr:biome-lindon-woodlands"    => idSoilMed,
-            "lotr:biome-lindon-coast"        => idSand,
-            "lotr:biome-minhiriath"          => idSoilMed,
-            "lotr:biome-enedwaith"           => idSoilLow,
-            "lotr:biome-dunland"             => idSoilLow,
-            "lotr:biome-eryn-vorn"           => idSoilMed,
-            "lotr:biome-swanfleet"           => idSoilLow,
-
-            // ── Isengard & Fangorn ────────────────────────────────────────
-            "lotr:biome-isengard"            => idSoilLow,
-            "lotr:biome-fangorn"             => idSoilMed,
-            "lotr:biome-fangorn-clearing"    => idSoilMed,
-            "lotr:biome-fangorn-wasteland"   => idSoilLow,
-
-            // ── Misty Mountains ───────────────────────────────────────────
-            "lotr:biome-misty-mountains"     => idStone,
-            "lotr:biome-misty-mountains-foothills" => idGravel,
-            "lotr:biome-moria"               => idStone,
-
-            // ── Anduin & Gladden Fields ───────────────────────────────────
-            "lotr:biome-anduin-vale"         => idSoilMed,
-            "lotr:biome-anduin-hills"        => idSoilLow,
-            "lotr:biome-anduin-mouth"        => idSoilLow,
-            "lotr:biome-gladden-fields"      => idSoilLow,
-            "lotr:biome-nindalf"             => idSoilLow,
-            "lotr:biome-entwash-mouth"       => idSoilLow,
-            "lotr:biome-celebrant"           => idSoilMed,
-            "lotr:biome-long-marshes"        => idSoilLow,
-            "lotr:biome-brown-lands"         => idSoilLow,
-
-            // ── Lothlórien ────────────────────────────────────────────────
-            "lotr:biome-lothlorien"          => idSoilMed,
-            "lotr:biome-lothlorien-edge"     => idSoilMed,
-
-            // ── Mirkwood ─────────────────────────────────────────────────
-            "lotr:biome-woodland-realm"      => idSoilMed,
-            "lotr:biome-woodland-realm-hills"=> idSoilLow,
-            "lotr:biome-mirkwood-corrupted"  => idSoilLow,
-            "lotr:biome-mirkwood-mountains"  => idStone,
-            "lotr:biome-mirkwood-north"      => idSoilMed,
-            "lotr:biome-dol-guldur"          => idSoilLow,
-            "lotr:biome-east-bight"          => idSoilLow,
-
-            // ── Rhûn & Dorwinion ──────────────────────────────────────────
-            "lotr:biome-rhun"                => idSoilLow,
-            "lotr:biome-rhun-forest"         => idSoilMed,
-            "lotr:biome-rhun-land"           => idSoilLow,
-            "lotr:biome-rhun-land-steppe"    => idSoilLow,
-            "lotr:biome-rhun-land-hills"     => idSoilLow,
-            "lotr:biome-rhun-red-forest"     => idSoilMed,
-            "lotr:biome-rhun-island"         => idSoilMed,
-            "lotr:biome-rhun-island-forest"  => idSoilMed,
-            "lotr:biome-red-mountains"       => idStone,
-            "lotr:biome-red-mountains-foothills" => idGravel,
-            "lotr:biome-dorwinion"           => idSoilMed,
-            "lotr:biome-dorwinion-hills"     => idSoilLow,
-            "lotr:biome-wilderland"          => idSoilLow,
-            "lotr:biome-wilderland-north"    => idSoilLow,
-
-            // ── Erebor, Dale & Iron Hills ─────────────────────────────────
-            "lotr:biome-erebor"              => idStone,
-            "lotr:biome-dale"                => idSoilLow,
-            "lotr:biome-iron-hills"          => idStone,
-
-            // ── Angmar & Far North ────────────────────────────────────────
-            "lotr:biome-angmar"              => idGravel,
-            "lotr:biome-angmar-mountains"    => idStone,
-            "lotr:biome-forodwaith"          => idGravel,
-            "lotr:biome-forodwaith-mountains"=> idStone,
-            "lotr:biome-forodwaith-glacier"  => idGravel,
-            "lotr:biome-forodwaith-coast"    => idSand,
-            "lotr:biome-tundra"              => idGravel,
-            "lotr:biome-taiga"               => idSoilLow,
-
-            // ── Mordor & surroundings ─────────────────────────────────────
-            "lotr:biome-mordor"              => idBasalt,
-            "lotr:biome-mordor-mountains"    => idStone,
-            "lotr:biome-gorgoroth"           => idBasalt,
-            "lotr:biome-udun"                => idBasalt,
-            "lotr:biome-dagorlad"            => idSand,
-            "lotr:biome-dead-marshes"        => idSoilLow,
-            "lotr:biome-nurn"                => idSoilLow,
-            "lotr:biome-nurnen"              => idSoilLow,
-            "lotr:biome-nurn-marshes"        => idSoilLow,
-            "lotr:biome-emyn-muil"           => idStone,
-            "lotr:biome-morgul-vale"         => idBasalt,
-            "lotr:biome-nan-ungol"           => idGravel,
-            "lotr:biome-eastern-desolation"  => idBasalt,
-
-            // ── Harad ─────────────────────────────────────────────────────
-            "lotr:biome-near-harad"          => idSand,
-            "lotr:biome-near-harad-hills"    => idSand,
-            "lotr:biome-near-harad-fertile"  => idSoilLow,
-            "lotr:biome-near-harad-fertile-forest" => idSoilMed,
-            "lotr:biome-near-harad-oasis"    => idSoilMed,
-            "lotr:biome-near-harad-red-desert" => idSand,
-            "lotr:biome-near-harad-riverbank"=> idSoilLow,
-            "lotr:biome-near-harad-semi-desert" => idSand,
-            "lotr:biome-far-harad"           => idSand,
-            "lotr:biome-far-harad-arid"      => idSand,
-            "lotr:biome-far-harad-arid-hills"=> idSand,
-            "lotr:biome-far-harad-jungle"    => idSoilMed,
-            "lotr:biome-far-harad-jungle-edge" => idSoilMed,
-            "lotr:biome-far-harad-jungle-lake" => idSoilMed,
-            "lotr:biome-far-harad-forest"    => idSoilMed,
-            "lotr:biome-far-harad-bushland"  => idSoilLow,
-            "lotr:biome-far-harad-bushland-hills" => idSoilLow,
-            "lotr:biome-far-harad-cloud-forest" => idSoilMed,
-            "lotr:biome-far-harad-swamp"     => idSoilLow,
-            "lotr:biome-far-harad-mangrove"  => idSoilLow,
-            "lotr:biome-far-harad-volcano"   => idBasalt,
-            "lotr:biome-far-harad-coast"     => idSand,
-            "lotr:biome-harad-mountains"     => idStone,
-            "lotr:biome-umbar"               => idSand,
-            "lotr:biome-umbar-hills"         => idSoilLow,
-            "lotr:biome-umbar-forest"        => idSoilMed,
-            "lotr:biome-gulf-harad"          => idSand,
-            "lotr:biome-gulf-harad-forest"   => idSoilMed,
-            "lotr:biome-pertorogwaith"       => idSand,
-            "lotr:biome-lostladen"           => idSand,
-            "lotr:biome-tauredain-clearing"  => idSoilMed,
-            "lotr:biome-harnedor"            => idSoilLow,
-
-            // ── Wind Mountains, Last Desert ───────────────────────────────
-            "lotr:biome-wind-mountains"      => idStone,
-            "lotr:biome-wind-mountains-foothills" => idGravel,
-            "lotr:biome-last-desert"         => idSand,
-
-            // ── Beaches ───────────────────────────────────────────────────
-            "lotr:biome-beach"               => idSand,
-            "lotr:biome-beach-gravel"        => idGravel,
-            "lotr:biome-beach-white"         => idSand,
-
-            _ => 0   // 0 = no override for ocean, rivers, and unknown
-        };
+            if (g == grade) continue;
+            id = OreId(g, oreType, rockType);
+            if (id != 0) return id;
+        }
+        return 0;
     }
+
+    int OreId(string grade, string oreType, string rockType)
+        => sapi!.World.GetBlock(new AssetLocation($"game:ore-{grade}-{oreType}-{rockType}"))?.Id ?? 0;
+
+    /// <summary>Places a small blob of 3–7 ore blocks, replacing only host rock.</summary>
+    void PlaceVein(int oreId, BlockPos center, Random rng)
+    {
+        blockAccessor.SetBlock(oreId, center);
+
+        int extra = 2 + rng.Next(5);
+        var p = new BlockPos(0);
+        for (int i = 0; i < extra; i++)
+        {
+            p.Set(center.X + rng.Next(3) - 1,
+                  center.Y + rng.Next(2),
+                  center.Z + rng.Next(3) - 1);
+            var b = blockAccessor.GetBlock(p);
+            if (b?.Code?.Path.StartsWith("rock-") == true)
+                blockAccessor.SetBlock(oreId, p);
+        }
+    }
+
+    // ── Helpers ─────────────────────────────────────────────────────
 
     /// Returns true for blocks we are allowed to replace at the surface.
     bool IsSurfaceReplaceable(int blockId)
@@ -418,7 +233,7 @@ public class LotrWorldGen : ModSystem
         if (blockId == 0) return false; // air
         var block = sapi!.World.Blocks[blockId];
         if (block == null) return false;
-        var code  = block.Code?.Path ?? "";
+        var code = block.Code?.Path ?? "";
         // Allow replacing: soil, grass, sand, gravel, rock, stone
         return code.StartsWith("soil")    ||
                code.StartsWith("grass")   ||

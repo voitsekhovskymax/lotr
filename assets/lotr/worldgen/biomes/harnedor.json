@@ -8,6 +8,53 @@
   "fertilityMin": 0.35,
   "fertilityMax": 0.65,
   "landformHint": "mountainous-foothills",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#567A42"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#567A42",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 10
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0025,
+  "trees": [
+    {
+      "code": "game:acacia",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:truemulga",
+      "weight": 3,
+      "size": 0.9
+    },
+    {
+      "code": "game:deadacacia",
+      "weight": 2,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:deadacacia",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free",
+    "game:truemulga"
+  ]
 }

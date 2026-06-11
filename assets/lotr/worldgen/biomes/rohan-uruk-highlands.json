@@ -8,6 +8,33 @@
   "fertilityMin": 0.25,
   "fertilityMax": 0.45,
   "landformHint": "highland-plains",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#7E935A"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#7E935A",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 10
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "game:wolf"
+  ],
+  "flora": [
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

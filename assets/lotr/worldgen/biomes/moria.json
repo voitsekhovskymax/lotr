@@ -8,8 +8,31 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.0,
   "landformHint": "underground",
-  "surfaceBlock": "basalt",
-  "flora": [],
+  "surfaceBlock": "game:rock-granite",
+  "flora": [
+    "game:flower-edelweiss-free",
+    "game:tallgrass-veryshort-free"
+  ],
   "fauna": [],
-  "notes": "Underground cave complex, no surface"
+  "notes": "Underground cave complex, no surface",
+  "subSurfaceBlock": "game:gravel-granite",
+  "decorationChance": 0.03,
+  "decorations": [
+    {
+      "block": "game:flower-edelweiss-free",
+      "weight": 3
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {
+    "galena": 3.0,
+    "hematite": 2.0,
+    "nativecopper": 1.5,
+    "bismuthinite": 1.5
+  }
 }

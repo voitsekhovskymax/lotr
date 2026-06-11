@@ -8,6 +8,49 @@
   "fertilityMin": 0.5,
   "fertilityMax": 0.75,
   "landformHint": "vineyard-hills",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#9FB258"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#9FB258",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:fruitingbush-wild-redcurrant-free",
+      "weight": 2
+    },
+    {
+      "block": "game:fruitingbush-wild-blackcurrant-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.003,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 4,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:fruitingbush-wild-blackcurrant-free",
+    "game:fruitingbush-wild-redcurrant-free",
+    "game:silverbirch",
+    "game:tallgrass-medium-free"
+  ]
 }

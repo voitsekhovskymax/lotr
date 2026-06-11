@@ -8,6 +8,28 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "dark-valley",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#689641"
+  "surfaceBlock": "game:rock-basalt",
+  "referenceColor": "#689641",
+  "subSurfaceBlock": "game:gravel-basalt",
+  "decorationChance": 0.05,
+  "decorations": [
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "lotr:orc-mordor"
+  ],
+  "flora": [
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free"
+  ]
 }

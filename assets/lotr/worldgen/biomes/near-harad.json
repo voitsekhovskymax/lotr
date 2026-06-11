@@ -8,6 +8,37 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "arid-plains",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#919C54"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#919C54",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.015,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.0008,
+  "trees": [
+    {
+      "code": "game:deadacacia",
+      "weight": 5,
+      "size": 0.9
+    },
+    {
+      "code": "game:acacia",
+      "weight": 2,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:deadacacia",
+    "game:tallgrass-veryshort-free"
+  ]
 }

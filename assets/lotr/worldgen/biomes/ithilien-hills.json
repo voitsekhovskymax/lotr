@@ -8,6 +8,65 @@
   "fertilityMin": 0.35,
   "fertilityMax": 0.65,
   "landformHint": "mountainous-foothills",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#7A874F"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#7A874F",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.25,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 10
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 8
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-cornflower-free",
+      "weight": 1
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.006,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:greenspirecypress",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:walnut",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:wolf",
+    "game:bighornsheep"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-cornflower-free",
+    "game:flower-wilddaisy-free",
+    "game:greenspirecypress",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-tall-free",
+    "game:walnut"
+  ]
 }

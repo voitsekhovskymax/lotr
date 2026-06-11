@@ -8,6 +8,63 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.55,
   "landformHint": "scrubland-forest",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#699B4C"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#699B4C",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.14,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-bluebell-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-raspberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0025,
+  "trees": [
+    {
+      "code": "game:acacia",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:truemulga",
+      "weight": 3,
+      "size": 0.9
+    },
+    {
+      "code": "game:deadacacia",
+      "weight": 2,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:deadacacia",
+    "game:flower-bluebell-free",
+    "game:flower-lilyofthevalley-free",
+    "game:fruitingbush-wild-raspberry-free",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:truemulga"
+  ]
 }

@@ -8,6 +8,16 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "arid-plains",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#877E5A"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#877E5A",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.0,
+  "decorations": [],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "game:hyena"
+  ],
+  "flora": []
 }

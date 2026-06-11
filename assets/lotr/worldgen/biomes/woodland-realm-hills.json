@@ -8,6 +8,67 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.6,
   "landformHint": "dense-forest",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#9AB553"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#9AB553",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.14,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-bluebell-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-raspberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.014,
+  "trees": [
+    {
+      "code": "game:larch",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:fir",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:scotspine",
+      "weight": 5,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:wolf",
+    "game:pig-wild",
+    "game:bear",
+    "game:raccoon"
+  ],
+  "flora": [
+    "game:fir",
+    "game:flower-bluebell-free",
+    "game:flower-lilyofthevalley-free",
+    "game:fruitingbush-wild-raspberry-free",
+    "game:larch",
+    "game:scotspine",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free"
+  ]
 }

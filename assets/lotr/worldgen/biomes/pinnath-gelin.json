@@ -8,6 +8,44 @@
   "fertilityMin": 0.35,
   "fertilityMax": 0.65,
   "landformHint": "mountainous-foothills",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#BEC1B6"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#BEC1B6",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.24,
+  "decorations": [
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 8
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    }
+  ],
+  "treeChance": 0.003,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 4,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:wolf",
+    "game:bighornsheep"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:silverbirch",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-tall-free"
+  ]
 }

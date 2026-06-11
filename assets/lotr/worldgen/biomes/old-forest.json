@@ -8,6 +8,54 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.6,
   "landformHint": "dense-forest",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#45753B"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#45753B",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 2
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.018,
+  "trees": [
+    {
+      "code": "game:oldenglishoak",
+      "weight": 8,
+      "size": 1.2
+    },
+    {
+      "code": "game:englishoak",
+      "weight": 4,
+      "size": 1.1
+    },
+    {
+      "code": "game:walnut",
+      "weight": 2,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:wolf",
+    "game:bear",
+    "game:raccoon"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free",
+    "game:oldenglishoak",
+    "game:tallgrass-short-free",
+    "game:walnut"
+  ]
 }

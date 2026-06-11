@@ -8,6 +8,26 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.55,
   "landformHint": "open-lands",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#578736"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#578736",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.04,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:flower-mugwort-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

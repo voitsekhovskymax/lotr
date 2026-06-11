@@ -8,6 +8,25 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.06,
   "landformHint": "arid-desert",
-  "surfaceBlock": "sand",
-  "referenceColor": "#2E7B40"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#2E7B40",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.0,
+  "decorations": [],
+  "treeChance": 0.0006,
+  "trees": [
+    {
+      "code": "game:deadacacia",
+      "weight": 5,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:deadacacia"
+  ]
 }

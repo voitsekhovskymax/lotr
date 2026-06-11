@@ -8,6 +8,34 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.03,
   "landformHint": "frozen-tundra",
-  "surfaceBlock": "gravel-grey",
-  "referenceColor": "#7AA84F"
+  "surfaceBlock": "game:gravel-granite",
+  "referenceColor": "#7AA84F",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:fruitingbush-wild-cloudberry-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-cranberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "game:wolf",
+    "game:bear"
+  ],
+  "flora": [
+    "game:fruitingbush-wild-cloudberry-free",
+    "game:fruitingbush-wild-cranberry-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

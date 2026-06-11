@@ -8,6 +8,55 @@
   "fertilityMin": 0.1,
   "fertilityMax": 0.3,
   "landformHint": "boreal-forest",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#8FCCE0"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#8FCCE0",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.1,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 5
+    },
+    {
+      "block": "game:fruitingbush-wild-blueberry-free",
+      "weight": 2
+    },
+    {
+      "block": "game:fruitingbush-wild-cloudberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.014,
+  "trees": [
+    {
+      "code": "game:larch",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:fir",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:scotspine",
+      "weight": 5,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:moose",
+    "game:wolf",
+    "game:bear",
+    "game:hare"
+  ],
+  "flora": [
+    "game:fir",
+    "game:fruitingbush-wild-blueberry-free",
+    "game:fruitingbush-wild-cloudberry-free",
+    "game:larch",
+    "game:scotspine",
+    "game:tallgrass-short-free"
+  ]
 }

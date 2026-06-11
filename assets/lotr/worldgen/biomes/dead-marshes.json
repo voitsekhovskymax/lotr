@@ -8,6 +8,31 @@
   "fertilityMin": 0.15,
   "fertilityMax": 0.4,
   "landformHint": "boggy-marsh",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#6F733F"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#6F733F",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.14,
+  "decorations": [
+    {
+      "block": "game:tallgrass-verytall-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free",
+    "game:tallgrass-verytall-free"
+  ]
 }

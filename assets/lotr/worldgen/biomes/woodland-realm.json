@@ -8,6 +8,73 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.6,
   "landformHint": "dense-forest",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#3E6526"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#3E6526",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.14,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-bluebell-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-raspberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.018,
+  "trees": [
+    {
+      "code": "game:scotspine",
+      "weight": 6,
+      "size": 1.1
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:englishoak",
+      "weight": 3,
+      "size": 1.0
+    },
+    {
+      "code": "game:fir",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:wolf",
+    "game:pig-wild",
+    "game:bear",
+    "game:raccoon"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:fir",
+    "game:flower-bluebell-free",
+    "game:flower-lilyofthevalley-free",
+    "game:fruitingbush-wild-raspberry-free",
+    "game:scotspine",
+    "game:silverbirch",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free"
+  ]
 }

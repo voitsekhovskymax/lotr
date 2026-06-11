@@ -8,8 +8,34 @@
   "fertilityMin": 0.1,
   "fertilityMax": 0.3,
   "landformHint": "flat-lowlands",
-  "surfaceBlock": "gravel-andesite",
-  "flora": [],
-  "fauna": [],
-  "notes": "Deforested industrial wasteland, Orthanc"
+  "surfaceBlock": "game:soil-low-normal",
+  "flora": [
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free"
+  ],
+  "fauna": [
+    "lotr:uruk-hai",
+    "lotr:warg"
+  ],
+  "notes": "Deforested industrial wasteland, Orthanc",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 10
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {}
 }

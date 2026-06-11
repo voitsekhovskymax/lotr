@@ -8,6 +8,33 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.2,
   "landformHint": "moorland",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#6C7C52"
+  "surfaceBlock": "game:gravel-granite",
+  "referenceColor": "#6C7C52",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:fruitingbush-wild-cloudberry-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-cranberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "game:wolf"
+  ],
+  "flora": [
+    "game:fruitingbush-wild-cloudberry-free",
+    "game:fruitingbush-wild-cranberry-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

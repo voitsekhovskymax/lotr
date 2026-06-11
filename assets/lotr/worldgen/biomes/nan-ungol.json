@@ -8,6 +8,33 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.55,
   "landformHint": "open-lands",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#EDEDEE"
+  "surfaceBlock": "game:gravel-basalt",
+  "referenceColor": "#EDEDEE",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 2
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "lotr:mirkwood-spider"
+  ],
+  "flora": [
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free",
+    "game:tallgrass-short-free"
+  ]
 }

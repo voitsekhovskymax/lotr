@@ -8,6 +8,59 @@
   "fertilityMin": 0.75,
   "fertilityMax": 0.95,
   "landformHint": "flat-forest-floor",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#74AF46"
+  "surfaceBlock": "game:soil-rich-normal",
+  "referenceColor": "#74AF46",
+  "subSurfaceBlock": "game:soil-medium-normal",
+  "decorationChance": 0.22,
+  "decorations": [
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 8
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 8
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-goldenpoppy-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-cowparsley-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.006,
+  "trees": [
+    {
+      "code": "game:riverbirch",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
+  ],
+  "flora": [
+    "game:flower-cowparsley-free",
+    "game:flower-goldenpoppy-free",
+    "game:flower-wilddaisy-free",
+    "game:riverbirch",
+    "game:silverbirch",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-tall-free"
+  ]
 }

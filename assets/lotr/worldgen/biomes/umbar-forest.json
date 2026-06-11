@@ -8,6 +8,63 @@
   "fertilityMin": 0.35,
   "fertilityMax": 0.6,
   "landformHint": "coastal-forest",
-  "surfaceBlock": "soil-medium-normal",
-  "referenceColor": "#8BA850"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#8BA850",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.14,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-bluebell-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-lilyofthevalley-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-raspberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.01,
+  "trees": [
+    {
+      "code": "game:greenspirecypress",
+      "weight": 5,
+      "size": 1.0
+    },
+    {
+      "code": "game:englishoak",
+      "weight": 3,
+      "size": 1.0
+    },
+    {
+      "code": "game:acacia",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:englishoak",
+    "game:flower-bluebell-free",
+    "game:flower-lilyofthevalley-free",
+    "game:fruitingbush-wild-raspberry-free",
+    "game:greenspirecypress",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free"
+  ]
 }

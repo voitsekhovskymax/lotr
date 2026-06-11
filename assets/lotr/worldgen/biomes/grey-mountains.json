@@ -8,6 +8,52 @@
   "fertilityMin": 0.02,
   "fertilityMax": 0.15,
   "landformHint": "alpine-peaks",
-  "surfaceBlock": "rock",
-  "referenceColor": "#CACCC1"
+  "surfaceBlock": "game:rock-granite",
+  "referenceColor": "#CACCC1",
+  "subSurfaceBlock": "game:gravel-granite",
+  "decorationChance": 0.03,
+  "decorations": [
+    {
+      "block": "game:flower-edelweiss-free",
+      "weight": 3
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.003,
+  "trees": [
+    {
+      "code": "game:mountainpine",
+      "weight": 6,
+      "size": 0.9
+    },
+    {
+      "code": "game:dwarfbirch",
+      "weight": 4,
+      "size": 0.8
+    },
+    {
+      "code": "game:bristleconepine",
+      "weight": 1,
+      "size": 0.8
+    }
+  ],
+  "oreBoost": {
+    "nativecopper": 1.5,
+    "hematite": 1.3
+  },
+  "fauna": [
+    "game:bighornsheep",
+    "game:wolf",
+    "game:bear"
+  ],
+  "flora": [
+    "game:bristleconepine",
+    "game:dwarfbirch",
+    "game:flower-edelweiss-free",
+    "game:mountainpine",
+    "game:tallgrass-veryshort-free"
+  ]
 }

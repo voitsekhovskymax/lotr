@@ -8,6 +8,49 @@
   "fertilityMin": 0.75,
   "fertilityMax": 0.95,
   "landformHint": "flat-forest-floor",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#D8D8D2"
+  "surfaceBlock": "game:soil-medium-normal",
+  "referenceColor": "#D8D8D2",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:flower-daffodil-free",
+      "weight": 3
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 4
+    }
+  ],
+  "treeChance": 0.008,
+  "trees": [
+    {
+      "code": "game:sugarmaple",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 4,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
+  ],
+  "flora": [
+    "game:flower-daffodil-free",
+    "game:silverbirch",
+    "game:sugarmaple",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-tall-free"
+  ]
 }

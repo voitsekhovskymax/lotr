@@ -8,6 +8,58 @@
   "fertilityMin": 0.1,
   "fertilityMax": 0.3,
   "landformHint": "mountain-foothills",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#63964F"
+  "surfaceBlock": "game:gravel-granite",
+  "referenceColor": "#63964F",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:fruitingbush-wild-cloudberry-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-cranberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.014,
+  "trees": [
+    {
+      "code": "game:larch",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:fir",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:scotspine",
+      "weight": 5,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {
+    "nativecopper": 1.5,
+    "hematite": 1.3
+  },
+  "fauna": [
+    "game:moose",
+    "game:wolf",
+    "game:bear",
+    "game:hare"
+  ],
+  "flora": [
+    "game:fir",
+    "game:fruitingbush-wild-cloudberry-free",
+    "game:fruitingbush-wild-cranberry-free",
+    "game:larch",
+    "game:scotspine",
+    "game:tallgrass-veryshort-free"
+  ]
 }

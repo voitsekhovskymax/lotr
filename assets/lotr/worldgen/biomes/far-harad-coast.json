@@ -8,6 +8,28 @@
   "fertilityMin": 0.15,
   "fertilityMax": 0.35,
   "landformHint": "coastal",
-  "surfaceBlock": "sand",
-  "referenceColor": "#EDEDED"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#EDEDED",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.03,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.002,
+  "trees": [
+    {
+      "code": "game:acacia",
+      "weight": 4,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:acacia",
+    "game:tallgrass-short-free"
+  ]
 }

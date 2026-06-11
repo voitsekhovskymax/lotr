@@ -8,6 +8,57 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.55,
   "landformHint": "tropical-swamp",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#7F7934"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#7F7934",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-verytall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-forgetmenot-free",
+      "weight": 1
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.008,
+  "trees": [
+    {
+      "code": "game:baldcypress",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:baldcypressswamp",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:riverbirch",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:raccoon"
+  ],
+  "flora": [
+    "game:baldcypress",
+    "game:baldcypressswamp",
+    "game:flower-forgetmenot-free",
+    "game:flower-mugwort-free",
+    "game:riverbirch",
+    "game:tallgrass-tall-free",
+    "game:tallgrass-verytall-free"
+  ]
 }

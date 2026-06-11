@@ -8,6 +8,26 @@
   "fertilityMin": 0.02,
   "fertilityMax": 0.1,
   "landformHint": "barren-wasteland",
-  "surfaceBlock": "gravel-grey",
-  "referenceColor": "#827E50"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#827E50",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.03,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:flower-mugwort-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

@@ -8,6 +8,52 @@
   "fertilityMin": 0.2,
   "fertilityMax": 0.4,
   "landformHint": "rolling-hills",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#848E4E"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#848E4E",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.18,
+  "decorations": [
+    {
+      "block": "game:flower-heather-free",
+      "weight": 8
+    },
+    {
+      "block": "game:flower-westerngorse-free",
+      "weight": 4
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 5
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.0012,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 5,
+      "size": 0.9
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 2,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:wolf"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-heather-free",
+    "game:flower-westerngorse-free",
+    "game:silverbirch",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

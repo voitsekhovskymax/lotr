@@ -8,6 +8,42 @@
   "fertilityMin": 0.1,
   "fertilityMax": 0.3,
   "landformHint": "dark-corrupted-forest",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#998D5B"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#998D5B",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.01,
+  "trees": [
+    {
+      "code": "game:deepforestlarch",
+      "weight": 6,
+      "size": 1.1
+    },
+    {
+      "code": "game:deadkapok",
+      "weight": 2,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "lotr:mirkwood-spider",
+    "lotr:orc-mordor"
+  ],
+  "flora": [
+    "game:deadkapok",
+    "game:deepforestlarch",
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free"
+  ]
 }

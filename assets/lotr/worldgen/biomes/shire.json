@@ -8,6 +8,80 @@
   "fertilityMin": 0.7,
   "fertilityMax": 0.9,
   "landformHint": "rolling-hills",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#67AD35"
+  "surfaceBlock": "game:soil-rich-normal",
+  "referenceColor": "#67AD35",
+  "subSurfaceBlock": "game:soil-medium-normal",
+  "decorationChance": 0.26,
+  "decorations": [
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 8
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-goldenpoppy-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-cowparsley-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-strawberry-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-redcurrant-free",
+      "weight": 1
+    },
+    {
+      "block": "game:fruitingbush-wild-raspberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.004,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:walnut",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:chicken",
+    "game:pig-wild",
+    "game:fox"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-cowparsley-free",
+    "game:flower-goldenpoppy-free",
+    "game:flower-wilddaisy-free",
+    "game:fruitingbush-wild-raspberry-free",
+    "game:fruitingbush-wild-redcurrant-free",
+    "game:fruitingbush-wild-strawberry-free",
+    "game:silverbirch",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-tall-free",
+    "game:walnut"
+  ]
 }

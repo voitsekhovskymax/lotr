@@ -8,6 +8,14 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.0,
   "landformHint": "water",
-  "surfaceBlock": "water",
-  "referenceColor": "#6BB25C"
+  "surfaceBlock": "",
+  "referenceColor": "#6BB25C",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.0,
+  "decorations": [],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": []
 }

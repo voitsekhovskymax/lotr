@@ -8,6 +8,39 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.5,
   "landformHint": "moorland",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#685734"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#685734",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.18,
+  "decorations": [
+    {
+      "block": "game:flower-heather-free",
+      "weight": 8
+    },
+    {
+      "block": "game:flower-westerngorse-free",
+      "weight": 4
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 5
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox"
+  ],
+  "flora": [
+    "game:flower-heather-free",
+    "game:flower-westerngorse-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

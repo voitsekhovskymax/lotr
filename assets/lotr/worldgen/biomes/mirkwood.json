@@ -3,25 +3,59 @@
   "displayName": "Mirkwood",
   "tempMin": 5,
   "tempMax": 14,
-  "rainMin": 0.40,
+  "rainMin": 0.4,
   "rainMax": 0.65,
-  "fertilityMin": 0.20,
+  "fertilityMin": 0.2,
   "fertilityMax": 0.45,
   "landformHint": "dense-dark-forest",
-  "surfaceBlock": "soil-low-normal",
+  "surfaceBlock": "game:soil-medium-normal",
   "flora": [
-    "oak-dark",
-    "fir",
-    "deadwood",
-    "cobweb",
-    "mushroom"
+    "game:deepforestlarch",
+    "game:fir",
+    "game:flower-ghostpipered-free",
+    "game:flower-mugwort-free",
+    "game:scotspine",
+    "game:tallgrass-short-free"
   ],
   "fauna": [
-    "spider",
-    "bat",
-    "deer",
-    "warg"
+    "lotr:mirkwood-spider",
+    "game:wolf"
   ],
   "ambientSound": "lotr:sounds/ambient/mirkwood",
-  "notes": "Taur-e-Ndaedelos — great dark forest corrupted by Dol Guldur, filled with giant spiders"
+  "notes": "Taur-e-Ndaedelos — great dark forest corrupted by Dol Guldur, filled with giant spiders",
+  "subSurfaceBlock": "game:soil-low-normal",
+  "decorationChance": 0.06,
+  "decorations": [
+    {
+      "block": "game:flower-mugwort-free",
+      "weight": 4
+    },
+    {
+      "block": "game:flower-ghostpipered-free",
+      "weight": 2
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.02,
+  "trees": [
+    {
+      "code": "game:scotspine",
+      "weight": 6,
+      "size": 1.1
+    },
+    {
+      "code": "game:deepforestlarch",
+      "weight": 5,
+      "size": 1.2
+    },
+    {
+      "code": "game:fir",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {}
 }

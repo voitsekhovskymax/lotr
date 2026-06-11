@@ -8,6 +8,48 @@
   "fertilityMin": 0.3,
   "fertilityMax": 0.55,
   "landformHint": "scrubland-forest",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#698432"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#698432",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.12,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 4
+    }
+  ],
+  "treeChance": 0.005,
+  "trees": [
+    {
+      "code": "game:truemulga",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:pricklymoses",
+      "weight": 4,
+      "size": 1.0
+    },
+    {
+      "code": "game:acacia",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:pricklymoses",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free",
+    "game:truemulga"
+  ]
 }

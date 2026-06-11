@@ -8,6 +8,24 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "arid-plains",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#38821D"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#38821D",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.015,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:tallgrass-veryshort-free"
+  ]
 }

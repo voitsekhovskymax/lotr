@@ -8,6 +8,21 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "rocky-wasteland",
-  "surfaceBlock": "gravel-grey",
-  "referenceColor": "#6C8446"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#6C8446",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.015,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 3
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:tallgrass-veryshort-free"
+  ]
 }

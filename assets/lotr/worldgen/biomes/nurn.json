@@ -8,6 +8,46 @@
   "fertilityMin": 0.1,
   "fertilityMax": 0.25,
   "landformHint": "inland-sea-shore",
-  "surfaceBlock": "soil-low-normal",
-  "referenceColor": "#3D3B2B"
+  "surfaceBlock": "game:soil-low-normal",
+  "referenceColor": "#3D3B2B",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.2,
+  "decorations": [
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 10
+    },
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 6
+    },
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0012,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 5,
+      "size": 0.9
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 2,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "lotr:orc-mordor"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:silverbirch",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free"
+  ]
 }

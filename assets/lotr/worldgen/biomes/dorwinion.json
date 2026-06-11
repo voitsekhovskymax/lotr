@@ -8,6 +8,64 @@
   "fertilityMin": 0.5,
   "fertilityMax": 0.75,
   "landformHint": "vineyard-hills",
-  "surfaceBlock": "soil-rich-normal",
-  "referenceColor": "#8C9AAD"
+  "surfaceBlock": "game:soil-rich-normal",
+  "referenceColor": "#8C9AAD",
+  "subSurfaceBlock": "game:soil-medium-normal",
+  "decorationChance": 0.24,
+  "decorations": [
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 6
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 2
+    },
+    {
+      "block": "game:flower-catmint-free",
+      "weight": 2
+    },
+    {
+      "block": "game:fruitingbush-wild-redcurrant-free",
+      "weight": 2
+    },
+    {
+      "block": "game:fruitingbush-wild-blackcurrant-free",
+      "weight": 2
+    },
+    {
+      "block": "game:fruitingbush-wild-strawberry-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.005,
+  "trees": [
+    {
+      "code": "game:walnut",
+      "weight": 6,
+      "size": 1.0
+    },
+    {
+      "code": "game:englishoak",
+      "weight": 3,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
+  ],
+  "flora": [
+    "game:englishoak",
+    "game:flower-catmint-free",
+    "game:flower-wilddaisy-free",
+    "game:fruitingbush-wild-blackcurrant-free",
+    "game:fruitingbush-wild-redcurrant-free",
+    "game:fruitingbush-wild-strawberry-free",
+    "game:tallgrass-tall-free",
+    "game:walnut"
+  ]
 }

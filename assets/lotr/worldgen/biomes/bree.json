@@ -8,16 +8,59 @@
   "fertilityMin": 0.5,
   "fertilityMax": 0.7,
   "landformHint": "flat-lowlands",
-  "surfaceBlock": "soil-medium-sparse",
+  "surfaceBlock": "game:soil-low-normal",
   "flora": [
-    "oak",
-    "elm",
-    "tallgrass"
+    "game:englishoak",
+    "game:flower-cornflower-free",
+    "game:flower-wilddaisy-free",
+    "game:silverbirch",
+    "game:tallgrass-medium-free",
+    "game:tallgrass-short-free",
+    "game:tallgrass-tall-free"
   ],
   "fauna": [
-    "horse",
-    "cattle",
-    "rabbit"
+    "game:hare",
+    "game:fox",
+    "game:pig-wild",
+    "game:chicken"
   ],
-  "notes": "Crossroads settlement, moderate climate"
+  "notes": "Crossroads settlement, moderate climate",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.25,
+  "decorations": [
+    {
+      "block": "game:tallgrass-medium-free",
+      "weight": 10
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 8
+    },
+    {
+      "block": "game:tallgrass-tall-free",
+      "weight": 3
+    },
+    {
+      "block": "game:flower-cornflower-free",
+      "weight": 1
+    },
+    {
+      "block": "game:flower-wilddaisy-free",
+      "weight": 1
+    }
+  ],
+  "treeChance": 0.003,
+  "trees": [
+    {
+      "code": "game:englishoak",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:silverbirch",
+      "weight": 4,
+      "size": 1.0
+    }
+  ],
+  "oreBoost": {}
 }

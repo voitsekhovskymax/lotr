@@ -8,6 +8,48 @@
   "fertilityMin": 0.0,
   "fertilityMax": 0.06,
   "landformHint": "arid-desert",
-  "surfaceBlock": "sand",
-  "referenceColor": "#55934B"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#55934B",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.05,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 5
+    },
+    {
+      "block": "game:tallgrass-short-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0025,
+  "trees": [
+    {
+      "code": "game:acacia",
+      "weight": 8,
+      "size": 1.0
+    },
+    {
+      "code": "game:truemulga",
+      "weight": 3,
+      "size": 0.9
+    },
+    {
+      "code": "game:deadacacia",
+      "weight": 2,
+      "size": 0.9
+    }
+  ],
+  "oreBoost": {},
+  "fauna": [
+    "game:gazelle",
+    "game:hyena"
+  ],
+  "flora": [
+    "game:acacia",
+    "game:deadacacia",
+    "game:tallgrass-short-free",
+    "game:tallgrass-veryshort-free",
+    "game:truemulga"
+  ]
 }

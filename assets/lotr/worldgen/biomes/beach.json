@@ -8,6 +8,21 @@
   "fertilityMin": 0.05,
   "fertilityMax": 0.15,
   "landformHint": "coastal-beach",
-  "surfaceBlock": "sand",
-  "referenceColor": "#94A041"
+  "surfaceBlock": "game:sand-sandstone",
+  "referenceColor": "#94A041",
+  "subSurfaceBlock": "",
+  "decorationChance": 0.02,
+  "decorations": [
+    {
+      "block": "game:tallgrass-veryshort-free",
+      "weight": 2
+    }
+  ],
+  "treeChance": 0.0,
+  "trees": [],
+  "oreBoost": {},
+  "fauna": [],
+  "flora": [
+    "game:tallgrass-veryshort-free"
+  ]
 }
